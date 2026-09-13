@@ -1,15 +1,23 @@
 <template>
-  <div class="mh" aria-label="Brújula para IA y salud mental">
-    <svg viewBox="0 0 620 540" role="img">
-      <defs><radialGradient id="mhg"><stop stop-color="#fff"/><stop offset=".08" stop-color="#5de6ff"/><stop offset=".62" stop-color="#081326"/></radialGradient></defs>
-      <circle cx="310" cy="270" r="184" fill="#081326" stroke="#fff" stroke-opacity=".09"/>
-      <circle cx="310" cy="270" r="112" fill="url(#mhg)" opacity=".75"/>
-      <g fill="none" stroke="#fff" stroke-opacity=".12"><path d="M310 86V454M126 270H494"/></g>
-      <g font-family="Inter" text-anchor="middle"><text x="310" y="260" fill="#fff" font-size="24" font-weight="800">APOYO</text><text x="310" y="286" fill="#d2dfed" font-size="13">sin suplantar vínculo humano</text>
-      <text x="310" y="74" fill="#62e8b8" font-size="16" font-weight="800">DISPONIBILIDAD</text><text x="310" y="486" fill="#ffc867" font-size="16" font-weight="800">ESCALADO HUMANO</text><text x="90" y="276" fill="#a978ff" font-size="16" font-weight="800" transform="rotate(-90 90 276)">PRIVACIDAD</text><text x="530" y="276" fill="#ff7487" font-size="16" font-weight="800" transform="rotate(90 530 276)">NO DEPENDENCIA</text></g>
-      <g fill="#0d1b30" stroke-width="2"><circle cx="310" cy="125" r="28" stroke="#62e8b8"/><circle cx="310" cy="415" r="28" stroke="#ffc867"/><circle cx="165" cy="270" r="28" stroke="#a978ff"/><circle cx="455" cy="270" r="28" stroke="#ff7487"/></g>
-      <g fill="#fff" font-family="Inter" font-size="18" text-anchor="middle"><text x="310" y="131">24/7</text><text x="310" y="421">↗</text><text x="165" y="276">◈</text><text x="455" y="276">∞</text></g>
+  <div class="mh" aria-label="Principios de diseño para IA y salud mental">
+    <svg viewBox="0 0 680 520" role="img">
+      <defs>
+        <radialGradient id="mhcore"><stop stop-color="#ffffff"/><stop offset=".12" stop-color="#7deaff"/><stop offset=".55" stop-color="#4768d6"/><stop offset="1" stop-color="#091426"/></radialGradient>
+        <filter id="mhglow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <g font-family="Inter, Segoe UI, sans-serif">
+        <path d="M340 178V135M340 342V385M258 260H214M422 260H466" stroke="#8cb8d7" stroke-opacity=".5" stroke-width="3"/>
+
+        <g transform="translate(220 38)"><rect width="240" height="92" rx="24" fill="#0f2622" stroke="#62e8b8" stroke-width="2"/><text x="22" y="34" fill="#83f0cb" font-size="13" font-weight="900">DISPONIBILIDAD</text><text x="22" y="58" fill="#fff" font-size="17" font-weight="800">Acceso cuando ayuda</text><text x="22" y="77" fill="#a9c6bc" font-size="11">sin fingir presencia humana</text></g>
+        <g transform="translate(220 390)"><rect width="240" height="92" rx="24" fill="#2a2112" stroke="#ffc867" stroke-width="2"/><text x="22" y="34" fill="#ffd98a" font-size="13" font-weight="900">ESCALADO HUMANO</text><text x="22" y="58" fill="#fff" font-size="17" font-weight="800">Derivar a una persona</text><text x="22" y="77" fill="#cdbf9f" font-size="11">cuando el contexto supera al sistema</text></g>
+        <g transform="translate(20 214)"><rect width="218" height="92" rx="24" fill="#17172d" stroke="#a978ff" stroke-width="2"/><text x="22" y="34" fill="#d0b5ff" font-size="13" font-weight="900">PRIVACIDAD</text><text x="22" y="56" fill="#fff" font-size="14.5" font-weight="800">Dato especialmente</text><text x="22" y="74" fill="#fff" font-size="14.5" font-weight="800">sensible</text><text x="22" y="88" fill="#bdb8d2" font-size="9.5">mínimo acceso · máxima protección</text></g>
+        <g transform="translate(442 214)"><rect width="218" height="92" rx="24" fill="#2a141b" stroke="#ff7487" stroke-width="2"/><text x="22" y="34" fill="#ff9dad" font-size="13" font-weight="900">NO DEPENDENCIA</text><text x="22" y="56" fill="#fff" font-size="14.5" font-weight="800">Diseñar para</text><text x="22" y="74" fill="#fff" font-size="14.5" font-weight="800">autonomía</text><text x="22" y="88" fill="#d0b3bc" font-size="9.5">no maximizar apego</text></g>
+
+        <circle cx="340" cy="260" r="90" fill="url(#mhcore)" filter="url(#mhglow)"/>
+        <text x="340" y="250" fill="#fff" font-size="25" font-weight="900" text-anchor="middle">APOYO</text>
+        <text x="340" y="277" fill="#d8f5ff" font-size="13" font-weight="700" text-anchor="middle">útil · limitado · transparente</text>
+      </g>
     </svg>
   </div>
 </template>
-<style scoped>.mh{width:100%;max-width:560px;margin:auto}.mh svg{width:100%}</style>
+<style scoped>.mh{width:100%;max-width:620px;margin:auto}.mh svg{width:100%;display:block}</style>

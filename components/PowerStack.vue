@@ -1,16 +1,21 @@
 <template>
   <div class="stack" aria-label="Capas de poder e infraestructura de la inteligencia artificial">
-    <svg viewBox="0 0 700 500" role="img">
-      <defs><linearGradient id="ps" x1="0" x2="1"><stop stop-color="#5de6ff"/><stop offset="1" stop-color="#a978ff"/></linearGradient></defs>
-      <g font-family="Inter">
-        <g><rect x="120" y="372" width="460" height="62" rx="18" fill="#0d1b30" stroke="#5de6ff" stroke-opacity=".35"/><text x="350" y="410" fill="#fff" font-size="17" font-weight="800" text-anchor="middle">ENERGÍA + CENTROS DE DATOS</text></g>
-        <g><rect x="150" y="297" width="400" height="62" rx="18" fill="#0d1b30" stroke="#6688ff" stroke-opacity=".42"/><text x="350" y="335" fill="#fff" font-size="17" font-weight="800" text-anchor="middle">CHIPS + COMPUTACIÓN</text></g>
-        <g><rect x="180" y="222" width="340" height="62" rx="18" fill="#0d1b30" stroke="#a978ff" stroke-opacity=".5"/><text x="350" y="260" fill="#fff" font-size="17" font-weight="800" text-anchor="middle">DATOS + MODELOS</text></g>
-        <g><rect x="210" y="147" width="280" height="62" rx="18" fill="#0d1b30" stroke="#ff70bd" stroke-opacity=".55"/><text x="350" y="185" fill="#fff" font-size="17" font-weight="800" text-anchor="middle">PLATAFORMAS + AGENTES</text></g>
-        <g><rect x="240" y="72" width="220" height="62" rx="18" fill="url(#ps)" fill-opacity=".17" stroke="url(#ps)"/><text x="350" y="109" fill="#fff" font-size="17" font-weight="800" text-anchor="middle">DECISIONES</text></g>
+    <svg viewBox="0 0 720 500" role="img">
+      <defs><linearGradient id="psg" x1="0" x2="1"><stop stop-color="#5de6ff"/><stop offset=".55" stop-color="#a978ff"/><stop offset="1" stop-color="#ff70bd"/></linearGradient></defs>
+      <g font-family="Inter, Segoe UI, sans-serif">
+        <text x="70" y="48" fill="#8fa6c1" font-size="12" font-weight="900" letter-spacing="1.4">INFRAESTRUCTURA → CAPACIDAD → DECISIÓN</text>
+        <g>
+          <rect x="60" y="355" width="500" height="68" rx="20" fill="#0c1c31" stroke="#5de6ff" stroke-width="2"/><circle cx="92" cy="389" r="18" fill="#5de6ff" fill-opacity=".16"/><text x="92" y="395" fill="#8cecff" font-size="15" font-weight="900" text-anchor="middle">1</text><text x="128" y="383" fill="#fff" font-size="18" font-weight="900">ENERGÍA + CENTROS DE DATOS</text><text x="128" y="405" fill="#a8bbd2" font-size="11">capital físico · electricidad · refrigeración</text>
+          <rect x="92" y="282" width="468" height="62" rx="20" fill="#101d35" stroke="#6688ff" stroke-width="2"/><circle cx="122" cy="313" r="17" fill="#6688ff" fill-opacity=".16"/><text x="122" y="319" fill="#9cabff" font-size="14" font-weight="900" text-anchor="middle">2</text><text x="157" y="308" fill="#fff" font-size="17" font-weight="900">CHIPS + COMPUTACIÓN</text><text x="157" y="329" fill="#a8bbd2" font-size="11">capacidad de entrenar y servir modelos</text>
+          <rect x="124" y="213" width="436" height="58" rx="19" fill="#161b38" stroke="#a978ff" stroke-width="2"/><circle cx="153" cy="242" r="16" fill="#a978ff" fill-opacity=".16"/><text x="153" y="247" fill="#d2b9ff" font-size="13" font-weight="900" text-anchor="middle">3</text><text x="186" y="237" fill="#fff" font-size="16" font-weight="900">DATOS + MODELOS</text><text x="186" y="257" fill="#a8bbd2" font-size="11">conocimiento comprimido + entrenamiento</text>
+          <rect x="156" y="148" width="404" height="54" rx="18" fill="#21182f" stroke="#ff70bd" stroke-width="2"/><circle cx="183" cy="175" r="15" fill="#ff70bd" fill-opacity=".16"/><text x="183" y="180" fill="#ffabd7" font-size="12" font-weight="900" text-anchor="middle">4</text><text x="214" y="170" fill="#fff" font-size="16" font-weight="900">PLATAFORMAS + AGENTES</text><text x="214" y="189" fill="#bda9b7" font-size="10.5">distribución · herramientas · acceso</text>
+          <rect x="188" y="84" width="372" height="52" rx="18" fill="url(#psg)" fill-opacity=".18" stroke="url(#psg)" stroke-width="2"/><circle cx="214" cy="110" r="14" fill="#fff" fill-opacity=".12"/><text x="214" y="115" fill="#fff" font-size="12" font-weight="900" text-anchor="middle">5</text><text x="244" y="116" fill="#fff" font-size="16" font-weight="900">DECISIONES + PODER</text>
+        </g>
+        <path d="M606 403V104" stroke="url(#psg)" stroke-width="5" stroke-linecap="round"/>
+        <path d="M594 118L606 96l12 22" fill="none" stroke="#ff9fd0" stroke-width="4" stroke-linecap="round"/>
+        <rect x="620" y="214" width="82" height="92" rx="18" fill="#0b1729" stroke="#ff70bd" stroke-opacity=".36"/><text x="661" y="240" fill="#ffabd7" font-size="10.5" font-weight="900" text-anchor="middle">INFLUENCIA</text><text x="661" y="260" fill="#fff" font-size="13" font-weight="900" text-anchor="middle">↑</text><text x="661" y="281" fill="#dce8f6" font-size="10.5" font-weight="800" text-anchor="middle">menos actores</text>
       </g>
-      <path d="M595 398V104" stroke="#fff" stroke-opacity=".18" stroke-width="2"/><path d="M589 115l6-11 6 11" fill="none" stroke="#fff" stroke-opacity=".4" stroke-width="2"/><text x="620" y="260" fill="#b8c8d8" font-family="Inter" font-size="13" transform="rotate(-90 620 260)" text-anchor="middle">concentración de capacidad e influencia</text>
     </svg>
   </div>
 </template>
-<style scoped>.stack{width:100%;max-width:640px;margin:auto}.stack svg{width:100%}</style>
+<style scoped>.stack{width:100%;max-width:650px;margin:auto}.stack svg{width:100%;display:block}</style>

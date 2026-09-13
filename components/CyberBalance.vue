@@ -1,16 +1,36 @@
 <template>
   <div class="cyber" aria-label="Equilibrio entre ataque y defensa asistidos por IA">
-    <svg viewBox="0 0 720 500" role="img">
-      <defs><linearGradient id="cb" x1="0" x2="1"><stop stop-color="#ff7487"/><stop offset=".5" stop-color="#a978ff"/><stop offset="1" stop-color="#62e8b8"/></linearGradient></defs>
-      <path d="M360 82v314" stroke="#fff" stroke-opacity=".12" stroke-width="2"/>
-      <path d="M120 250H600" stroke="url(#cb)" stroke-width="8" stroke-linecap="round"/>
-      <circle cx="360" cy="250" r="45" fill="#07101d" stroke="#fff" stroke-opacity=".28" stroke-width="3"/>
-      <text x="360" y="244" fill="#fff" font-family="Inter" font-size="16" font-weight="800" text-anchor="middle">IA</text><text x="360" y="264" fill="#aebbd0" font-family="Inter" font-size="11" text-anchor="middle">multiplicador</text>
-      <g fill="#111d31" stroke-width="2"><circle cx="130" cy="145" r="42" stroke="#ff7487"/><circle cx="130" cy="355" r="42" stroke="#ff7487"/><circle cx="590" cy="145" r="42" stroke="#62e8b8"/><circle cx="590" cy="355" r="42" stroke="#62e8b8"/></g>
-      <g fill="#fff" font-family="Inter" font-size="14" text-anchor="middle"><text x="130" y="142">phishing</text><text x="130" y="161">a escala</text><text x="130" y="352">engaño</text><text x="130" y="371">personalizado</text><text x="590" y="142">detección</text><text x="590" y="161">asistida</text><text x="590" y="352">respuesta</text><text x="590" y="371">más rápida</text></g>
-      <text x="110" y="72" fill="#ff9aaa" font-family="Inter" font-weight="800" font-size="20">ATAQUE</text><text x="525" y="72" fill="#84f0cb" font-family="Inter" font-weight="800" font-size="20">DEFENSA</text>
-      <text x="360" y="452" fill="#c5d5e7" font-family="Inter" font-size="15" text-anchor="middle">la diferencia real: identidad · permisos · contexto · trazabilidad</text>
+    <svg viewBox="0 0 740 500" role="img">
+      <defs>
+        <linearGradient id="cbline" x1="0" x2="1"><stop stop-color="#ff7487"/><stop offset=".49" stop-color="#a978ff"/><stop offset=".51" stop-color="#5de6ff"/><stop offset="1" stop-color="#62e8b8"/></linearGradient>
+        <filter id="cg"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <g font-family="Inter, Segoe UI, sans-serif">
+        <rect x="24" y="48" width="292" height="386" rx="30" fill="#20111e" stroke="#ff7487" stroke-opacity=".55"/>
+        <rect x="424" y="48" width="292" height="386" rx="30" fill="#0d201d" stroke="#62e8b8" stroke-opacity=".55"/>
+        <text x="56" y="91" fill="#ff9caa" font-size="21" font-weight="900">ATAQUE</text>
+        <text x="456" y="91" fill="#8df0ce" font-size="21" font-weight="900">DEFENSA</text>
+        <text x="56" y="115" fill="#aeb7c7" font-size="11">la IA reduce coste y aumenta escala</text>
+        <text x="456" y="115" fill="#aeb7c7" font-size="11">la IA reduce tiempo de detección</text>
+
+        <g>
+          <rect x="54" y="145" width="232" height="72" rx="18" fill="#2b1725" stroke="#ff7487" stroke-opacity=".36"/><text x="77" y="176" fill="#fff" font-size="16" font-weight="800">Phishing a escala</text><text x="77" y="198" fill="#c9b8c1" font-size="12">personalización automática</text>
+          <rect x="54" y="235" width="232" height="72" rx="18" fill="#2b1725" stroke="#ff7487" stroke-opacity=".36"/><text x="77" y="266" fill="#fff" font-size="16" font-weight="800">Engaño adaptativo</text><text x="77" y="288" fill="#c9b8c1" font-size="12">voz · texto · contexto</text>
+          <rect x="54" y="325" width="232" height="72" rx="18" fill="#2b1725" stroke="#ff7487" stroke-opacity=".36"/><text x="77" y="356" fill="#fff" font-size="16" font-weight="800">Exploración rápida</text><text x="77" y="378" fill="#c9b8c1" font-size="12">más intentos, más superficie</text>
+        </g>
+        <g>
+          <rect x="454" y="145" width="232" height="72" rx="18" fill="#122923" stroke="#62e8b8" stroke-opacity=".36"/><text x="477" y="176" fill="#fff" font-size="16" font-weight="800">Detección asistida</text><text x="477" y="198" fill="#b9cdc5" font-size="12">correlación de señales</text>
+          <rect x="454" y="235" width="232" height="72" rx="18" fill="#122923" stroke="#62e8b8" stroke-opacity=".36"/><text x="477" y="266" fill="#fff" font-size="16" font-weight="800">Respuesta más rápida</text><text x="477" y="288" fill="#b9cdc5" font-size="12">priorización + automatización</text>
+          <rect x="454" y="325" width="232" height="72" rx="18" fill="#122923" stroke="#62e8b8" stroke-opacity=".36"/><text x="477" y="356" fill="#fff" font-size="16" font-weight="800">Contexto operativo</text><text x="477" y="378" fill="#b9cdc5" font-size="12">identidad · permisos · trazas</text>
+        </g>
+
+        <path d="M297 241H443" stroke="url(#cbline)" stroke-width="7" stroke-linecap="round"/>
+        <circle cx="370" cy="241" r="58" fill="#091426" stroke="#a978ff" stroke-width="3" filter="url(#cg)"/>
+        <text x="370" y="232" fill="#fff" font-size="27" font-weight="900" text-anchor="middle">IA</text>
+        <text x="370" y="256" fill="#d7c9ff" font-size="11" font-weight="800" text-anchor="middle">MULTIPLICADOR</text>
+        <text x="370" y="470" fill="#dce8f6" font-size="14" font-weight="800" text-anchor="middle">La ventaja sostenible está en identidad · permisos · contexto · trazabilidad</text>
+      </g>
     </svg>
   </div>
 </template>
-<style scoped>.cyber{width:100%;max-width:660px;margin:auto}.cyber svg{width:100%}</style>
+<style scoped>.cyber{width:100%;max-width:680px;margin:auto}.cyber svg{width:100%;display:block}</style>

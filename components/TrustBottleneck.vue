@@ -1,15 +1,40 @@
 <template>
   <div class="trust" aria-label="De abundancia de contenido a escasez de confianza">
-    <svg viewBox="0 0 700 500" role="img">
-      <defs><linearGradient id="t" x1="0" x2="1"><stop stop-color="#5de6ff"/><stop offset="1" stop-color="#ff70bd"/></linearGradient></defs>
-      <g fill="#0d1a30" stroke="#fff" stroke-opacity=".13"><rect x="54" y="70" width="190" height="62" rx="18"/><rect x="54" y="158" width="190" height="62" rx="18"/><rect x="54" y="246" width="190" height="62" rx="18"/><rect x="54" y="334" width="190" height="62" rx="18"/></g>
-      <g fill="#fff" font-family="Inter" font-size="16"><text x="82" y="108">texto sintético</text><text x="82" y="196">imagen / vídeo</text><text x="82" y="284">audio / voz</text><text x="82" y="372">agentes / bots</text></g>
-      <path d="M244 101C330 101 310 178 400 198M244 189C330 189 330 205 400 214M244 277C330 277 330 231 400 230M244 365C330 365 310 250 400 246" fill="none" stroke="url(#t)" stroke-width="4" stroke-opacity=".65"/>
-      <path d="M400 166h74l48 84-48 84h-74l38-84z" fill="#11253b" stroke="#5de6ff" stroke-width="3"/>
-      <text x="456" y="235" fill="#fff" font-family="Inter" font-weight="800" font-size="18" text-anchor="middle">FILTRO</text><text x="456" y="260" fill="#b9c8d8" font-family="Inter" font-size="12" text-anchor="middle">procedencia</text><text x="456" y="278" fill="#b9c8d8" font-family="Inter" font-size="12" text-anchor="middle">evidencia</text>
-      <circle cx="610" cy="250" r="62" fill="#0d1a30" stroke="#a978ff" stroke-width="3"/><circle cx="610" cy="250" r="36" fill="none" stroke="#a978ff" stroke-opacity=".35" stroke-dasharray="5 8"/><text x="610" y="247" fill="#fff" font-family="Inter" font-weight="800" font-size="21" text-anchor="middle">CONFIANZA</text><text x="610" y="270" fill="#c8d5e5" font-family="Inter" font-size="12" text-anchor="middle">nuevo recurso escaso</text>
-      <path d="M522 250H548" stroke="#fff" stroke-opacity=".35" stroke-width="4"/>
+    <svg viewBox="0 0 720 500" role="img">
+      <defs>
+        <linearGradient id="tb" x1="0" x2="1"><stop stop-color="#5de6ff"/><stop offset=".52" stop-color="#a978ff"/><stop offset="1" stop-color="#ff70bd"/></linearGradient>
+        <filter id="tg"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <g font-family="Inter, Segoe UI, sans-serif">
+        <text x="52" y="54" fill="#8fa6c1" font-size="12" font-weight="800" letter-spacing="1.5">ABUNDANCIA</text>
+        <text x="305" y="54" fill="#8fa6c1" font-size="12" font-weight="800" letter-spacing="1.5">VERIFICACIÓN</text>
+        <text x="548" y="54" fill="#8fa6c1" font-size="12" font-weight="800" letter-spacing="1.5">RECURSO ESCASO</text>
+
+        <g>
+          <rect x="38" y="84" width="200" height="70" rx="20" fill="#0d1b30" stroke="#5de6ff" stroke-opacity=".55"/><text x="67" y="115" fill="#fff" font-size="17" font-weight="800">Texto sintético</text><text x="67" y="137" fill="#9fb2ca" font-size="12">escala casi ilimitada</text>
+          <rect x="38" y="171" width="200" height="70" rx="20" fill="#0d1b30" stroke="#6688ff" stroke-opacity=".55"/><text x="67" y="202" fill="#fff" font-size="17" font-weight="800">Imagen + vídeo</text><text x="67" y="224" fill="#9fb2ca" font-size="12">plausibilidad visual</text>
+          <rect x="38" y="258" width="200" height="70" rx="20" fill="#0d1b30" stroke="#a978ff" stroke-opacity=".55"/><text x="67" y="289" fill="#fff" font-size="17" font-weight="800">Audio + voz</text><text x="67" y="311" fill="#9fb2ca" font-size="12">imitación convincente</text>
+          <rect x="38" y="345" width="200" height="70" rx="20" fill="#0d1b30" stroke="#ff70bd" stroke-opacity=".55"/><text x="67" y="376" fill="#fff" font-size="17" font-weight="800">Agentes + bots</text><text x="67" y="398" fill="#9fb2ca" font-size="12">volumen + persistencia</text>
+        </g>
+
+        <g stroke="url(#tb)" stroke-width="4" stroke-opacity=".62" fill="none"><path d="M238 119C285 119 282 205 324 220"/><path d="M238 206C280 206 292 223 324 230"/><path d="M238 293C280 293 292 244 324 240"/><path d="M238 380C285 380 282 260 324 250"/></g>
+
+        <g transform="translate(307 155)">
+          <path d="M50 0h118l55 94-55 94H50L0 94z" fill="#10243e" stroke="url(#tb)" stroke-width="3" filter="url(#tg)"/>
+          <text x="111" y="65" fill="#fff" font-size="20" font-weight="900" text-anchor="middle">FILTRO</text>
+          <text x="111" y="91" fill="#7feaff" font-size="13" font-weight="800" text-anchor="middle">procedencia</text>
+          <text x="111" y="112" fill="#c6d4e6" font-size="12" text-anchor="middle">evidencia · contexto</text>
+          <text x="111" y="133" fill="#c6d4e6" font-size="12" text-anchor="middle">incentivos</text>
+        </g>
+
+        <path d="M530 249H556" stroke="#d6e6f7" stroke-opacity=".62" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="624" cy="249" r="74" fill="#0b1b31" stroke="#a978ff" stroke-width="3"/>
+        <circle cx="624" cy="249" r="56" fill="none" stroke="#a978ff" stroke-opacity=".34" stroke-dasharray="5 7"/>
+        <text x="624" y="241" fill="#fff" font-size="20" font-weight="900" text-anchor="middle">CONFIANZA</text>
+        <text x="624" y="266" fill="#d5c9ff" font-size="12" font-weight="800" text-anchor="middle">no se genera</text>
+        <text x="624" y="285" fill="#b7c6da" font-size="11" text-anchor="middle">se construye</text>
+      </g>
     </svg>
   </div>
 </template>
-<style scoped>.trust{width:100%;max-width:650px;margin:auto}.trust svg{width:100%}</style>
+<style scoped>.trust{width:100%;max-width:670px;margin:auto}.trust svg{width:100%;display:block}</style>

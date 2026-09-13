@@ -66,3 +66,14 @@ body{font-family:Inter,"Segoe UI",system-ui,sans-serif}
 .cinematic.slidev-layout{padding:0!important;background:#02050a!important}
 .cinematic.slidev-layout:before{display:none!important}
 .cinematic.slidev-layout>*{z-index:auto}
+
+/* v5.1 · legibility / fit fixes from visual review */
+.slidev-layout{isolation:isolate}
+.slidev-layout .split>*,.slidev-layout .split-45>*{min-width:0}
+.light .source{color:#66758b!important}
+.light .big-number{background:linear-gradient(135deg,#163d8d,#2468d0,#664ac4);-webkit-background-clip:text;color:transparent}
+/* FutureFork already labels branches; give the explanatory cards more air below it. */
+.slidev-layout:has(.fork) .grid-3{margin-top:-10px!important}
+.slidev-layout:has(.fork) .card{padding:14px 16px}
+.slidev-layout:has(.fork) .card h3{font-size:16px!important;margin-bottom:5px!important}
+.slidev-layout:has(.fork) .card p{font-size:12.5px!important;line-height:1.3!important}

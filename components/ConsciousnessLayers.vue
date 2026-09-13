@@ -1,15 +1,31 @@
 <template>
-  <div class="ice" aria-label="Capas de observación e inferencia sobre consciencia">
+  <div class="layers" aria-label="Capas de observación e inferencia sobre consciencia">
     <svg viewBox="0 0 700 500" role="img">
-      <defs><linearGradient id="sea" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#5de6ff" stop-opacity=".18"/><stop offset="1" stop-color="#081326"/></linearGradient></defs>
-      <rect x="30" y="245" width="640" height="220" rx="24" fill="url(#sea)" stroke="#5de6ff" stroke-opacity=".15"/>
-      <path d="M350 70l90 175H260z" fill="#eafcff" fill-opacity=".92" stroke="#fff" stroke-opacity=".45"/>
-      <path d="M260 245h180l88 180H172z" fill="#3f6b91" fill-opacity=".40" stroke="#a978ff" stroke-opacity=".28"/>
-      <text x="350" y="150" fill="#09101d" font-family="Inter" font-weight="800" font-size="18" text-anchor="middle">CONDUCTA</text><text x="350" y="174" fill="#304356" font-family="Inter" font-size="12" text-anchor="middle">lenguaje · planificación · memoria</text>
-      <text x="350" y="318" fill="#fff" font-family="Inter" font-weight="800" font-size="19" text-anchor="middle">INFERENCIA</text><text x="350" y="343" fill="#c4d5e7" font-family="Inter" font-size="12" text-anchor="middle">modelos teóricos · indicadores funcionales</text>
-      <text x="350" y="398" fill="#ff9dcc" font-family="Inter" font-weight="800" font-size="19" text-anchor="middle">EXPERIENCIA SUBJETIVA</text><text x="350" y="423" fill="#c4d5e7" font-family="Inter" font-size="12" text-anchor="middle">no demostrada por conducta lingüística</text>
-      <text x="52" y="232" fill="#7eeafa" font-family="Inter" font-size="12">observable</text><text x="52" y="270" fill="#9eaec1" font-family="Inter" font-size="12">no observable directamente</text>
+      <defs><linearGradient id="cl" x1="0" x2="1"><stop stop-color="#5de6ff"/><stop offset=".5" stop-color="#a978ff"/><stop offset="1" stop-color="#ff70bd"/></linearGradient></defs>
+      <g font-family="Inter, Segoe UI, sans-serif">
+        <text x="52" y="55" fill="#8fa6c1" font-size="12" font-weight="900" letter-spacing="1.5">LO QUE PODEMOS OBSERVAR</text>
+        <rect x="50" y="78" width="600" height="102" rx="26" fill="#eafcff" stroke="#79e8ff" stroke-width="2"/>
+        <circle cx="103" cy="129" r="28" fill="#c7f6ff"/><text x="103" y="137" fill="#0b4d63" font-size="24" font-weight="900" text-anchor="middle">1</text>
+        <text x="150" y="117" fill="#081321" font-size="21" font-weight="900">CONDUCTA</text>
+        <text x="150" y="145" fill="#344a5f" font-size="13">lenguaje · planificación · memoria · acción</text>
+        <text x="565" y="132" fill="#167990" font-size="12" font-weight="900" text-anchor="middle">MEDIBLE</text>
+
+        <path d="M350 180V218" stroke="url(#cl)" stroke-width="5" stroke-linecap="round"/>
+        <text x="52" y="228" fill="#8fa6c1" font-size="12" font-weight="900" letter-spacing="1.5">LO QUE INFERIMOS</text>
+        <rect x="50" y="248" width="600" height="102" rx="26" fill="#151a34" stroke="#a978ff" stroke-width="2"/>
+        <circle cx="103" cy="299" r="28" fill="#a978ff" fill-opacity=".18"/><text x="103" y="307" fill="#d3bcff" font-size="24" font-weight="900" text-anchor="middle">2</text>
+        <text x="150" y="287" fill="#fff" font-size="21" font-weight="900">INFERENCIA FUNCIONAL</text>
+        <text x="150" y="315" fill="#c1bfd5" font-size="13">modelos teóricos · indicadores · hipótesis</text>
+        <text x="565" y="302" fill="#c9b5ff" font-size="12" font-weight="900" text-anchor="middle">DISCUTIBLE</text>
+
+        <path d="M350 350V385" stroke="url(#cl)" stroke-width="5" stroke-linecap="round"/>
+        <rect x="50" y="388" width="600" height="82" rx="26" fill="#25131f" stroke="#ff70bd" stroke-width="2"/>
+        <circle cx="103" cy="429" r="25" fill="#ff70bd" fill-opacity=".16"/><text x="103" y="436" fill="#ffabd7" font-size="22" font-weight="900" text-anchor="middle">?</text>
+        <text x="150" y="421" fill="#fff" font-size="20" font-weight="900">EXPERIENCIA SUBJETIVA</text>
+        <text x="150" y="447" fill="#d0b8c4" font-size="13">no queda demostrada por conducta lingüística</text>
+        <text x="565" y="433" fill="#ff9dce" font-size="12" font-weight="900" text-anchor="middle">NO ACCESIBLE</text>
+      </g>
     </svg>
   </div>
 </template>
-<style scoped>.ice{width:100%;max-width:640px;margin:auto}.ice svg{width:100%}</style>
+<style scoped>.layers{width:100%;max-width:640px;margin:auto}.layers svg{width:100%;display:block}</style>

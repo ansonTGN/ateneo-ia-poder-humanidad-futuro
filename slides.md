@@ -16,11 +16,10 @@ colorSchema: dark
 aspectRatio: 16/9
 canvasWidth: 980
 routerMode: hash
+class: cinematic
 seoMeta:
   ogTitle: Inteligencia artificial — poder, humanidad y futuro
   ogDescription: Una conversación pública sobre IA, agencia humana, ciberseguridad y salud mental.
----
-class: cinematic
 ---
 
 <CinematicLoop

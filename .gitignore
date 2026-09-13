@@ -5,3 +5,6 @@ dist/
 .env
 .env.*
 !.env.example
+
+# Backups locales de correcciones visuales
+.visual-fix-backup/

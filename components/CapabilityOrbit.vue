@@ -1,14 +1,44 @@
 <template>
-  <div class="orbit" aria-label="Capacidades contemporáneas de la inteligencia artificial">
-    <svg viewBox="0 0 680 520" role="img">
-      <defs><radialGradient id="c"><stop stop-color="#fff"/><stop offset=".09" stop-color="#69e6ff"/><stop offset=".42" stop-color="#6688ff"/><stop offset="1" stop-color="#07101d" stop-opacity="0"/></radialGradient></defs>
-      <g fill="none"><circle cx="340" cy="260" r="86" stroke="#79e8ff" stroke-opacity=".18"/><circle cx="340" cy="260" r="160" stroke="#a978ff" stroke-opacity=".18" stroke-dasharray="5 10"/><circle cx="340" cy="260" r="220" stroke="#fff" stroke-opacity=".07"/></g>
-      <circle cx="340" cy="260" r="92" fill="url(#c)"/>
-      <g stroke="#82e8ff" stroke-opacity=".24"><path d="M340 260L142 118M340 260L528 118M340 260L574 280M340 260L502 420M340 260L160 416M340 260L100 265"/></g>
-      <g fill="#07101d" stroke-width="3"><circle cx="142" cy="118" r="34" stroke="#69e6ff"/><circle cx="528" cy="118" r="34" stroke="#a978ff"/><circle cx="574" cy="280" r="34" stroke="#ff70bd"/><circle cx="502" cy="420" r="34" stroke="#ffc867"/><circle cx="160" cy="416" r="34" stroke="#62e8b8"/><circle cx="100" cy="265" r="34" stroke="#6688ff"/></g>
-      <g fill="#fff" font-family="Inter" font-size="17" text-anchor="middle"><text x="142" y="123">ver</text><text x="528" y="123">crear</text><text x="574" y="285">actuar</text><text x="502" y="425">código</text><text x="160" y="421">ciencia</text><text x="100" y="270">hablar</text></g>
-      <text x="340" y="252" fill="#fff" font-family="Inter" font-weight="800" font-size="31" text-anchor="middle">IA</text><text x="340" y="280" fill="#cde9f8" font-family="Inter" font-size="14" text-anchor="middle">multimodal + herramientas</text>
+  <div class="capability-map" aria-label="Capacidades contemporáneas de la inteligencia artificial">
+    <svg viewBox="0 0 720 520" role="img">
+      <defs>
+        <radialGradient id="cap-core" cx="50%" cy="45%" r="60%">
+          <stop offset="0" stop-color="#ffffff"/>
+          <stop offset=".12" stop-color="#8ff0ff"/>
+          <stop offset=".48" stop-color="#6688ff"/>
+          <stop offset="1" stop-color="#0a1222"/>
+        </radialGradient>
+        <linearGradient id="cap-line" x1="0" x2="1">
+          <stop stop-color="#5de6ff"/><stop offset="1" stop-color="#a978ff"/>
+        </linearGradient>
+        <filter id="cap-glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+
+      <circle cx="360" cy="262" r="172" fill="none" stroke="#86eaff" stroke-opacity=".12" stroke-width="2" stroke-dasharray="7 11"/>
+      <circle cx="360" cy="262" r="111" fill="none" stroke="#b890ff" stroke-opacity=".16" stroke-width="2"/>
+      <g stroke="url(#cap-line)" stroke-opacity=".52" stroke-width="3" fill="none">
+        <path d="M309 212L212 140"/><path d="M410 212L508 140"/>
+        <path d="M455 260L575 260"/><path d="M410 315L500 392"/>
+        <path d="M310 315L220 392"/><path d="M265 260L145 260"/>
+      </g>
+
+      <g font-family="Inter, Segoe UI, sans-serif">
+        <g transform="translate(116 94)"><rect width="190" height="76" rx="22" fill="#0b1b31" stroke="#5de6ff" stroke-width="2"/><circle cx="28" cy="38" r="14" fill="#5de6ff" fill-opacity=".16"/><text x="28" y="43" text-anchor="middle" fill="#8ff0ff" font-size="18">◉</text><text x="52" y="32" fill="#fff" font-size="18" font-weight="800">VER</text><text x="52" y="53" fill="#bdd0e6" font-size="12">imagen · vídeo · sensores</text></g>
+        <g transform="translate(414 94)"><rect width="190" height="76" rx="22" fill="#0b1b31" stroke="#a978ff" stroke-width="2"/><circle cx="28" cy="38" r="14" fill="#a978ff" fill-opacity=".18"/><text x="28" y="43" text-anchor="middle" fill="#d2b8ff" font-size="18">✦</text><text x="52" y="32" fill="#fff" font-size="18" font-weight="800">CREAR</text><text x="52" y="53" fill="#bdd0e6" font-size="12">texto · imagen · vídeo</text></g>
+        <g transform="translate(507 222)"><rect width="176" height="76" rx="22" fill="#0b1b31" stroke="#ff70bd" stroke-width="2"/><circle cx="28" cy="38" r="14" fill="#ff70bd" fill-opacity=".18"/><text x="28" y="43" text-anchor="middle" fill="#ff9fd0" font-size="18">→</text><text x="52" y="32" fill="#fff" font-size="18" font-weight="800">ACTUAR</text><text x="52" y="53" fill="#bdd0e6" font-size="12">agentes · herramientas</text></g>
+        <g transform="translate(406 354)"><rect width="190" height="76" rx="22" fill="#0b1b31" stroke="#ffc867" stroke-width="2"/><circle cx="28" cy="38" r="14" fill="#ffc867" fill-opacity=".18"/><text x="28" y="43" text-anchor="middle" fill="#ffd98e" font-size="18">{ }</text><text x="52" y="32" fill="#fff" font-size="18" font-weight="800">PROGRAMAR</text><text x="52" y="53" fill="#bdd0e6" font-size="12">código · automatización</text></g>
+        <g transform="translate(124 354)"><rect width="190" height="76" rx="22" fill="#0b1b31" stroke="#62e8b8" stroke-width="2"/><circle cx="28" cy="38" r="14" fill="#62e8b8" fill-opacity=".18"/><text x="28" y="43" text-anchor="middle" fill="#8bf0cc" font-size="18">Σ</text><text x="52" y="32" fill="#fff" font-size="18" font-weight="800">ANALIZAR</text><text x="52" y="53" fill="#bdd0e6" font-size="12">ciencia · datos · modelos</text></g>
+        <g transform="translate(36 222)"><rect width="176" height="76" rx="22" fill="#0b1b31" stroke="#6688ff" stroke-width="2"/><circle cx="28" cy="38" r="14" fill="#6688ff" fill-opacity=".18"/><text x="28" y="43" text-anchor="middle" fill="#9eb0ff" font-size="18">◌</text><text x="52" y="32" fill="#fff" font-size="18" font-weight="800">HABLAR</text><text x="52" y="53" fill="#bdd0e6" font-size="12">lenguaje · voz · diálogo</text></g>
+      </g>
+
+      <circle cx="360" cy="262" r="88" fill="url(#cap-core)" filter="url(#cap-glow)"/>
+      <text x="360" y="250" fill="#fff" font-family="Inter" font-size="40" font-weight="900" text-anchor="middle">IA</text>
+      <text x="360" y="278" fill="#d7f4ff" font-family="Inter" font-size="14" font-weight="700" text-anchor="middle">multimodal</text>
+      <text x="360" y="298" fill="#c2d1e5" font-family="Inter" font-size="12" text-anchor="middle">+ herramientas + memoria</text>
     </svg>
   </div>
 </template>
-<style scoped>.orbit{width:100%;max-width:600px;margin:auto}.orbit svg{width:100%;display:block}</style>
+<style scoped>
+.capability-map{width:100%;max-width:650px;margin:auto;filter:drop-shadow(0 24px 60px rgba(0,0,0,.28))}
+.capability-map svg{width:100%;display:block}
+</style>

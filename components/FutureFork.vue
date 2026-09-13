@@ -1,12 +1,33 @@
 <template>
   <div class="fork" aria-label="Tres futuros posibles de la IA">
-    <svg viewBox="0 0 760 430" role="img">
-      <defs><linearGradient id="line" x1="0" x2="1"><stop stop-color="#5de6ff"/><stop offset=".5" stop-color="#a978ff"/><stop offset="1" stop-color="#ff70bd"/></linearGradient></defs>
-      <path d="M80 215H310" stroke="#fff" stroke-opacity=".24" stroke-width="8" stroke-linecap="round"/>
-      <path d="M310 215 C430 215 440 70 660 70 M310 215 C450 215 470 215 660 215 M310 215 C430 215 440 360 660 360" fill="none" stroke="url(#line)" stroke-width="8" stroke-linecap="round"/>
-      <g fill="#07101d" stroke-width="3"><circle cx="80" cy="215" r="28" stroke="#5de6ff"/><circle cx="660" cy="70" r="34" stroke="#62e8b8"/><circle cx="660" cy="215" r="34" stroke="#ffc867"/><circle cx="660" cy="360" r="34" stroke="#ff7487"/></g>
-      <g fill="#fff" font-family="Inter" font-size="14" text-anchor="middle"><text x="80" y="220">hoy</text><text x="660" y="75">cívica</text><text x="660" y="220">desigual</text><text x="660" y="365">tutelar</text></g>
+    <svg viewBox="0 0 820 360" role="img">
+      <defs>
+        <linearGradient id="road1" x1="0" x2="1"><stop stop-color="#5de6ff"/><stop offset="1" stop-color="#62e8b8"/></linearGradient>
+        <linearGradient id="road2" x1="0" x2="1"><stop stop-color="#5de6ff"/><stop offset="1" stop-color="#ffc867"/></linearGradient>
+        <linearGradient id="road3" x1="0" x2="1"><stop stop-color="#5de6ff"/><stop offset="1" stop-color="#ff7487"/></linearGradient>
+        <filter id="fg"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <g font-family="Inter, Segoe UI, sans-serif">
+        <text x="45" y="45" fill="#8fa6c1" font-size="12" font-weight="900" letter-spacing="1.5">DECISIONES DE HOY</text>
+        <text x="600" y="45" fill="#8fa6c1" font-size="12" font-weight="900" letter-spacing="1.5">2030 · RESULTADOS POSIBLES</text>
+
+        <circle cx="95" cy="180" r="52" fill="#0b1a2d" stroke="#5de6ff" stroke-width="3" filter="url(#fg)"/>
+        <text x="95" y="174" fill="#fff" font-size="25" font-weight="900" text-anchor="middle">2026</text>
+        <text x="95" y="198" fill="#9defff" font-size="11" font-weight="800" text-anchor="middle">elecciones</text>
+
+        <path d="M147 180H280" stroke="#5de6ff" stroke-opacity=".55" stroke-width="10" stroke-linecap="round"/>
+        <circle cx="296" cy="180" r="18" fill="#102239" stroke="#9befff" stroke-width="3"/>
+        <text x="296" y="185" fill="#fff" font-size="15" font-weight="900" text-anchor="middle">?</text>
+
+        <path d="M314 171C380 151 425 86 510 80H625" fill="none" stroke="url(#road1)" stroke-width="11" stroke-linecap="round"/>
+        <path d="M314 180C400 180 445 180 625 180" fill="none" stroke="url(#road2)" stroke-width="11" stroke-linecap="round"/>
+        <path d="M314 189C380 209 425 274 510 280H625" fill="none" stroke="url(#road3)" stroke-width="11" stroke-linecap="round"/>
+
+        <g transform="translate(625 50)"><rect width="160" height="60" rx="20" fill="#10251f" stroke="#62e8b8" stroke-width="2"/><circle cx="28" cy="30" r="15" fill="#62e8b8" fill-opacity=".18"/><text x="28" y="35" fill="#8ff0cf" font-size="14" font-weight="900" text-anchor="middle">+</text><text x="52" y="27" fill="#fff" font-size="17" font-weight="900">IA CÍVICA</text><text x="52" y="46" fill="#a7c6bb" font-size="10.5">capacidad + derechos</text></g>
+        <g transform="translate(625 150)"><rect width="160" height="60" rx="20" fill="#2a2113" stroke="#ffc867" stroke-width="2"/><circle cx="28" cy="30" r="15" fill="#ffc867" fill-opacity=".18"/><text x="28" y="35" fill="#ffda8f" font-size="14" font-weight="900" text-anchor="middle">≈</text><text x="52" y="27" fill="#fff" font-size="17" font-weight="900">IA DESIGUAL</text><text x="52" y="46" fill="#cabf9f" font-size="10.5">productividad concentrada</text></g>
+        <g transform="translate(625 250)"><rect width="160" height="60" rx="20" fill="#2a141b" stroke="#ff7487" stroke-width="2"/><circle cx="28" cy="30" r="15" fill="#ff7487" fill-opacity=".18"/><text x="28" y="35" fill="#ff9fad" font-size="14" font-weight="900" text-anchor="middle">−</text><text x="52" y="27" fill="#fff" font-size="17" font-weight="900">IA TUTELAR</text><text x="52" y="46" fill="#ceb2bb" font-size="10.5">comodidad + vigilancia</text></g>
+      </g>
     </svg>
   </div>
 </template>
-<style scoped>.fork{width:100%;max-width:700px;margin:auto}.fork svg{width:100%}</style>
+<style scoped>.fork{width:100%;max-width:760px;margin:4px auto 0}.fork svg{width:100%;display:block;filter:drop-shadow(0 18px 40px rgba(0,0,0,.18))}</style>
