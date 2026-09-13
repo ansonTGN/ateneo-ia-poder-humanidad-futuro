@@ -97,3 +97,22 @@ netlify deploy --prod --dir=dist
 - `.github/workflows/build.yml` — build automático en push/PR.
 - `SOURCES.md` — fuentes utilizadas.
 - `VIDEO-CATALOG.md` — vídeos seleccionados y candidatos editoriales.
+
+## Revisión visual 5.1
+
+Correcciones de legibilidad y composición tras revisión en pantalla: portada cinematográfica, gráficos de capacidades, trabajo, confianza, ciberseguridad, salud mental, consciencia, poder y futuros 2030; además de ajuste de las diapositivas de vídeo con textos largos.
+
+## Revisión de producción 5.2
+
+- CSS global integrado en `styles/index.css` para entrar en el bundle de Vite; `/deck.css` queda sólo como fallback compatible.
+- Eliminadas las fuentes web externas: los SVG y el deck usan tipografía de sistema para evitar variaciones por bloqueo de terceros.
+- Netlify sin rewrite global: `routerMode: hash` no lo necesita.
+- Postprocesado de Netlify desactivado para conservar intactos HTML/CSS/JS del build.
+- `index.html` se sirve sin caché; los assets con hash mantienen caché `immutable`.
+- Apertura y cierre cinematográficos tienen un fondo CSS de fallback, por lo que siguen siendo legibles aunque el iframe de YouTube sea bloqueado.
+- La última diapositiva reutiliza el vídeo de apertura y añade el perfil profesional + QR.
+
+
+## Nota de producción v5.3.0
+
+La portada y el cierre usan HTML directo dentro de `slides.md`: el texto permanece visible aunque YouTube no cargue. Los diagramas principales se publican como SVG estáticos en `public/visuals/` para evitar diferencias de herencia CSS entre desarrollo y producción. Node se fija en 22.14.0 para reproducibilidad.

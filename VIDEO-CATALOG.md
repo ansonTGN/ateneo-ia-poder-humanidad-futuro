@@ -47,3 +47,11 @@ Uso recomendado: sustituir el vídeo AIP general cuando la charla tenga una orie
 Vídeo oficial: `https://www.youtube.com/watch?v=9Uch931cDx8`
 
 El tramo 00:02–00:34 se utiliza como apertura; el vídeo completo puede usarse como material posterior para explicar world foundation models y synthetic data.
+
+## Fondo cinematográfico de apertura y cierre — v5.7
+
+- **NVIDIA Cosmos: A World Foundation Model Platform for Physical AI**
+- Vídeo oficial de NVIDIA: `https://www.youtube.com/watch?v=9Uch931cDx8`
+- Se reproduce **completo**, silenciado y en bucle mediante YouTube IFrame Player API.
+- No se descarga ni redistribuye el vídeo: la presentación conserva el embed oficial y un poster local de respaldo.
+
