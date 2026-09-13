@@ -1,0 +1,4 @@
+/* Slidev loads this convention automatically. The same visual system is also
+   linked as /deck.css from index.html so Netlify and local builds have a
+   defensive fallback if the theme CSS cache is ever stale. */
+@import url('/deck.css');

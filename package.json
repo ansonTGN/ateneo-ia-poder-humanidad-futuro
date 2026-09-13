@@ -1,0 +1,20 @@
+{
+  "name": "ateneo-ia-poder-humanidad-futuro",
+  "version": "5.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build --base /",
+    "export": "slidev export --output dist/ateneo-ia-poder-humanidad-futuro.pdf",
+    "format": "slidev format",
+    "check": "slidev build --base /"
+  },
+  "devDependencies": {
+    "@slidev/cli": "52.19.1",
+    "@slidev/theme-default": "0.25.0"
+  },
+  "engines": {
+    "node": ">=20.12.0"
+  }
+}

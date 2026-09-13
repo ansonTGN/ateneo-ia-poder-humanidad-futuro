@@ -1,0 +1,68 @@
+:root{
+  --bg:#050914;--bg2:#081326;--ink:#f7fbff;--muted:#aebbd0;
+  --cyan:#5de6ff;--blue:#6688ff;--violet:#a978ff;--magenta:#ff70bd;
+  --green:#62e8b8;--amber:#ffc867;--red:#ff7487;
+  --glass:rgba(11,22,42,.72);--line:rgba(220,240,255,.14);
+  --shadow:0 26px 90px rgba(0,0,0,.34);
+}
+*{box-sizing:border-box}
+html,body,#app{margin:0;background:var(--bg);color:var(--ink)}
+body{font-family:Inter,"Segoe UI",system-ui,sans-serif}
+.slidev-layout{position:relative!important;overflow:hidden!important;color:var(--ink)!important;padding:42px 58px!important;background:
+ radial-gradient(circle at 80% 18%,rgba(93,230,255,.13),transparent 28%),
+ radial-gradient(circle at 14% 86%,rgba(169,120,255,.13),transparent 31%),
+ linear-gradient(135deg,#040812 0%,#071222 55%,#050914 100%)!important;
+ font-family:Inter,"Segoe UI",system-ui,sans-serif!important}
+.slidev-layout:before{content:"";position:absolute;inset:0;pointer-events:none;background-image:
+ linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.022) 1px,transparent 1px);background-size:40px 40px;mask-image:linear-gradient(to bottom,#000 0%,transparent 92%)}
+.slidev-layout>*{position:relative;z-index:1}
+.slidev-layout h1,.slidev-layout h2,.slidev-layout h3,.slidev-layout p{margin-top:0}
+.slidev-layout h1{font-size:44px!important;line-height:1.02!important;letter-spacing:-.045em!important;font-weight:800!important;color:#fff!important;margin-bottom:16px!important}
+.slidev-layout h2{font-size:25px!important;line-height:1.15!important;letter-spacing:-.025em!important;color:#fff!important}
+.slidev-layout h3{font-size:18px!important;line-height:1.16!important;color:#fff!important}
+.slidev-layout p{font-size:18px!important;line-height:1.43!important;color:var(--muted)!important}
+.slidev-layout strong{color:#fff!important}
+.slidev-layout a{color:var(--cyan);text-decoration:none}
+
+/* Prevent unstyled tooltips/nav labels from ever covering the deck. */
+[role="tooltip"],.slidev-tooltip,.v-popper__popper{display:none!important}
+.slidev-icon-btn{font-size:0!important;overflow:hidden!important;white-space:nowrap!important}
+.slidev-icon-btn svg,.slidev-icon-btn [class*="i-"]{font-size:16px!important}
+
+.kicker{display:inline-flex;gap:10px;align-items:center;text-transform:uppercase;letter-spacing:.16em;font-size:11px;font-weight:800;color:var(--cyan);margin-bottom:14px}.kicker:before{content:"";width:30px;height:1px;background:currentColor}
+.hero-title{font-size:72px!important;line-height:.94!important;letter-spacing:-.062em!important;max-width:840px;background:linear-gradient(112deg,#fff 12%,#baf3ff 48%,#cbb7ff 78%,#fff);-webkit-background-clip:text;color:transparent!important}
+.hero-sub{font-size:21px!important;max-width:760px!important;color:#c7d6ea!important}
+.question{font-family:"Source Serif 4",Georgia,serif!important;font-size:50px!important;line-height:1.06!important;letter-spacing:-.035em!important;text-wrap:balance}.question em{font-style:normal;color:var(--cyan)}
+.quote{font-family:"Source Serif 4",Georgia,serif;font-size:36px;line-height:1.18;letter-spacing:-.025em;color:#fff;max-width:900px}
+.source{position:absolute!important;left:58px;right:58px;bottom:18px;font-size:9px!important;line-height:1.25!important;color:#718199!important}
+.footer-mark{position:absolute!important;right:22px;top:18px;text-transform:uppercase;letter-spacing:.12em;font-size:9px;color:rgba(255,255,255,.28)}
+
+.scene{height:100%;display:grid;align-items:center}
+.split{display:grid;grid-template-columns:1.04fr .96fr;gap:34px;align-items:center;height:100%}
+.split-45{display:grid;grid-template-columns:.86fr 1.14fr;gap:34px;align-items:center;height:100%}
+.center{height:100%;display:grid;place-items:center;text-align:center}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+.glass{background:linear-gradient(180deg,rgba(20,36,63,.78),rgba(6,13,27,.70));border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow),inset 0 1px rgba(255,255,255,.05);backdrop-filter:blur(12px)}
+.card{padding:19px 20px}.card p{font-size:14px!important;margin:0}.card h3{margin:.25rem 0 .45rem!important}.card-number{font-size:34px;font-weight:850;letter-spacing:-.06em;color:#fff}.card-icon{width:45px;height:45px;border-radius:14px;display:grid;place-items:center;background:rgba(93,230,255,.09);border:1px solid rgba(93,230,255,.18);color:var(--cyan);font-weight:800;font-size:19px}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.badge{padding:7px 10px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.04);font-size:11px;color:#d8e7f9}
+.big-number{font-size:108px;font-weight:850;line-height:.82;letter-spacing:-.085em;background:linear-gradient(135deg,#fff,var(--cyan),var(--violet));-webkit-background-clip:text;color:transparent}
+.metric-label{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.12em;font-weight:750}
+.callout{border-left:3px solid var(--cyan);padding:14px 18px;background:linear-gradient(90deg,rgba(93,230,255,.08),transparent);color:#dceaff;border-radius:0 12px 12px 0;font-size:15px}
+
+.debate{background:radial-gradient(circle at 50% 48%,rgba(93,230,255,.16),transparent 34%),linear-gradient(135deg,#040812,#081426)!important}.debate .question{max-width:900px;margin:auto!important}.debate p{font-size:16px!important}
+.light{background:linear-gradient(135deg,#edf5ff,#faf8ff)!important;color:#09101d!important}.light h1,.light h2,.light h3,.light strong{color:#09101d!important}.light p{color:#46566d!important}.light .glass{background:rgba(255,255,255,.86);border-color:#dce6f2;box-shadow:0 24px 70px rgba(25,45,90,.11)}
+
+.visual-frame{position:relative;height:100%;display:grid;place-items:center}.visual-frame:after{content:"";position:absolute;width:72%;aspect-ratio:1;border-radius:50%;border:1px solid rgba(93,230,255,.14);box-shadow:0 0 90px rgba(93,230,255,.08)}
+
+/* local navigation: keyboard-first, visually unobtrusive */
+#slidev-nav-controls{opacity:.14!important;transition:opacity .2s ease!important}#slidev-nav-controls:hover{opacity:.95!important}
+
+@media(max-width:900px){.slidev-layout{padding:30px 34px!important}.hero-title{font-size:56px!important}.question{font-size:40px!important}.slidev-layout h1{font-size:38px!important}.split,.split-45{gap:20px}.source{left:34px;right:34px}}
+
+/* v4 · clips corporativos: el vídeo domina la slide, sin sacrificar legibilidad */
+.video-slide .slidev-layout{padding-top:34px!important;padding-bottom:34px!important}
+
+/* v5 · apertura cinematográfica */
+.cinematic.slidev-layout{padding:0!important;background:#02050a!important}
+.cinematic.slidev-layout:before{display:none!important}
+.cinematic.slidev-layout>*{z-index:auto}
