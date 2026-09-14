@@ -116,3 +116,16 @@ Correcciones de legibilidad y composición tras revisión en pantalla: portada c
 ## Nota de producción v5.3.0
 
 La portada y el cierre usan HTML directo dentro de `slides.md`: el texto permanece visible aunque YouTube no cargue. Los diagramas principales se publican como SVG estáticos en `public/visuals/` para evitar diferencias de herencia CSS entre desarrollo y producción. Node se fija en 22.14.0 para reproducibilidad.
+
+## Revisión visual v6.3 — Centre d’Amics de Reus
+
+Parte exactamente de **v5.7.0** (`6bfe18f`) y conserva la arquitectura audiovisual desplegada en GitHub/Netlify.
+
+Además de integrar la identidad del **Centre d’Amics de Reus**, esta edición incorpora la fotografía del ponente de forma contenida:
+
+- mini retrato en la portada junto a la autoría;
+- retrato profesional en el bloque de identidad del cierre;
+- no se repite en las slides de contenido para evitar ruido visual.
+
+La fotografía se mantiene sin reinterpretación gráfica y se recorta únicamente mediante CSS (`object-fit`) dentro del layout.
+

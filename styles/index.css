@@ -226,3 +226,66 @@ html,body,#app{width:100%;height:100%;min-height:100%;}
 .cinematic-v56.slidev-layout:before{display:none!important}
 .cinematic-v56.slidev-layout > .opening-v56,
 .cinematic-v56.slidev-layout > .closing-v56{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;z-index:1!important}
+
+/* ==============================================================
+   v6.3 — Centre d'Amics de Reus · civic futurism + speaker identity
+   ============================================================== */
+:root{
+  --reus-red:#e32835;
+  --reus-green:#69b443;
+}
+.slidev-layout:not(.cinematic-v56) .glass{
+  border-radius:18px!important;
+  border-color:rgba(220,240,255,.125)!important;
+  box-shadow:0 22px 72px rgba(0,0,0,.27),inset 0 1px rgba(255,255,255,.045)!important;
+}
+.slidev-layout:not(.cinematic-v56) .kicker:before{
+  background:linear-gradient(90deg,var(--reus-red),var(--cyan))!important;
+}
+.slidev-layout.debate{
+  background:
+    radial-gradient(circle at 50% 48%,rgba(93,230,255,.125),transparent 34%),
+    radial-gradient(circle at 18% 78%,rgba(227,40,53,.045),transparent 27%),
+    linear-gradient(135deg,#040812,#081426)!important;
+}
+.slidev-layout.debate .question{
+  font-family:Georgia,"Times New Roman",serif!important;
+  font-weight:560!important;
+  letter-spacing:-.028em!important;
+}
+.slidev-layout .callout{
+  border-left-color:var(--reus-red)!important;
+  background:linear-gradient(90deg,rgba(227,40,53,.065),rgba(93,230,255,.035) 42%,transparent)!important;
+}
+.reus-institution{
+  height:100%;display:grid;grid-template-rows:auto 1fr auto;gap:23px;align-content:center;
+}
+.reus-institution__header{
+  display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:38px;align-items:start;
+}
+.reus-institution__header h1{
+  max-width:650px!important;margin-bottom:12px!important;font-size:50px!important;
+}
+.reus-institution__header h1 em{font-style:normal!important;color:#a9efff!important}
+.reus-institution__header .hero-sub{max-width:660px!important;font-size:17px!important}
+.reus-institution__logo{
+  justify-self:end;width:210px;padding:10px 12px;border-radius:18px;background:#fff;
+  box-shadow:0 22px 70px rgba(0,0,0,.28);
+}
+.reus-institution__logo img{display:block;width:100%;height:auto}
+.reus-institution__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.reus-principle{
+  min-height:145px;display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;
+  padding:20px 18px;border:1px solid rgba(220,240,255,.12);border-radius:18px;
+  background:linear-gradient(180deg,rgba(18,34,57,.68),rgba(6,14,27,.64));
+  box-shadow:0 20px 64px rgba(0,0,0,.24),inset 0 1px rgba(255,255,255,.04);
+}
+.reus-principle>span{color:var(--reus-red);font-size:24px;line-height:1;font-weight:850;letter-spacing:-.05em}
+.reus-principle h3{margin:0 0 8px!important;font-size:17px!important}
+.reus-principle p{margin:0!important;font-size:13px!important;line-height:1.35!important}
+.reus-institution__thesis{
+  padding:15px 18px;border-left:3px solid var(--reus-red);border-radius:0 12px 12px 0;
+  background:linear-gradient(90deg,rgba(227,40,53,.075),rgba(105,180,67,.025),transparent);
+  color:#dceaff;font-size:15px;
+}
+

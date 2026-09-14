@@ -2,7 +2,7 @@
 theme: default
 title: Inteligencia artificial — poder, humanidad y futuro
 info: |
-  Presentación para un ateneo de Cataluña.
+  Presentación para el Centre d’Amics de Reus, Reus.
   Una conversación visual sobre inteligencia artificial, sociedad, ciberseguridad y salud mental.
 author: Angel A. Urbina
 transition: fade-out
@@ -344,14 +344,26 @@ class: debate
 ---
 ---
 
-<div class="kicker">Un ateneo en la era de la IA</div>
-<h1>¿Qué puede aportar una institución cultural?</h1>
-<div class="grid-3" style="margin-top:28px">
-  <div class="glass card"><div class="card-number">01</div><h3>Conversación lenta</h3><p>Un espacio donde la tecnología no marque el ritmo del juicio.</p></div>
-  <div class="glass card"><div class="card-number">02</div><h3>Pluralidad</h3><p>Ingeniería, humanidades, salud, derecho y ciudadanía en la misma mesa.</p></div>
-  <div class="glass card"><div class="card-number">03</div><h3>Criterio público</h3><p>Aprender a distinguir capacidad técnica de legitimidad social.</p></div>
+<div class="reus-institution">
+  <div class="reus-institution__header">
+    <div>
+      <div class="kicker">Centre d’Amics de Reus · conversa cívica</div>
+      <h1>Un lugar para pensar<br><em>antes de delegar.</em></h1>
+      <p class="hero-sub">La IA acelera decisiones. Una institución cultural puede hacer algo distinto y necesario: <strong>crear tiempo, pluralidad y criterio compartido</strong>.</p>
+    </div>
+    <div class="reus-institution__logo">
+      <img src="/brand/centre-amics-reus-logo.png" alt="Centre d'Amics de Reus">
+    </div>
+  </div>
+
+  <div class="reus-institution__grid">
+    <div class="reus-principle"><span>01</span><div><h3>Conversación lenta</h3><p>Que la velocidad tecnológica no marque la velocidad del juicio.</p></div></div>
+    <div class="reus-principle"><span>02</span><div><h3>Pluralidad real</h3><p>Ingeniería, humanidades, salud, derecho y ciudadanía en la misma sala.</p></div></div>
+    <div class="reus-principle"><span>03</span><div><h3>Criterio público</h3><p>Distinguir lo técnicamente posible de lo socialmente legítimo.</p></div></div>
+  </div>
+
+  <div class="reus-institution__thesis">La innovación no consiste sólo en adoptar tecnología. También consiste en <strong>decidir juntos qué no queremos delegar</strong>.</div>
 </div>
-<div class="callout" style="margin-top:26px">Quizá el valor de un ateneo sea precisamente ofrecer lo que un algoritmo no puede garantizar: <strong>una comunidad que discute sus propios fines</strong>.</div>
 
 ---
 ---
