@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="500" viewBox="0 0 720 500" role="img">
+      <defs>
+        <linearGradient id="tb" x1="0" x2="1"><stop stop-color="#5de6ff"/><stop offset=".52" stop-color="#a978ff"/><stop offset="1" stop-color="#ff70bd"/></linearGradient>
+        <filter id="tg"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <g font-family="system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif">
+        <text x="52" y="54" fill="#8fa6c1" font-size="12" font-weight="800" letter-spacing="1.5">ABUNDÀNCIA</text>
+        <text x="305" y="54" fill="#8fa6c1" font-size="12" font-weight="800" letter-spacing="1.5">VEUREIFICACIÓ</text>
+        <text x="548" y="54" fill="#8fa6c1" font-size="12" font-weight="800" letter-spacing="1.5">RECURS ESCÀS</text>
+
+        <g>
+          <rect x="38" y="84" width="200" height="70" rx="20" fill="#0d1b30" stroke="#5de6ff" stroke-opacity=".55"/><text x="67" y="115" fill="#fff" font-size="17" font-weight="800">Text sintètic</text><text x="67" y="137" fill="#9fb2ca" font-size="12">escala gairebé il·limitada</text>
+          <rect x="38" y="171" width="200" height="70" rx="20" fill="#0d1b30" stroke="#6688ff" stroke-opacity=".55"/><text x="67" y="202" fill="#fff" font-size="17" font-weight="800">Imatge + vídeo</text><text x="67" y="224" fill="#9fb2ca" font-size="12">plausibilitat visual</text>
+          <rect x="38" y="258" width="200" height="70" rx="20" fill="#0d1b30" stroke="#a978ff" stroke-opacity=".55"/><text x="67" y="289" fill="#fff" font-size="17" font-weight="800">Àudio + veu</text><text x="67" y="311" fill="#9fb2ca" font-size="12">imitació convincent</text>
+          <rect x="38" y="345" width="200" height="70" rx="20" fill="#0d1b30" stroke="#ff70bd" stroke-opacity=".55"/><text x="67" y="376" fill="#fff" font-size="17" font-weight="800">Agents + bots</text><text x="67" y="398" fill="#9fb2ca" font-size="12">volum + persistència</text>
+        </g>
+
+        <g stroke="url(#tb)" stroke-width="4" stroke-opacity=".62" fill="none"><path d="M238 119C285 119 282 205 324 220"/><path d="M238 206C280 206 292 223 324 230"/><path d="M238 293C280 293 292 244 324 240"/><path d="M238 380C285 380 282 260 324 250"/></g>
+
+        <g transform="translate(307 155)">
+          <path d="M50 0h118l55 94-55 94H50L0 94z" fill="#10243e" stroke="url(#tb)" stroke-width="3" filter="url(#tg)"/>
+          <text x="111" y="65" fill="#fff" font-size="20" font-weight="900" text-anchor="middle">FILTRE</text>
+          <text x="111" y="91" fill="#7feaff" font-size="13" font-weight="800" text-anchor="middle">procedència</text>
+          <text x="111" y="112" fill="#c6d4e6" font-size="12" text-anchor="middle">evidència · context</text>
+          <text x="111" y="133" fill="#c6d4e6" font-size="12" text-anchor="middle">incentius</text>
+        </g>
+
+        <path d="M530 249H556" stroke="#d6e6f7" stroke-opacity=".62" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="624" cy="249" r="74" fill="#0b1b31" stroke="#a978ff" stroke-width="3"/>
+        <circle cx="624" cy="249" r="56" fill="none" stroke="#a978ff" stroke-opacity=".34" stroke-dasharray="5 7"/>
+        <text x="624" y="241" fill="#fff" font-size="20" font-weight="900" text-anchor="middle">CONFIANÇA</text>
+        <text x="624" y="266" fill="#d5c9ff" font-size="12" font-weight="800" text-anchor="middle">no es genera</text>
+        <text x="624" y="285" fill="#b7c6da" font-size="11" text-anchor="middle">es construeix</text>
+      </g>
+    </svg>

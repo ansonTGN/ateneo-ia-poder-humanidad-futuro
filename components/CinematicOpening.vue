@@ -4,6 +4,7 @@
 
     <div class="opening-v56__veil" aria-hidden="true" />
     <div class="opening-v56__grid" aria-hidden="true" />
+    <LanguageSelector />
 
     <div class="opening-v56__content">
       <div class="opening-v56__kicker"><span /> INTELIGENCIA ARTIFICIAL · PODER · HUMANIDAD · 2026</div>

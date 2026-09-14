@@ -45,7 +45,7 @@ class: debate
     <p class="hero-sub">La ruptura no es sólo que la IA genere texto. Es que <strong>percibe, crea, usa herramientas y entra en cadenas de decisión</strong>.</p>
     <div class="callout" style="margin-top:22px">Cuando la IA deja de ser un “chat” y pasa a ser un <strong>actor dentro de sistemas</strong>, cambian también los riesgos y las responsabilidades.</div>
   </div>
-  <img class="diagram-img diagram-capability" src="/visuals/capability-orbit.svg" alt="Mapa visual de capacidades contemporáneas de la IA" />
+  <I18nDiagram class="diagram-img diagram-capability" src="/visuals/capability-orbit.svg" alt="Mapa visual de capacidades contemporáneas de la IA" />
 </div>
 
 ---
@@ -104,7 +104,7 @@ class: light
     <h1 style="font-size:38px!important">de los trabajadores está en ocupaciones con algún grado de exposición a IA generativa</h1>
     <p style="font-size:15px!important">La OIT subraya que <strong>transformación</strong> es más probable que sustitución automática.</p>
   </div>
-  <img class="diagram-img diagram-work" src="/visuals/work-transform.svg" alt="Transformación del trabajo por tareas" />
+  <I18nDiagram class="diagram-img diagram-work" src="/visuals/work-transform.svg" alt="Transformación del trabajo por tareas" />
 </div>
 <div class="source">OIT/NASK · <em>Generative AI and Jobs: A Refined Global Index of Occupational Exposure</em> (2025).</div>
 
@@ -156,7 +156,7 @@ class: debate
     <h1>Cuando producir contenido cuesta casi cero…</h1>
     <div class="quote">…la escasez se desplaza de la <strong>información</strong> hacia la <strong>confianza</strong>.</div>
   </div>
-  <img class="diagram-img diagram-trust" src="/visuals/trust-bottleneck.svg" alt="De abundancia de contenido a escasez de confianza" />
+  <I18nDiagram class="diagram-img diagram-trust" src="/visuals/trust-bottleneck.svg" alt="De abundancia de contenido a escasez de confianza" />
 </div>
 
 ---
@@ -196,7 +196,7 @@ class: debate
     <h1>La IA abarata atacar.<br>Y también defender.</h1>
     <p class="hero-sub">La ventaja ya no depende sólo de tener mejores herramientas, sino de <strong>identidad, permisos, contexto y velocidad de respuesta</strong>.</p>
   </div>
-  <img class="diagram-img diagram-cyber" src="/visuals/cyber-balance.svg" alt="IA como multiplicador de ataque y defensa" />
+  <I18nDiagram class="diagram-img diagram-cyber" src="/visuals/cyber-balance.svg" alt="IA como multiplicador de ataque y defensa" />
 </div>
 <div class="source">ENISA Threat Landscape 2025: la IA aparece como optimizador de actividad maliciosa y como nueva superficie de exposición.</div>
 
@@ -251,7 +251,7 @@ class: debate
     <h1>Puede acompañar.<br>No debe fingir que es humana.</h1>
     <p class="hero-sub">Disponibilidad y psicoeducación pueden ser útiles. Dependencia, suplantación de vínculo y error clínico requieren límites explícitos.</p>
   </div>
-  <img class="diagram-img diagram-mental" src="/visuals/mental-health-compass.svg" alt="Principios de uso responsable de IA en salud mental" />
+  <I18nDiagram class="diagram-img diagram-mental" src="/visuals/mental-health-compass.svg" alt="Principios de uso responsable de IA en salud mental" />
 </div>
 <div class="source">OMS · Guidance on large multi-modal models for health (2025); Wiest et al., <em>Nature</em> 656 (2026).</div>
 
@@ -277,7 +277,7 @@ class: debate
     <p class="hero-sub">Podemos medir conducta. Podemos proponer indicadores funcionales. Pero la experiencia subjetiva sigue siendo otro problema.</p>
     <div class="callout" style="margin-top:20px"><strong>Conducta convincente ≠ vida interior demostrada.</strong></div>
   </div>
-  <img class="diagram-img diagram-consciousness" src="/visuals/consciousness-layers.svg" alt="Capas de observación e inferencia sobre consciencia" />
+  <I18nDiagram class="diagram-img diagram-consciousness" src="/visuals/consciousness-layers.svg" alt="Capas de observación e inferencia sobre consciencia" />
 </div>
 
 ---
@@ -309,7 +309,7 @@ class: debate
     <h1>La IA distribuye capacidad.<br>Y concentra infraestructura.</h1>
     <p class="hero-sub">La conversación pública no puede quedarse en el chatbot. También debe mirar <strong>energía, chips, datos, modelos y canales de distribución</strong>.</p>
   </div>
-  <img class="diagram-img diagram-power" src="/visuals/power-stack.svg" alt="Pila de infraestructura, capacidad y poder" />
+  <I18nDiagram class="diagram-img diagram-power" src="/visuals/power-stack.svg" alt="Pila de infraestructura, capacidad y poder" />
 </div>
 
 ---
@@ -367,7 +367,7 @@ class: debate
 
 <div class="kicker">2030 · tres futuros plausibles</div>
 <h1>No hay un único futuro tecnológico</h1>
-<img class="diagram-img diagram-future" src="/visuals/future-fork.svg" alt="Tres futuros posibles de la IA hacia 2030" />
+<I18nDiagram class="diagram-img diagram-future" src="/visuals/future-fork.svg" alt="Tres futuros posibles de la IA hacia 2030" />
 <div class="grid-3" style="margin-top:-4px">
   <div class="glass card"><h3 style="color:var(--green)!important">IA cívica</h3><p>Capacidad distribuida, educación, derechos y control humano significativo.</p></div>
   <div class="glass card"><h3 style="color:var(--amber)!important">IA desigual</h3><p>Gran productividad con concentración de oportunidades y poder.</p></div>

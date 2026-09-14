@@ -145,3 +145,28 @@ El objetivo es que la marca identifique la sede sin competir con títulos, gráf
 
 El logo del Centre d’Amics de Reus se renderiza ahora mediante una capa CSS global sobre `.slidev-layout`. Esta solución sustituye `global-top.vue` para garantizar que la marca aparezca también en layouts cinematográficos y en todas las diapositivas del build estático.
 
+
+## Preview multilingüe v6.4
+
+Rama de prueba local con selector de idioma en la portada:
+
+- **ES** — Español
+- **CA** — Català
+- **EN** — English
+
+La selección se conserva en `localStorage`, se aplica dinámicamente a las diapositivas y también cambia las variantes SVG de los diagramas. No modifica la estructura narrativa ni la estética de v6.3.2.
+
+Esta rama es de **prueba local** y no debe publicarse hasta completar la revisión visual de los tres idiomas.
+
+### Corrección de diagramas multilingües
+
+Los diagramas SVG se renderizan mediante `I18nDiagram.vue`. El componente
+selecciona reactivamente la ruta apropiada según el idioma:
+
+- `/visuals/*.svg` -> español
+- `/visuals/ca/*.svg` -> català
+- `/visuals/en/*.svg` -> English
+
+Esto evita depender de mutaciones manuales del atributo `src`, que no eran
+fiables con el ciclo de renderizado de Slidev/Vue.
+
