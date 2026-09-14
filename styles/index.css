@@ -261,18 +261,13 @@ html,body,#app{width:100%;height:100%;min-height:100%;}
   height:100%;display:grid;grid-template-rows:auto 1fr auto;gap:23px;align-content:center;
 }
 .reus-institution__header{
-  display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:38px;align-items:start;
+  display:grid;grid-template-columns:minmax(0,1fr);gap:24px;align-items:start;
 }
 .reus-institution__header h1{
   max-width:650px!important;margin-bottom:12px!important;font-size:50px!important;
 }
 .reus-institution__header h1 em{font-style:normal!important;color:#a9efff!important}
 .reus-institution__header .hero-sub{max-width:660px!important;font-size:17px!important}
-.reus-institution__logo{
-  justify-self:end;width:210px;padding:10px 12px;border-radius:18px;background:#fff;
-  box-shadow:0 22px 70px rgba(0,0,0,.28);
-}
-.reus-institution__logo img{display:block;width:100%;height:auto}
 .reus-institution__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .reus-principle{
   min-height:145px;display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;
@@ -289,3 +284,73 @@ html,body,#app{width:100%;height:100%;min-height:100%;}
   color:#dceaff;font-size:15px;
 }
 
+
+
+
+
+/* v6.3.2 — persistent global Centre d'Amics de Reus mark
+   CSS pseudo-element: funciona en layouts normales, portada y cierre. */
+.slidev-layout{
+  position:relative!important;
+}
+
+.slidev-layout::after{
+  content:""!important;
+  position:absolute!important;
+  z-index:2147483000!important;
+  top:18px!important;
+  right:24px!important;
+  width:132px!important;
+  height:48px!important;
+  box-sizing:border-box!important;
+  padding:5px 7px!important;
+  border:1px solid rgba(255,255,255,.14)!important;
+  border-radius:15px!important;
+  background:
+    rgba(255,255,255,.95)
+    url('/brand/centre-amics-reus-logo.png')
+    center / calc(100% - 14px) auto
+    no-repeat!important;
+  box-shadow:0 16px 48px rgba(0,0,0,.24)!important;
+  pointer-events:none!important;
+}
+
+/* Reserva mínima: evita que títulos largos alcancen la marca. */
+.slidev-layout:not(.cinematic-v56) > h1,
+.slidev-layout:not(.cinematic-v56) .kicker{
+  max-width:calc(100% - 145px);
+}
+
+/* En la slide institucional seguimos dando prioridad al contenido. */
+.reus-institution__header{
+  padding-right:145px;
+}
+
+/* Portada: el título ya vive a la izquierda; no necesita cambios de layout. */
+.cinematic-v56.slidev-layout::after{
+  top:18px!important;
+  right:24px!important;
+  width:132px!important;
+  height:48px!important;
+}
+
+@media(max-width:900px){
+  .slidev-layout::after{
+    top:12px!important;
+    right:14px!important;
+    width:112px!important;
+    height:42px!important;
+    padding:4px 6px!important;
+    border-radius:12px!important;
+    background-size:calc(100% - 12px) auto!important;
+  }
+
+  .slidev-layout:not(.cinematic-v56) > h1,
+  .slidev-layout:not(.cinematic-v56) .kicker{
+    max-width:calc(100% - 122px);
+  }
+
+  .reus-institution__header{
+    padding-right:122px;
+  }
+}

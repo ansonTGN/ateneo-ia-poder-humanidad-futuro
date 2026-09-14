@@ -351,9 +351,6 @@ class: debate
       <h1>Un lugar para pensar<br><em>antes de delegar.</em></h1>
       <p class="hero-sub">La IA acelera decisiones. Una institución cultural puede hacer algo distinto y necesario: <strong>crear tiempo, pluralidad y criterio compartido</strong>.</p>
     </div>
-    <div class="reus-institution__logo">
-      <img src="/brand/centre-amics-reus-logo.png" alt="Centre d'Amics de Reus">
-    </div>
   </div>
 
   <div class="reus-institution__grid">

@@ -3,9 +3,6 @@
     <NvidiaCosmosBackground :opacity="0.82" />
     <div class="closing-v56__veil" aria-hidden="true" />
     <div class="closing-v56__grid" aria-hidden="true" />
-    <div class="closing-v63__venue">
-      <img src="/brand/centre-amics-reus-logo.png" alt="Centre d'Amics de Reus">
-    </div>
 
     <div class="closing-v56__shell">
       <main class="closing-v56__main">
@@ -50,24 +47,6 @@
 .closing-v56__qr{display:block!important;width:146px!important;height:146px!important;margin:0 auto 13px!important;padding:9px!important;border-radius:19px!important;background:#fff!important;object-fit:contain!important;box-shadow:0 18px 52px rgba(93,230,255,.16)!important}
 .closing-v56__card strong{display:block!important;color:#fff!important;font-size:14px!important;line-height:1.16!important;margin:0 0 10px!important}.closing-v56__card a{display:block!important;color:#6cecff!important;font-size:9px!important;font-weight:800!important;line-height:1.2!important;text-decoration:none!important;white-space:nowrap!important}
 
-.closing-v63__venue{
-  position:absolute!important;
-  z-index:4!important;
-  right:24px!important;
-  top:18px!important;
-  width:132px!important;
-  padding:5px 7px!important;
-  border:1px solid rgba(255,255,255,.14)!important;
-  border-radius:15px!important;
-  background:rgba(255,255,255,.95)!important;
-  box-shadow:0 16px 48px rgba(0,0,0,.24)!important;
-}
-.closing-v63__venue img{
-  display:block!important;
-  width:100%!important;
-  height:auto!important;
-  object-fit:contain!important;
-}
 .closing-v63__portrait{
   width:54px!important;
   height:54px!important;

@@ -129,3 +129,19 @@ Además de integrar la identidad del **Centre d’Amics de Reus**, esta edición
 
 La fotografía se mantiene sin reinterpretación gráfica y se recorta únicamente mediante CSS (`object-fit`) dentro del layout.
 
+## Ajuste v6.3.1 — marca institucional global
+
+El logotipo del **Centre d’Amics de Reus** pasa a una única capa global (`global-top.vue`) para mantener exactamente el mismo tratamiento en todas las diapositivas:
+
+- esquina superior derecha;
+- tamaño discreto y constante;
+- misma tarjeta blanca del cierre;
+- sin duplicidades en portada, slide institucional ni cierre;
+- pequeña zona de seguridad tipográfica para reducir solapamientos.
+
+El objetivo es que la marca identifique la sede sin competir con títulos, gráficos, vídeos o mensajes principales.
+
+## Ajuste v6.3.2 — logo persistente
+
+El logo del Centre d’Amics de Reus se renderiza ahora mediante una capa CSS global sobre `.slidev-layout`. Esta solución sustituye `global-top.vue` para garantizar que la marca aparezca también en layouts cinematográficos y en todas las diapositivas del build estático.
+
