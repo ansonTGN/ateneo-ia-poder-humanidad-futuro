@@ -1476,6 +1476,390 @@ const rows: TranslationRow[] = [
     "Vídeo · demo oficial",
     "Vídeo · demo oficial",
     "Video · official demo"
+  ],
+  [
+    "Frontera · septiembre de 2026",
+    "Frontera · septiembre de 2026",
+    "Frontera · setembre de 2026",
+    "Frontier · September 2026"
+  ],
+  [
+    "No hay un único “modelo ganador”. Hay varias fronteras avanzando a la vez.",
+    "No hay un único “modelo ganador”. Hay varias fronteras avanzando a la vez.",
+    "No hi ha un únic «model guanyador». Hi ha diverses fronteres avançant alhora.",
+    "There is no single “winning model”. Several frontiers are advancing at once."
+  ],
+  [
+    "Autonomía",
+    "Autonomía",
+    "Autonomia",
+    "Autonomy"
+  ],
+  [
+    "GPT-6 Astra lleva el foco hacia tareas largas, computer use y ejecución con herramientas.",
+    "GPT-6 Astra lleva el foco hacia tareas largas, uso del ordenador y ejecución con herramientas.",
+    "GPT-6 Astra desplaça el focus cap a tasques llargues, ús de l'ordinador i execució amb eines.",
+    "GPT-6 Astra shifts the focus toward long-running tasks, computer use and tool execution."
+  ],
+  [
+    "Agentes y código",
+    "Agentes y código",
+    "Agents i codi",
+    "Agents and code"
+  ],
+  [
+    "Claude Opus 5.5 refuerza programación agéntica de larga duración y trabajo de conocimiento.",
+    "Claude Opus 5.5 refuerza la programación agéntica de larga duración y el trabajo de conocimiento.",
+    "Claude Opus 5.5 reforça la programació agèntica de llarga durada i el treball del coneixement.",
+    "Claude Opus 5.5 strengthens long-running agentic coding and knowledge work."
+  ],
+  [
+    "Eficiencia abierta",
+    "Eficiencia abierta",
+    "Eficiència oberta",
+    "Open efficiency"
+  ],
+  [
+    "DeepSeek V4.1-Flash y Kimi muestran que la frontera también compite en coste, contexto y apertura.",
+    "DeepSeek V4.1-Flash y Kimi muestran que la frontera también compite en coste, contexto y apertura.",
+    "DeepSeek V4.1-Flash i Kimi mostren que la frontera també competeix en cost, context i obertura.",
+    "DeepSeek V4.1-Flash and Kimi show that the frontier also competes on cost, context and openness."
+  ],
+  [
+    "Multimodalidad",
+    "Multimodalidad",
+    "Multimodalitat",
+    "Multimodality"
+  ],
+  [
+    "Qwen 3.8 amplía contexto, visión, audio, vídeo y orquestación de herramientas dentro del mismo ecosistema.",
+    "Qwen 3.8 amplía contexto, visión, audio, vídeo y orquestación de herramientas dentro del mismo ecosistema.",
+    "Qwen 3.8 amplia el context, la visió, l'àudio, el vídeo i l'orquestració d'eines dins del mateix ecosistema.",
+    "Qwen 3.8 expands context, vision, audio, video and tool orchestration within the same ecosystem."
+  ],
+  [
+    "La tendencia común:",
+    "La tendencia común:",
+    "La tendència comuna:",
+    "The common trend:"
+  ],
+  [
+    "modelos menos aislados, más conectados a memoria, herramientas, software y mundo físico.",
+    "modelos menos aislados, más conectados a memoria, herramientas, software y mundo físico.",
+    "models menys aïllats, més connectats a memòria, eines, programari i món físic.",
+    "less isolated models, more connected to memory, tools, software and the physical world."
+  ],
+  [
+    "Fuentes oficiales consultadas a 25/09/2026: OpenAI, Anthropic, DeepSeek, Moonshot/Kimi y Alibaba Cloud.",
+    "Fuentes oficiales consultadas a 25/09/2026: OpenAI, Anthropic, DeepSeek, Moonshot/Kimi y Alibaba Cloud.",
+    "Fonts oficials consultades el 25/09/2026: OpenAI, Anthropic, DeepSeek, Moonshot/Kimi i Alibaba Cloud.",
+    "Official sources consulted on 25/09/2026: OpenAI, Anthropic, DeepSeek, Moonshot/Kimi and Alibaba Cloud."
+  ],
+  [
+    "Agentes 2026 · computer use",
+    "Agentes 2026 · uso del ordenador",
+    "Agents 2026 · ús de l'ordinador",
+    "Agents 2026 · computer use"
+  ],
+  [
+    "La frontera ya no es conversar: es ejecutar trabajo dentro del ordenador",
+    "La frontera ya no es conversar: es ejecutar trabajo dentro del ordenador",
+    "La frontera ja no és conversar: és executar feina dins de l'ordinador",
+    "The frontier is no longer conversation: it is doing work inside the computer"
+  ],
+  [
+    "Astra ejemplifica el salto hacia tareas largas con uso del ordenador y herramientas. La cuestión cambia de «¿qué responde?» a «¿qué puede hacer en nuestro nombre?».",
+    "Astra ejemplifica el salto hacia tareas largas con uso del ordenador y herramientas. La cuestión cambia de «¿qué responde?» a «¿qué puede hacer en nuestro nombre?».",
+    "Astra exemplifica el salt cap a tasques llargues amb ús de l'ordinador i eines. La qüestió passa de «què respon?» a «què pot fer en nom nostre?».",
+    "Astra illustrates the shift toward long-running tasks using computers and tools. The question changes from “what does it answer?” to “what can it do on our behalf?”"
+  ],
+  [
+    "Demostración oficial del proveedor. Se utiliza para observar la dirección tecnológica; no como validación independiente de fiabilidad o seguridad.",
+    "Demostración oficial del proveedor. Se utiliza para observar la dirección tecnológica; no como validación independiente de fiabilidad o seguridad.",
+    "Demostració oficial del proveïdor. S'utilitza per observar la direcció tecnològica, no com a validació independent de fiabilitat o seguretat.",
+    "Official provider demonstration. It is used to observe technological direction, not as independent validation of reliability or safety."
+  ],
+  [
+    "04 · IA + biología",
+    "04 · IA + biología",
+    "04 · IA + biologia",
+    "04 · AI + biology"
+  ],
+  [
+    "La inteligencia artificial empieza a aprender el lenguaje de la vida",
+    "La inteligencia artificial empieza a aprender el lenguaje de la vida",
+    "La intel·ligència artificial comença a aprendre el llenguatge de la vida",
+    "Artificial intelligence is beginning to learn the language of life"
+  ],
+  [
+    "Genoma",
+    "Genoma",
+    "Genoma",
+    "Genome"
+  ],
+  [
+    "Modelos que predicen cómo cambios en una sola letra del ADN pueden alterar procesos moleculares.",
+    "Modelos que predicen cómo cambios en una sola letra del ADN pueden alterar procesos moleculares.",
+    "Models que prediuen com els canvis en una sola lletra de l'ADN poden alterar processos moleculars.",
+    "Models that predict how a single-letter DNA change can alter molecular processes."
+  ],
+  [
+    "Proteínas",
+    "Proteínas",
+    "Proteïnes",
+    "Proteins"
+  ],
+  [
+    "La IA ya no sólo predice estructuras: propone secuencias y arquitecturas con propiedades buscadas.",
+    "La IA ya no sólo predice estructuras: propone secuencias y arquitecturas con propiedades buscadas.",
+    "La IA ja no només prediu estructures: proposa seqüències i arquitectures amb les propietats buscades.",
+    "AI no longer only predicts structures: it proposes sequences and architectures with desired properties."
+  ],
+  [
+    "Sistemas vivos",
+    "Sistemas vivos",
+    "Sistemes vius",
+    "Living systems"
+  ],
+  [
+    "La frontera se desplaza hacia modelos que conectan moléculas, células, genomas y experimentación.",
+    "La frontera se desplaza hacia modelos que conectan moléculas, células, genomas y experimentación.",
+    "La frontera es desplaça cap a models que connecten molècules, cèl·lules, genomes i experimentació.",
+    "The frontier is moving toward models that connect molecules, cells, genomes and experimentation."
+  ],
+  [
+    "El cambio filosófico es profundo: pasamos de ",
+    "El cambio filosófico es profundo: pasamos de ",
+    "El canvi filosòfic és profund: passem de ",
+    "The philosophical shift is profound: we are moving from "
+  ],
+  [
+    "leer la vida",
+    "leer la vida",
+    "llegir la vida",
+    "reading life"
+  ],
+  [
+    "modelarla y diseñarla",
+    "modelarla y diseñarla",
+    "modelar-la i dissenyar-la",
+    "modelling and designing it"
+  ],
+  [
+    "Genómica · septiembre de 2026",
+    "Genómica · septiembre de 2026",
+    "Genòmica · setembre de 2026",
+    "Genomics · September 2026"
+  ],
+  [
+    "Nueve mil millones de cambios posibles, convertidos en un mapa predictivo",
+    "Nueve mil millones de cambios posibles, convertidos en un mapa predictivo",
+    "Nou mil milions de canvis possibles, convertits en un mapa predictiu",
+    "Nine billion possible changes, turned into a predictive map"
+  ],
+  [
+    "AlphaGenome Atlas ofrece predicciones moleculares para cada posible variante de una sola letra del genoma humano. Es una imagen poderosa de cómo la IA transforma el genoma en un espacio navegable.",
+    "AlphaGenome Atlas ofrece predicciones moleculares para cada posible variante de una sola letra del genoma humano. Es una imagen poderosa de cómo la IA transforma el genoma en un espacio navegable.",
+    "AlphaGenome Atlas ofereix prediccions moleculars per a cada possible variant d'una sola lletra del genoma humà. És una imatge potent de com la IA transforma el genoma en un espai navegable.",
+    "AlphaGenome Atlas provides molecular predictions for every possible single-letter variant in the human genome. It is a powerful image of how AI turns the genome into a navigable space."
+  ],
+  [
+    "Es una herramienta de investigación. Google DeepMind indica expresamente que no está validada ni aprobada para uso clínico.",
+    "Es una herramienta de investigación. Google DeepMind indica expresamente que no está validada ni aprobada para uso clínico.",
+    "És una eina de recerca. Google DeepMind indica expressament que no està validada ni aprovada per a ús clínic.",
+    "It is a research tool. Google DeepMind explicitly states that it is not validated or approved for clinical use."
+  ],
+  [
+    "Evo 2 · modelo fundacional biológico",
+    "Evo 2 · modelo fundacional biológico",
+    "Evo 2 · model fundacional biològic",
+    "Evo 2 · biological foundation model"
+  ],
+  [
+    "Un contexto de un millón de bases para razonar sobre genomas",
+    "Un contexto de un millón de bases para razonar sobre genomas",
+    "Un context d'un milió de bases per raonar sobre genomes",
+    "A one-million-base context for reasoning about genomes"
+  ],
+  [
+    "Evo 2 fue entrenado con ",
+    "Evo 2 fue entrenado con ",
+    "Evo 2 es va entrenar amb ",
+    "Evo 2 was trained on "
+  ],
+  [
+    "9 billones de pares de bases",
+    "9 billones de pares de bases",
+    "9 bilions de parells de bases",
+    "9 trillion base pairs"
+  ],
+  [
+    " de todos los dominios de la vida y trabaja con contexto de hasta ",
+    " de todos los dominios de la vida y trabaja con contexto de hasta ",
+    " de tots els dominis de la vida i treballa amb un context de fins a ",
+    " from all domains of life and works with a context of up to "
+  ],
+  [
+    "1 millón de nucleótidos",
+    "1 millón de nucleótidos",
+    "1 milió de nucleòtids",
+    "1 million nucleotides"
+  ],
+  [
+    "La analogía con los LLM es útil, pero incompleta: aquí los “tokens” representan secuencias biológicas y las predicciones deben volver al laboratorio para demostrar función.",
+    "La analogía con los LLM es útil, pero incompleta: aquí los “tokens” representan secuencias biológicas y las predicciones deben volver al laboratorio para demostrar función.",
+    "L'analogia amb els LLM és útil, però incompleta: aquí els «tokens» representen seqüències biològiques i les prediccions han de tornar al laboratori per demostrar funció.",
+    "The analogy with LLMs is useful but incomplete: here the “tokens” represent biological sequences, and predictions must return to the laboratory to demonstrate function."
+  ],
+  [
+    "pares de bases en entrenamiento",
+    "pares de bases en entrenamiento",
+    "parells de bases en l'entrenament",
+    "base pairs in training"
+  ],
+  [
+    "ventana de contexto, resolución de nucleótido",
+    "ventana de contexto, resolución de nucleótido",
+    "finestra de context, resolució de nucleòtid",
+    "context window, nucleotide resolution"
+  ],
+  [
+    "Abierto:",
+    "Abierto:",
+    "Obert:",
+    "Open:"
+  ],
+  [
+    "parámetros, código y OpenGenome2.",
+    "parámetros, código y OpenGenome2.",
+    "paràmetres, codi i OpenGenome2.",
+    "weights, code and OpenGenome2."
+  ],
+  [
+    "Diseño biológico",
+    "Diseño biológico",
+    "Disseny biològic",
+    "Biological design"
+  ],
+  [
+    "De predecir estructuras a proponer materia biológica nueva",
+    "De predecir estructuras a proponer materia biológica nueva",
+    "De predir estructures a proposar nova matèria biològica",
+    "From predicting structures to proposing new biological matter"
+  ],
+  [
+    "Predicción",
+    "Predicción",
+    "Predicció",
+    "Prediction"
+  ],
+  [
+    "¿Qué estructura o función es probable que tenga una secuencia?",
+    "¿Qué estructura o función es probable que tenga una secuencia?",
+    "Quina estructura o funció és probable que tingui una seqüència?",
+    "What structure or function is a sequence likely to have?"
+  ],
+  [
+    "Generación",
+    "Generación",
+    "Generació",
+    "Generation"
+  ],
+  [
+    "¿Qué secuencia podría producir una propiedad que buscamos?",
+    "¿Qué secuencia podría producir una propiedad que buscamos?",
+    "Quina seqüència podria produir una propietat que busquem?",
+    "What sequence could produce a property we are looking for?"
+  ],
+  [
+    "Laboratorio",
+    "Laboratorio",
+    "Laboratori",
+    "Laboratory"
+  ],
+  [
+    "La realidad experimental decide si la propuesta funciona, es estable y es segura.",
+    "La realidad experimental decide si la propuesta funciona, es estable y es segura.",
+    "La realitat experimental decideix si la proposta funciona, és estable i és segura.",
+    "Experimental reality determines whether the proposal works, is stable and is safe."
+  ],
+  [
+    "En 2026, trabajos en ",
+    "En 2026, trabajos en ",
+    "El 2026, treballs a ",
+    "In 2026, studies in "
+  ],
+  [
+    " muestran proteínas rediseñadas por IA y ensamblajes proteicos sintéticos capaces de formar vehículos de transferencia de RNA. La frontera es ya ",
+    " muestran proteínas rediseñadas por IA y ensamblajes proteicos sintéticos capaces de formar vehículos de transferencia de RNA. La frontera es ya ",
+    " mostren proteïnes redissenyades per IA i assemblatges proteics sintètics capaços de formar vehicles de transferència d'RNA. La frontera ja és ",
+    " show AI-redesigned proteins and synthetic protein assemblies capable of forming RNA transfer vehicles. The frontier is now "
+  ],
+  [
+    "generativa y experimental",
+    "generativa y experimental",
+    "generativa i experimental",
+    "generative and experimental"
+  ],
+  [
+    "Pregunta de frontera",
+    "Pregunta de frontera",
+    "Pregunta de frontera",
+    "Frontier question"
+  ],
+  [
+    "¿Qué cambia cuando la IA no sólo interpreta la vida…",
+    "¿Qué cambia cuando la IA no sólo interpreta la vida…",
+    "Què canvia quan la IA no només interpreta la vida…",
+    "What changes when AI does not merely interpret life…"
+  ],
+  [
+    "sino que empieza a proponer cómo modificarla?",
+    "sino que empieza a proponer cómo modificarla?",
+    "sinó que comença a proposar com modificar-la?",
+    "but begins to propose how to modify it?"
+  ],
+  [
+    "Conocimiento · salud · bioeconomía · seguridad · propiedad · límites",
+    "Conocimiento · salud · bioeconomía · seguridad · propiedad · límites",
+    "Coneixement · salut · bioeconomia · seguretat · propietat · límits",
+    "Knowledge · health · bioeconomy · security · ownership · limits"
+  ],
+  [
+    "05 · Salud mental",
+    "05 · Salud mental",
+    "05 · Salut mental",
+    "05 · Mental health"
+  ],
+  [
+    "06 · Educación",
+    "06 · Educación",
+    "06 · Educació",
+    "06 · Education"
+  ],
+  [
+    "07 · Poder",
+    "07 · Poder",
+    "07 · Poder",
+    "07 · Power"
+  ],
+  [
+    "energía, chips, datos, modelos, agentes, infraestructuras científicas y canales de distribución",
+    "energía, chips, datos, modelos, agentes, infraestructuras científicas y canales de distribución",
+    "energia, xips, dades, models, agents, infraestructures científiques i canals de distribució",
+    "energy, chips, data, models, agents, scientific infrastructure and distribution channels"
+  ],
+  [
+    "Biología · salud · límites",
+    "Biología · salud · límites",
+    "Biologia · salut · límits",
+    "Biology · health · limits"
+  ],
+  [
+    "Durante esta secuencia, el G1 hace visible el cambio clave: percepción, control y aprendizaje dejan de vivir sólo en una pantalla.",
+    "Durante esta secuencia, el G1 hace visible el cambio clave: percepción, control y aprendizaje dejan de vivir sólo en una pantalla.",
+    "Durant aquesta seqüència, el G1 fa visible el canvi clau: percepció, control i aprenentatge deixen de viure només en una pantalla.",
+    "During this sequence, the G1 makes the key shift visible: perception, control and learning no longer live only on a screen."
   ]
 ]
 

@@ -3,7 +3,7 @@ theme: default
 title: Inteligencia artificial — poder, humanidad y futuro
 info: |
   Presentación para el Centre d’Amics de Reus, Reus.
-  Una conversación visual sobre inteligencia artificial, sociedad, ciberseguridad y salud mental.
+  Una conversación visual sobre inteligencia artificial, biología, sociedad, ciberseguridad y salud mental.
 author: Angel A. Urbina
 transition: fade-out
 mdc: true
@@ -20,7 +20,7 @@ layout: full
 class: cinematic-v56
 seoMeta:
   ogTitle: Inteligencia artificial — poder, humanidad y futuro
-  ogDescription: Una conversación pública sobre IA, agencia humana, ciberseguridad y salud mental.
+  ogDescription: Una conversación pública sobre IA, biología, agencia humana, ciberseguridad y salud mental.
 ---
 
 <CinematicOpening />
@@ -55,10 +55,10 @@ class: debate
   company="Unitree Robotics · China"
   kicker="Embodied AI · del modelo al cuerpo"
   title="La IA ya está entrando en el mundo físico"
-  caption="En menos de medio minuto, el G1 hace visible el cambio clave: percepción, control y aprendizaje dejan de vivir sólo en una pantalla."
+  caption="Durante esta secuencia, el G1 hace visible el cambio clave: percepción, control y aprendizaje dejan de vivir sólo en una pantalla."
   video-id="Nkh6RUocD8c"
   :start="8"
-  :end="31"
+  :end="68"
 />
 <div class="source">Vídeo oficial · Unitree Robotics · “Movement creates intelligence — G1 humanoid robot” (21/03/2025). Clip incrustado desde YouTube; requiere conexión.</div>
 
@@ -81,6 +81,32 @@ class: debate
 ---
 ---
 
+<div class="kicker">Frontera · septiembre de 2026</div>
+<h1>No hay un único “modelo ganador”. Hay varias fronteras avanzando a la vez.</h1>
+<div class="grid-4" style="margin-top:26px">
+  <div class="glass card">
+    <div class="card-icon">↗</div><h3>Autonomía</h3>
+    <p>GPT-6 Astra lleva el foco hacia tareas largas, computer use y ejecución con herramientas.</p>
+  </div>
+  <div class="glass card">
+    <div class="card-icon">⌘</div><h3>Agentes y código</h3>
+    <p>Claude Opus 5.5 refuerza programación agéntica de larga duración y trabajo de conocimiento.</p>
+  </div>
+  <div class="glass card">
+    <div class="card-icon">◈</div><h3>Eficiencia abierta</h3>
+    <p>DeepSeek V4.1-Flash y Kimi muestran que la frontera también compite en coste, contexto y apertura.</p>
+  </div>
+  <div class="glass card">
+    <div class="card-icon">◎</div><h3>Multimodalidad</h3>
+    <p>Qwen 3.8 amplía contexto, visión, audio, vídeo y orquestación de herramientas dentro del mismo ecosistema.</p>
+  </div>
+</div>
+<div class="callout" style="margin-top:22px"><strong>La tendencia común:</strong> modelos menos aislados, más conectados a memoria, herramientas, software y mundo físico.</div>
+<div class="source">Fuentes oficiales consultadas a 25/09/2026: OpenAI, Anthropic, DeepSeek, Moonshot/Kimi y Alibaba Cloud.</div>
+
+---
+---
+
 <ShortVideo
   company="NVIDIA · GR00T N1"
   kicker="Modelos fundacionales · visión → lenguaje → acción"
@@ -89,7 +115,7 @@ class: debate
   caveat="La demostración es del fabricante. Su interés aquí es arquitectónico: hace visible cómo los modelos fundacionales empiezan a convertirse en políticas de control físico."
   video-id="m1CH-mgpdYg"
   :start="18"
-  :end="52"
+  :end="78"
 />
 <div class="source">Vídeo NVIDIA · “Isaac GR00T N1: An Open Foundation Model for Humanoid Robots” (2025). Clip 00:18–00:52.</div>
 
@@ -118,24 +144,9 @@ class: light
   caption="Walker S2 muestra por qué la discusión sobre empleo ya no se limita a redactar, programar o analizar: la automatización cognitiva empieza a adquirir cuerpo."
   video-id="xXiTvnsi4EI"
   :start="6"
-  :end="34"
+  :end="66"
 />
 <div class="source">Vídeo oficial · UBTECH Robotics · “Meet The First Humanoid Robotic Worker at SANY RE!” (20/01/2026). Demo corporativa: ilustra capacidad, no prueba por sí sola productividad a escala.</div>
-
----
----
-
-<ShortVideo
-  company="AGIBOT · China"
-  kicker="Industria · embodied AI"
-  title="China no está ensayando un único robot: está construyendo un ecosistema"
-  caption="AGIBOT G2 ilustra otra vía: plataforma industrial, manipulación de precisión, percepción 360° y operación continua. La carrera es ya de sistemas completos, no de prototipos aislados."
-  caveat="Demo oficial del fabricante. Se usa para observar dirección tecnológica y lenguaje de producto; no como validación independiente de rendimiento industrial."
-  video-id="WrSpfnEtzPA"
-  :start="6"
-  :end="34"
-/>
-<div class="source">Vídeo oficial · AGIBOT · “G2: The Next Generation of Industrial-Grade Interactive Embodied Operation Robots” (25/02/2026). Clip 00:06–00:34.</div>
 
 ---
 class: debate
@@ -170,7 +181,7 @@ class: debate
   caveat="El clip es una demostración oficial de vídeo generado con Veo 3. Precisamente por eso se usa aquí: lo visualmente plausible ya no implica que el acontecimiento haya ocurrido."
   video-id="ffRaD7sY0TQ"
   :start="0"
-  :end="10"
+  :end="60"
 />
 <div class="source">Vídeo oficial · Google DeepMind · “Veo 3 demo | Irish coast” (20/05/2025). Ejemplo de contenido sintético.</div>
 
@@ -204,16 +215,16 @@ class: debate
 ---
 
 <ShortVideo
-  company="Palantir · AIP"
-  kicker="Seguridad · IA operativa"
-  title="El salto decisivo: conectar el modelo con datos, permisos y operaciones"
-  caption="AIP es un buen caso para explicar que la seguridad de un agente no depende sólo del LLM: importan la identidad, el contexto autorizado, las herramientas y la trazabilidad."
-  caveat="Es una demostración del propio proveedor. Aquí se usa para observar la arquitectura y el lenguaje de producto, no como validación independiente de sus afirmaciones."
-  video-id="Xt_RLNx1eBM"
-  :start="12"
-  :end="41"
+  company="OpenAI · GPT-6 Astra"
+  kicker="Agentes 2026 · computer use"
+  title="La frontera ya no es conversar: es ejecutar trabajo dentro del ordenador"
+  caption="Astra ejemplifica el salto hacia tareas largas con uso del ordenador y herramientas. La cuestión cambia de «¿qué responde?» a «¿qué puede hacer en nuestro nombre?»."
+  caveat="Demostración oficial del proveedor. Se utiliza para observar la dirección tecnológica; no como validación independiente de fiabilidad o seguridad."
+  video-id="1QNsdr-Qx_I"
+  :start="0"
+  :end="60"
 />
-<div class="source">Vídeo oficial · Palantir · “Introducing Palantir AIP | Capabilities and Product Demo” (23/04/2023).</div>
+<div class="source">Vídeo oficial · OpenAI · “Introducing GPT-6 Astra” (03/09/2026). Clip inicial 00:00–00:30.</div>
 
 ---
 ---
@@ -245,9 +256,92 @@ class: debate
 ---
 ---
 
+<div class="kicker">04 · IA + biología</div>
+<h1>La inteligencia artificial empieza a aprender el lenguaje de la vida</h1>
+<div class="grid-3" style="margin-top:30px">
+  <div class="glass card" style="min-height:235px">
+    <div class="big-number" style="font-size:52px">DNA</div>
+    <h3>Genoma</h3>
+    <p>Modelos que predicen cómo cambios en una sola letra del ADN pueden alterar procesos moleculares.</p>
+  </div>
+  <div class="glass card" style="min-height:235px">
+    <div class="big-number" style="font-size:52px">PRO</div>
+    <h3>Proteínas</h3>
+    <p>La IA ya no sólo predice estructuras: propone secuencias y arquitecturas con propiedades buscadas.</p>
+  </div>
+  <div class="glass card" style="min-height:235px">
+    <div class="big-number" style="font-size:52px">SYS</div>
+    <h3>Sistemas vivos</h3>
+    <p>La frontera se desplaza hacia modelos que conectan moléculas, células, genomas y experimentación.</p>
+  </div>
+</div>
+<div class="callout" style="margin-top:24px">El cambio filosófico es profundo: pasamos de <strong>leer la vida</strong> a empezar a <strong>modelarla y diseñarla</strong>.</div>
+
+---
+---
+
+<ShortVideo
+  company="Google DeepMind · AlphaGenome Atlas"
+  kicker="Genómica · septiembre de 2026"
+  title="Nueve mil millones de cambios posibles, convertidos en un mapa predictivo"
+  caption="AlphaGenome Atlas ofrece predicciones moleculares para cada posible variante de una sola letra del genoma humano. Es una imagen poderosa de cómo la IA transforma el genoma en un espacio navegable."
+  caveat="Es una herramienta de investigación. Google DeepMind indica expresamente que no está validada ni aprobada para uso clínico."
+  video-id="U0aToL5C-bQ"
+  :start="0"
+  :end="60"
+/>
+<div class="source">Vídeo oficial · Google DeepMind · “AlphaGenome Atlas: Understanding the human genome” (08/09/2026).</div>
+
+---
+---
+
+<div class="split-45">
+  <div>
+    <div class="kicker">Evo 2 · modelo fundacional biológico</div>
+    <h1>Un contexto de un millón de bases para razonar sobre genomas</h1>
+    <p class="hero-sub">Evo 2 fue entrenado con <strong>9 billones de pares de bases</strong> de todos los dominios de la vida y trabaja con contexto de hasta <strong>1 millón de nucleótidos</strong>.</p>
+    <div class="callout" style="margin-top:20px">La analogía con los LLM es útil, pero incompleta: aquí los “tokens” representan secuencias biológicas y las predicciones deben volver al laboratorio para demostrar función.</div>
+  </div>
+  <div class="glass card" style="padding:28px">
+    <div class="metric-label">2026 · BIO FOUNDATION MODEL</div>
+    <div class="big-number" style="font-size:66px">9T</div>
+    <p>pares de bases en entrenamiento</p>
+    <div class="big-number" style="font-size:54px;margin-top:10px">1M</div>
+    <p>ventana de contexto, resolución de nucleótido</p>
+    <p style="margin-top:18px"><strong>Abierto:</strong> parámetros, código y OpenGenome2.</p>
+  </div>
+</div>
+<div class="source">Nature 652 (2026) · “Genome modelling and design across all domains of life with Evo 2”.</div>
+
+---
+---
+
+<div class="kicker">Diseño biológico</div>
+<h1>De predecir estructuras a proponer materia biológica nueva</h1>
+<div class="grid-3" style="margin-top:28px">
+  <div class="glass card"><h3>Predicción</h3><p>¿Qué estructura o función es probable que tenga una secuencia?</p></div>
+  <div class="glass card"><h3>Generación</h3><p>¿Qué secuencia podría producir una propiedad que buscamos?</p></div>
+  <div class="glass card"><h3>Laboratorio</h3><p>La realidad experimental decide si la propuesta funciona, es estable y es segura.</p></div>
+</div>
+<div class="callout" style="margin-top:24px">En 2026, trabajos en <em>Nature</em> muestran proteínas rediseñadas por IA y ensamblajes proteicos sintéticos capaces de formar vehículos de transferencia de RNA. La frontera es ya <strong>generativa y experimental</strong>, no sólo predictiva.</div>
+<div class="source">Nature (22/07/2026; 02/09/2026). Resultados experimentales, no promesas comerciales.</div>
+
+---
+class: debate
+---
+
+<div class="center"><div>
+  <div class="kicker">Pregunta de frontera</div>
+  <h1 class="question">¿Qué cambia cuando la IA no sólo interpreta la vida…<br><em>sino que empieza a proponer cómo modificarla?</em></h1>
+  <p>Conocimiento · salud · bioeconomía · seguridad · propiedad · límites</p>
+</div></div>
+
+---
+---
+
 <div class="split">
   <div>
-    <div class="kicker">04 · Salud mental</div>
+    <div class="kicker">05 · Salud mental</div>
     <h1>Puede acompañar.<br>No debe fingir que es humana.</h1>
     <p class="hero-sub">Disponibilidad y psicoeducación pueden ser útiles. Dependencia, suplantación de vínculo y error clínico requieren límites explícitos.</p>
   </div>
@@ -292,7 +386,7 @@ class: debate
 ---
 ---
 
-<div class="kicker">05 · Educación</div>
+<div class="kicker">06 · Educación</div>
 <h1>Cuando la respuesta se abarata, la pregunta se encarece</h1>
 <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px">
   <div class="glass card" style="min-height:230px"><div class="big-number" style="font-size:64px">?</div><h3>Preguntar</h3><p>Formular problemas valiosos, ambiguos y relevantes.</p></div>
@@ -305,9 +399,9 @@ class: debate
 
 <div class="split">
   <div>
-    <div class="kicker">06 · Poder</div>
+    <div class="kicker">07 · Poder</div>
     <h1>La IA distribuye capacidad.<br>Y concentra infraestructura.</h1>
-    <p class="hero-sub">La conversación pública no puede quedarse en el chatbot. También debe mirar <strong>energía, chips, datos, modelos y canales de distribución</strong>.</p>
+    <p class="hero-sub">La conversación pública no puede quedarse en el chatbot. También debe mirar <strong>energía, chips, datos, modelos, agentes, infraestructuras científicas y canales de distribución</strong>.</p>
   </div>
   <I18nDiagram class="diagram-img diagram-power" src="/visuals/power-stack.svg" alt="Pila de infraestructura, capacidad y poder" />
 </div>
@@ -323,7 +417,7 @@ class: debate
   caveat="Demo nocional del proveedor. Conviene verla con doble lectura: capacidad técnica y, al mismo tiempo, concentración de poder, responsabilidad y reglas de uso."
   video-id="7vwgr4xIfsw"
   :start="7"
-  :end="32"
+  :end="67"
 />
 <div class="source">Vídeo oficial · Palantir · “TITAN | Powered by Palantir” (22/04/2024).</div>
 
@@ -385,7 +479,7 @@ class: debate
   caveat="Demo del propio laboratorio. Sirve para observar una dirección tecnológica reciente; no implica que estas capacidades estén desplegadas de forma general en entornos no controlados."
   video-id="4lSQnrMC6nY"
   :start="6"
-  :end="36"
+  :end="66"
 />
 <div class="source">Vídeo oficial · Google DeepMind · “Gemini Robotics 2 brings whole body intelligence to robots” (30/07/2026). Clip 00:06–00:36.</div>
 
@@ -450,10 +544,11 @@ class: debate
     <p><strong>Vídeos oficiales</strong> · NVIDIA · Google DeepMind · Unitree · UBTECH · AGIBOT · Palantir</p>
   </div>
   <div class="glass card">
-    <h3>Salud · límites · evidencia</h3>
-    <p><strong>OMS</strong> · Governance of AI for Health / LMM guidance (2025)</p>
-    <p><strong>Wiest et al.</strong> · <em>Nature</em> 656 (2026), safety and security of LLMs in healthcare</p>
-    <p><strong>Slidev</strong> · presentación web reproducible y estática</p>
+    <h3>Biología · salud · límites</h3>
+    <p><strong>Google DeepMind</strong> · AlphaGenome Atlas (08/09/2026)</p>
+    <p><strong>Evo 2</strong> · <em>Nature</em> 652 (2026), genome modelling and design</p>
+    <p><strong>Nature</strong> · protein design / synthetic assemblies (2026)</p>
+    <p><strong>OMS + Wiest et al.</strong> · IA y seguridad en salud</p>
   </div>
 </div>
 <div class="callout" style="margin-top:22px">Los datos cambian. Las preguntas de agencia, responsabilidad y legitimidad permanecen.</div>
