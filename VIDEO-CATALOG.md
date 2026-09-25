@@ -55,3 +55,23 @@ El tramo 00:02–00:34 se utiliza como apertura; el vídeo completo puede usarse
 - Se reproduce **completo**, silenciado y en bucle mediante YouTube IFrame Player API.
 - No se descarga ni redistribuye el vídeo: la presentación conserva el embed oficial y un poster local de respaldo.
 
+## Actualización local v7.0 — 25/09/2026
+
+### Sustitución recomendada — Palantir AIP → OpenAI GPT-6 Astra
+
+- Vídeo oficial: `https://www.youtube.com/watch?v=1QNsdr-Qx_I`
+- Tramo propuesto: 00:00–00:30.
+- Función narrativa: mostrar el paso de conversación a **computer use**, herramientas y trabajo ejecutable.
+- Motivo editorial: reemplaza una demo de 2023 por una pieza de frontera publicada el 03/09/2026.
+
+### Nuevo bloque — Google DeepMind AlphaGenome Atlas
+
+- Vídeo oficial: `https://www.youtube.com/watch?v=U0aToL5C-bQ`
+- Tramo propuesto: 00:00–00:32.
+- Función narrativa: introducir IA + biología con las predicciones sobre los 9.000 millones de cambios de una sola letra posibles en el genoma humano.
+- Caveat: herramienta de investigación, no validada ni aprobada para uso clínico.
+
+### Simplificación de robótica
+
+AGIBOT G2 sale del recorrido principal para evitar redundancia audiovisual. Se conserva como candidato del catálogo.
+

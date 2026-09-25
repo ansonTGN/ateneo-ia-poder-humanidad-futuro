@@ -8,3 +8,7 @@ dist/
 
 # Backups locales
 .visual-fix-backup/
+.netlify/
+
+.backup-v7-*/
+.backup-v7.1-*/
