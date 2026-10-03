@@ -46,3 +46,10 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
     X-Content-Type-Options = "nosniff"
+
+# Las credenciales se leen de variables de entorno; nunca se almacenan aquí.
+[dev]
+  framework = "#static"
+  publish = "dist"
+  port = 8888
+  autoLaunch = false

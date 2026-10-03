@@ -1,4 +1,5 @@
 <template>
+    <EditionStamp />
   <section class="closing-v56">
     <NvidiaCosmosBackground :opacity="0.82" />
     <div class="closing-v56__veil" aria-hidden="true" />
@@ -62,3 +63,4 @@
 }
 
 </style>
+

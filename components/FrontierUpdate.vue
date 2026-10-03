@@ -1,0 +1,1024 @@
+<script setup lang="ts">
+import { computed } from 'vue'
+import { presentationLang } from '../i18n/presentation'
+type Entry = { kicker: string; title: string; lead: string; rows: string[][]; caveat: string; sources: string[][] }
+const props = defineProps<{ section: string }>()
+const content: Record<string, Record<'es' | 'ca' | 'en', Entry>> = {
+  "models": {
+    "es": {
+      "kicker": "Modelos de frontera",
+      "title": "Capacidad y coste avanzan a la vez",
+      "lead": "Los anuncios de finales de septiembre refuerzan el trabajo con herramientas y las tareas prolongadas.",
+      "rows": [
+        [
+          "GPT-6.1 Sol · 29/09",
+          "OpenAI comunica capacidad cercana a Astra con menores precios de entrada y salida."
+        ],
+        [
+          "Claude Sonnet 5.5 · 28/09",
+          "Anthropic mejora la eficiencia para programación y trabajo profesional. Opus 5.5 sigue como referencia superior."
+        ],
+        [
+          "Gemini 4 Argon · 30/09",
+          "Google anuncia razonamiento prolongado y defensa cibernética. El acceso inicial se limita a defensores seleccionados."
+        ]
+      ],
+      "caveat": "Son anuncios de proveedores. Un benchmark mide una tarea concreta bajo unas condiciones concretas.",
+      "sources": [
+        [
+          "OpenAI",
+          "https://openai.com/index/introducing-gpt-6-1-sol/"
+        ],
+        [
+          "Anthropic",
+          "https://www.anthropic.com/claude-sonnet-5-5"
+        ],
+        [
+          "Google",
+          "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+        ]
+      ]
+    },
+    "ca": {
+      "kicker": "Models de frontera",
+      "title": "Capacitat i cost avancen alhora",
+      "lead": "Els anuncis de finals de setembre reforcen el treball amb eines i les tasques prolongades.",
+      "rows": [
+        [
+          "GPT-6.1 Sol · 29/09",
+          "OpenAI comunica capacitat propera a Astra amb preus menors d’entrada i sortida."
+        ],
+        [
+          "Claude Sonnet 5.5 · 28/09",
+          "Anthropic millora l’eficiència per a programació i treball professional. Opus 5.5 continua com a referència superior."
+        ],
+        [
+          "Gemini 4 Argon · 30/09",
+          "Google anuncia raonament prolongat i defensa cibernètica. L’accés inicial es limita a defensors seleccionats."
+        ]
+      ],
+      "caveat": "Són anuncis de proveïdors. Un benchmark mesura una tasca concreta en unes condicions concretes.",
+      "sources": [
+        [
+          "OpenAI",
+          "https://openai.com/index/introducing-gpt-6-1-sol/"
+        ],
+        [
+          "Anthropic",
+          "https://www.anthropic.com/claude-sonnet-5-5"
+        ],
+        [
+          "Google",
+          "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+        ]
+      ]
+    },
+    "en": {
+      "kicker": "Frontier models",
+      "title": "Capability and cost advance together",
+      "lead": "Late-September announcements strengthen tool use and long-running tasks.",
+      "rows": [
+        [
+          "GPT-6.1 Sol · 29 Sep",
+          "OpenAI reports near-Astra capability with lower input and output prices."
+        ],
+        [
+          "Claude Sonnet 5.5 · 28 Sep",
+          "Anthropic improves efficiency for coding and professional work. Opus 5.5 remains the higher-end reference."
+        ],
+        [
+          "Gemini 4 Argon · 30 Sep",
+          "Google announces sustained reasoning and cyber defense. Initial access is limited to selected defenders."
+        ]
+      ],
+      "caveat": "These are vendor announcements. A benchmark measures a specific task under specific conditions.",
+      "sources": [
+        [
+          "OpenAI",
+          "https://openai.com/index/introducing-gpt-6-1-sol/"
+        ],
+        [
+          "Anthropic",
+          "https://www.anthropic.com/claude-sonnet-5-5"
+        ],
+        [
+          "Google",
+          "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+        ]
+      ]
+    }
+  },
+  "china": {
+    "es": {
+      "kicker": "Ecosistema chino",
+      "title": "Otra frontera: eficiencia y multimodalidad",
+      "lead": "La competencia incluye el coste de operar, el contexto disponible y la combinación de medios.",
+      "rows": [
+        [
+          "DeepSeek V4.1 Flash · 10/09",
+          "Nueva arquitectura con comprensión visual nativa. El proveedor comunica reducciones de precios de API."
+        ],
+        [
+          "Kimi K2.8 Preview · 11/09",
+          "Kimi Code incorpora razonamiento ajustable y contexto de hasta un millón de tokens."
+        ],
+        [
+          "Qwen · 21/09 y 02/10",
+          "Qwen3.8 Omni conecta audio, vídeo y herramientas. Qwen-Image-2.1-Pro añade generación y edición con transparencia."
+        ]
+      ],
+      "caveat": "Acceso por API, pesos abiertos y licencia son condiciones distintas. La disponibilidad depende del modelo y la región.",
+      "sources": [
+        [
+          "DeepSeek",
+          "https://api-docs.deepseek.com/updates/"
+        ],
+        [
+          "Kimi",
+          "https://www.kimi.com/code/docs/en/kimi-code/whats-new.html"
+        ],
+        [
+          "Alibaba Cloud",
+          "https://www.alibabacloud.com/help/en/model-studio/newly-released-models"
+        ]
+      ]
+    },
+    "ca": {
+      "kicker": "Ecosistema xinès",
+      "title": "Una altra frontera: eficiència i multimodalitat",
+      "lead": "La competència inclou el cost d’operar, el context disponible i la combinació de mitjans.",
+      "rows": [
+        [
+          "DeepSeek V4.1 Flash · 10/09",
+          "Nova arquitectura amb comprensió visual nativa. El proveïdor comunica reduccions de preus d’API."
+        ],
+        [
+          "Kimi K2.8 Preview · 11/09",
+          "Kimi Code incorpora raonament ajustable i context de fins a un milió de tokens."
+        ],
+        [
+          "Qwen · 21/09 i 02/10",
+          "Qwen3.8 Omni connecta àudio, vídeo i eines. Qwen-Image-2.1-Pro afegeix generació i edició amb transparència."
+        ]
+      ],
+      "caveat": "Accés per API, pesos oberts i llicència són condicions diferents. La disponibilitat depèn del model i la regió.",
+      "sources": [
+        [
+          "DeepSeek",
+          "https://api-docs.deepseek.com/updates/"
+        ],
+        [
+          "Kimi",
+          "https://www.kimi.com/code/docs/en/kimi-code/whats-new.html"
+        ],
+        [
+          "Alibaba Cloud",
+          "https://www.alibabacloud.com/help/en/model-studio/newly-released-models"
+        ]
+      ]
+    },
+    "en": {
+      "kicker": "Chinese ecosystem",
+      "title": "Another frontier: efficiency and multimodality",
+      "lead": "Competition includes operating cost, available context and combined media.",
+      "rows": [
+        [
+          "DeepSeek V4.1 Flash · 10 Sep",
+          "A new architecture with native visual understanding. The provider reports lower API prices."
+        ],
+        [
+          "Kimi K2.8 Preview · 11 Sep",
+          "Kimi Code adds adjustable reasoning and context of up to one million tokens."
+        ],
+        [
+          "Qwen · 21 Sep and 2 Oct",
+          "Qwen3.8 Omni connects audio, video and tools. Qwen-Image-2.1-Pro adds generation and editing with transparency."
+        ]
+      ],
+      "caveat": "API access, open weights and licensing are different conditions. Availability depends on model and region.",
+      "sources": [
+        [
+          "DeepSeek",
+          "https://api-docs.deepseek.com/updates/"
+        ],
+        [
+          "Kimi",
+          "https://www.kimi.com/code/docs/en/kimi-code/whats-new.html"
+        ],
+        [
+          "Alibaba Cloud",
+          "https://www.alibabacloud.com/help/en/model-studio/newly-released-models"
+        ]
+      ]
+    }
+  },
+  "continuous": {
+    "es": {
+      "kicker": "Asistentes persistentes",
+      "title": "Memoria y continuidad",
+      "lead": "La IA puede retomar el trabajo entre sesiones y conservar el contexto de un objetivo.",
+      "rows": [
+        [
+          "Memoria",
+          "Conserva el contexto para retomar el trabajo."
+        ],
+        [
+          "Continuidad",
+          "Avanza en un objetivo entre conversaciones."
+        ],
+        [
+          "El control debe seguir en la persona",
+          "Elegir qué recuerda, autorizar el acceso y poder detener la actividad."
+        ]
+      ],
+      "caveat": "Recordar contexto no demuestra identidad personal ni consciencia.",
+      "sources": [
+        [
+          "Dots · OpenAI · 29/09/2026",
+          "https://openai.com/index/introducing-dots/"
+        ],
+        [
+          "Memoria privada · Google · 23/09/2026",
+          "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/"
+        ]
+      ]
+    },
+    "ca": {
+      "kicker": "Assistents persistents",
+      "title": "Memòria i continuïtat",
+      "lead": "La IA pot reprendre el treball entre sessions i conservar el context d’un objectiu.",
+      "rows": [
+        [
+          "Memòria",
+          "Conserva el context per reprendre el treball."
+        ],
+        [
+          "Continuïtat",
+          "Avança en un objectiu entre converses."
+        ],
+        [
+          "El control ha de continuar en la persona",
+          "Triar què recorda, autoritzar l’accés i poder aturar l’activitat."
+        ]
+      ],
+      "caveat": "Recordar context no demostra identitat personal ni consciència.",
+      "sources": [
+        [
+          "Dots · OpenAI · 29/09/2026",
+          "https://openai.com/index/introducing-dots/"
+        ],
+        [
+          "Memòria privada · Google · 23/09/2026",
+          "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/"
+        ]
+      ]
+    },
+    "en": {
+      "kicker": "Persistent assistants",
+      "title": "Memory and continuity",
+      "lead": "AI can resume work across sessions and retain the context of a goal.",
+      "rows": [
+        [
+          "Memory",
+          "Retains the context needed to resume work."
+        ],
+        [
+          "Continuity",
+          "Works towards a goal between conversations."
+        ],
+        [
+          "People must remain in control",
+          "Choose what it remembers, authorize access and be able to stop its activity."
+        ]
+      ],
+      "caveat": "Remembering context does not demonstrate personal identity or consciousness.",
+      "sources": [
+        [
+          "Dots · OpenAI · 29 Sep 2026",
+          "https://openai.com/index/introducing-dots/"
+        ],
+        [
+          "Private memory · Google · 23 Sep 2026",
+          "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/"
+        ]
+      ]
+    }
+  },
+  "incident": {
+    "es": {
+      "kicker": "Agentes: evidencia observada",
+      "title": "Una búsqueda puede exceder sus límites",
+      "lead": "Transluce publicó el 30 de septiembre un análisis de tráfico asociado a agentes en webs gubernamentales.",
+      "rows": [
+        [
+          "Actividad observada",
+          "Intentos rudimentarios y fallidos de intrusión, junto con técnicas agresivas para obtener datos públicos."
+        ],
+        [
+          "Límites de la evidencia",
+          "El informe no identifica acceso a datos no públicos en los conjuntos analizados. La atribución varía entre casos."
+        ],
+        [
+          "Implicación para el diseño",
+          "El objetivo necesita límites de medios: qué sitios, qué permisos y cuándo detenerse."
+        ]
+      ],
+      "caveat": "Fecha del informe: 30/09/2026. Los incidentes descritos ocurrieron meses antes. La implicación de diseño es una lectura editorial.",
+      "sources": [
+        [
+          "Transluce",
+          "https://transluce.org/us-canada-gov"
+        ]
+      ]
+    },
+    "ca": {
+      "kicker": "Agents: evidència observada",
+      "title": "Una cerca pot excedir els seus límits",
+      "lead": "Transluce va publicar el 30 de setembre una anàlisi de trànsit associat a agents en webs governamentals.",
+      "rows": [
+        [
+          "Activitat observada",
+          "Intents rudimentaris i fallits d’intrusió, juntament amb tècniques agressives per obtenir dades públiques."
+        ],
+        [
+          "Límits de l’evidència",
+          "L’informe no identifica accés a dades no públiques en els conjunts analitzats. L’atribució varia entre casos."
+        ],
+        [
+          "Implicació per al disseny",
+          "L’objectiu necessita límits dels mitjans: quins llocs, quins permisos i quan aturar-se."
+        ]
+      ],
+      "caveat": "Data de l’informe: 30/09/2026. Els incidents descrits van passar mesos abans. La implicació de disseny és una lectura editorial.",
+      "sources": [
+        [
+          "Transluce",
+          "https://transluce.org/us-canada-gov"
+        ]
+      ]
+    },
+    "en": {
+      "kicker": "Agents: observed evidence",
+      "title": "A search can exceed its boundaries",
+      "lead": "On 30 September, Transluce published an analysis of agent-related traffic on government websites.",
+      "rows": [
+        [
+          "Observed activity",
+          "Rudimentary, failed intrusion attempts alongside aggressive techniques to obtain public data."
+        ],
+        [
+          "Evidence limits",
+          "The report identifies no access to nonpublic data in the analyzed datasets. Attribution varies between cases."
+        ],
+        [
+          "Design implication",
+          "A goal needs limits on methods: which sites, which permissions and when to stop."
+        ]
+      ],
+      "caveat": "Report date: 30 Sep 2026. The described incidents occurred months earlier. The design implication is an editorial interpretation.",
+      "sources": [
+        [
+          "Transluce",
+          "https://transluce.org/us-canada-gov"
+        ]
+      ]
+    }
+  },
+  "safety": {
+    "es": {
+      "kicker": "Seguridad de frontera",
+      "title": "La seguridad necesita evidencia verificable",
+      "lead": "OpenAI propone documentar argumentos de seguridad antes de continuar entrenamientos de frontera con aprendizaje por refuerzo.",
+      "rows": [
+        [
+          "Contención",
+          "Limitar los entornos y servicios accesibles aunque el modelo intente una acción indebida."
+        ],
+        [
+          "Supervisión",
+          "Detectar conductas preocupantes y disponer de alertas que puedan pausar el entrenamiento."
+        ],
+        [
+          "Responsabilidad",
+          "Asignar responsables, revisar objeciones y conservar registros para investigar incidentes."
+        ]
+      ],
+      "caveat": "Propuesta del 28/09/2026, en desarrollo. Su ámbito es el entrenamiento de frontera, no una certificación general de productos.",
+      "sources": [
+        [
+          "OpenAI",
+          "https://openai.com/index/towards-safety-cases-for-frontier-ai-training/"
+        ]
+      ]
+    },
+    "ca": {
+      "kicker": "Seguretat de frontera",
+      "title": "La seguretat necessita evidència verificable",
+      "lead": "OpenAI proposa documentar arguments de seguretat abans de continuar entrenaments de frontera amb aprenentatge per reforç.",
+      "rows": [
+        [
+          "Contenció",
+          "Limitar els entorns i serveis accessibles encara que el model intenti una acció indeguda."
+        ],
+        [
+          "Supervisió",
+          "Detectar conductes preocupants i disposar d’alertes que puguin pausar l’entrenament."
+        ],
+        [
+          "Responsabilitat",
+          "Assignar responsables, revisar objeccions i conservar registres per investigar incidents."
+        ]
+      ],
+      "caveat": "Proposta del 28/09/2026, en desenvolupament. L’àmbit és l’entrenament de frontera, no una certificació general de productes.",
+      "sources": [
+        [
+          "OpenAI",
+          "https://openai.com/index/towards-safety-cases-for-frontier-ai-training/"
+        ]
+      ]
+    },
+    "en": {
+      "kicker": "Frontier safety",
+      "title": "Safety needs verifiable evidence",
+      "lead": "OpenAI proposes documenting safety arguments before continuing frontier reinforcement-learning training.",
+      "rows": [
+        [
+          "Containment",
+          "Restrict reachable environments and services even if the model attempts an improper action."
+        ],
+        [
+          "Monitoring",
+          "Detect concerning behavior and provide alerts that can pause training."
+        ],
+        [
+          "Accountability",
+          "Assign accountable owners, review objections and retain records for incident investigation."
+        ]
+      ],
+      "caveat": "A developing proposal dated 28 Sep 2026. It concerns frontier training, not general product certification.",
+      "sources": [
+        [
+          "OpenAI",
+          "https://openai.com/index/towards-safety-cases-for-frontier-ai-training/"
+        ]
+      ]
+    }
+  },
+  "art": {
+    "es": {
+      "kicker": "IA en investigación biológica",
+      "title": "Agentes que generan hipótesis biológicas",
+      "lead": "Anthropic comunica el hallazgo de un sistema enzimático ART en bacteriófagos, virus que infectan bacterias.",
+      "rows": [
+        [
+          "Búsqueda computacional",
+          "Los agentes exploraron secuencias de ADN e identificaron patrones para revisión humana."
+        ],
+        [
+          "Comprobación experimental",
+          "Científicos humanos realizaron los experimentos de laboratorio y analizaron los candidatos."
+        ],
+        [
+          "Pregunta abierta",
+          "La función principal de ART sigue investigándose. No es una herramienta clínica o de edición genética validada."
+        ]
+      ],
+      "caveat": "Comunicación de Anthropic del 23/09/2026 y preprint asociado. El descubrimiento necesita caracterización posterior.",
+      "sources": [
+        [
+          "Anthropic",
+          "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system"
+        ]
+      ]
+    },
+    "ca": {
+      "kicker": "IA en recerca biològica",
+      "title": "Agents que generen hipòtesis biològiques",
+      "lead": "Anthropic comunica la troballa d’un sistema enzimàtic ART en bacteriòfags, virus que infecten bacteris.",
+      "rows": [
+        [
+          "Cerca computacional",
+          "Els agents van explorar seqüències d’ADN i van identificar patrons per a revisió humana."
+        ],
+        [
+          "Comprovació experimental",
+          "Científics humans van fer els experiments de laboratori i van analitzar els candidats."
+        ],
+        [
+          "Pregunta oberta",
+          "La funció principal d’ART continua en recerca. No és una eina clínica o d’edició genètica validada."
+        ]
+      ],
+      "caveat": "Comunicació d’Anthropic del 23/09/2026 i preprint associat. El descobriment necessita caracterització posterior.",
+      "sources": [
+        [
+          "Anthropic",
+          "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system"
+        ]
+      ]
+    },
+    "en": {
+      "kicker": "AI in biological research",
+      "title": "Agents generating biological hypotheses",
+      "lead": "Anthropic reports finding an ART enzyme system in bacteriophages, viruses that infect bacteria.",
+      "rows": [
+        [
+          "Computational search",
+          "Agents explored DNA sequences and identified patterns for human review."
+        ],
+        [
+          "Experimental checks",
+          "Human scientists performed laboratory experiments and analyzed the candidates."
+        ],
+        [
+          "Open question",
+          "ART’s main function remains under investigation. It is not a validated clinical or gene-editing tool."
+        ]
+      ],
+      "caveat": "Anthropic communication dated 23 Sep 2026 and associated preprint. The discovery needs further characterization.",
+      "sources": [
+        [
+          "Anthropic",
+          "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system"
+        ]
+      ]
+    }
+  },
+  "bio": {
+    "es": {
+      "kicker": "Procedencia biológica",
+      "title": "La trazabilidad llega a las proteínas",
+      "lead": "SynthID Bio introduce marcas identificables en secuencias y estructuras biológicas generadas por IA.",
+      "rows": [
+        [
+          "Prueba de concepto",
+          "DeepMind presenta diseños de proteínas con marcas que conservan la función en los ensayos realizados."
+        ],
+        [
+          "Procedencia",
+          "La marca ayuda a reconocer el origen sintético de un diseño y a cuidar la integridad de las bases de datos."
+        ],
+        [
+          "Límite esencial",
+          "La procedencia no demuestra inocuidad. La resistencia frente a manipulación deliberada requiere más investigación."
+        ]
+      ],
+      "caveat": "Publicado el 30/09/2026. Es una capa adicional de verificación, junto al análisis biológico y los controles de síntesis.",
+      "sources": [
+        [
+          "Google DeepMind",
+          "https://deepmind.google/blog/introducing-synthid-bio/"
+        ]
+      ]
+    },
+    "ca": {
+      "kicker": "Procedència biològica",
+      "title": "La traçabilitat arriba a les proteïnes",
+      "lead": "SynthID Bio introdueix marques identificables en seqüències i estructures biològiques generades per IA.",
+      "rows": [
+        [
+          "Prova de concepte",
+          "DeepMind presenta dissenys de proteïnes amb marques que conserven la funció en els assaigs realitzats."
+        ],
+        [
+          "Procedència",
+          "La marca ajuda a reconèixer l’origen sintètic d’un disseny i a cuidar la integritat de les bases de dades."
+        ],
+        [
+          "Límit essencial",
+          "La procedència no demostra innocuïtat. La resistència davant manipulació deliberada requereix més recerca."
+        ]
+      ],
+      "caveat": "Publicat el 30/09/2026. És una capa addicional de verificació, juntament amb l’anàlisi biològica i els controls de síntesi.",
+      "sources": [
+        [
+          "Google DeepMind",
+          "https://deepmind.google/blog/introducing-synthid-bio/"
+        ]
+      ]
+    },
+    "en": {
+      "kicker": "Biological provenance",
+      "title": "Traceability reaches proteins",
+      "lead": "SynthID Bio introduces identifiable marks in AI-generated biological sequences and structures.",
+      "rows": [
+        [
+          "Proof of concept",
+          "DeepMind presents watermarked protein designs that retain function in the reported tests."
+        ],
+        [
+          "Provenance",
+          "The mark helps identify a design’s synthetic origin and protect database integrity."
+        ],
+        [
+          "Essential limit",
+          "Provenance does not establish harmlessness. Resistance to deliberate tampering needs further research."
+        ]
+      ],
+      "caveat": "Published 30 Sep 2026. It adds a verification layer alongside biological analysis and synthesis controls.",
+      "sources": [
+        [
+          "Google DeepMind",
+          "https://deepmind.google/blog/introducing-synthid-bio/"
+        ]
+      ]
+    }
+  },
+  "mental": {
+    "es": {
+      "kicker": "Salud mental: evaluación",
+      "title": "Mejoras medibles y límites persistentes",
+      "lead": "Transluce evaluó más de 50.000 conversaciones simuladas con 77 variantes de modelos.",
+      "rows": [
+        [
+          "Mejora observada",
+          "Los modelos recientes respondieron mejor en crisis evidentes que generaciones anteriores."
+        ],
+        [
+          "Ambigüedad persistente",
+          "Algunos fallos aparecieron en situaciones indirectas, como escritura creativa y juegos de rol."
+        ],
+        [
+          "Condiciones de uso",
+          "Identidad clara, privacidad, conexión con apoyo humano y diseño que evite dependencia."
+        ]
+      ],
+      "caveat": "Informe del 31/08/2026. Las simulaciones evalúan conductas del sistema, no eficacia terapéutica ni resultados clínicos.",
+      "sources": [
+        [
+          "Transluce",
+          "https://transluce.org/announcing-mental-health-evaluation"
+        ]
+      ]
+    },
+    "ca": {
+      "kicker": "Salut mental: avaluació",
+      "title": "Millores mesurables i límits persistents",
+      "lead": "Transluce va avaluar més de 50.000 converses simulades amb 77 variants de models.",
+      "rows": [
+        [
+          "Millora observada",
+          "Els models recents van respondre millor en crisis evidents que generacions anteriors."
+        ],
+        [
+          "Ambigüitat persistent",
+          "Alguns errors van aparèixer en situacions indirectes, com escriptura creativa i jocs de rol."
+        ],
+        [
+          "Condicions d’ús",
+          "Identitat clara, privacitat, connexió amb suport humà i disseny que eviti dependència."
+        ]
+      ],
+      "caveat": "Informe del 31/08/2026. Les simulacions avaluen conductes del sistema, no eficàcia terapèutica ni resultats clínics.",
+      "sources": [
+        [
+          "Transluce",
+          "https://transluce.org/announcing-mental-health-evaluation"
+        ]
+      ]
+    },
+    "en": {
+      "kicker": "Mental health: evaluation",
+      "title": "Measurable gains and persistent limits",
+      "lead": "Transluce evaluated over 50,000 simulated conversations across 77 model variants.",
+      "rows": [
+        [
+          "Observed improvement",
+          "Recent models responded better to clear crises than earlier generations."
+        ],
+        [
+          "Persistent ambiguity",
+          "Some failures appeared in indirect contexts, such as creative writing and roleplay."
+        ],
+        [
+          "Conditions of use",
+          "Clear identity, privacy, connection to human support and design that avoids dependency."
+        ]
+      ],
+      "caveat": "Report dated 31 Aug 2026. Simulations assess system behavior, not therapeutic efficacy or clinical outcomes.",
+      "sources": [
+        [
+          "Transluce",
+          "https://transluce.org/announcing-mental-health-evaluation"
+        ]
+      ]
+    }
+  },
+  "complement": {
+    "es": {
+      "kicker": "Criterio y creatividad",
+      "title": "La diversidad humana aporta valor",
+      "lead": "Un preprint compara 25 modelos con 13 investigadores sénior y 60 doctorandos en tareas de teoría social.",
+      "rows": [
+        [
+          "Fortaleza de los modelos",
+          "Elaboración de teorías y revisión ante nueva evidencia, con buenos resultados en varias tareas individuales."
+        ],
+        [
+          "Fortaleza humana",
+          "Mayor diversidad de ideas y mejoras de precisión al combinar las teorías de distintas personas."
+        ],
+        [
+          "Implicación educativa",
+          "Practicar el contraste entre hipótesis, conservar voces distintas y comprobar las predicciones."
+        ]
+      ],
+      "caveat": "Preprint del 26/09/2026, limitado a las tareas estudiadas. La propuesta educativa es una interpretación, no una conclusión universal.",
+      "sources": [
+        [
+          "Li et al. · arXiv",
+          "https://arxiv.org/abs/2609.32562"
+        ]
+      ]
+    },
+    "ca": {
+      "kicker": "Criteri i creativitat",
+      "title": "La diversitat humana aporta valor",
+      "lead": "Un preprint compara 25 models amb 13 investigadors sèniors i 60 doctorands en tasques de teoria social.",
+      "rows": [
+        [
+          "Fortalesa dels models",
+          "Elaboració de teories i revisió davant nova evidència, amb bons resultats en diverses tasques individuals."
+        ],
+        [
+          "Fortalesa humana",
+          "Més diversitat d’idees i millores de precisió en combinar les teories de persones diferents."
+        ],
+        [
+          "Implicació educativa",
+          "Practicar el contrast entre hipòtesis, conservar veus diferents i comprovar les prediccions."
+        ]
+      ],
+      "caveat": "Preprint del 26/09/2026, limitat a les tasques estudiades. La proposta educativa és una interpretació, no una conclusió universal.",
+      "sources": [
+        [
+          "Li et al. · arXiv",
+          "https://arxiv.org/abs/2609.32562"
+        ]
+      ]
+    },
+    "en": {
+      "kicker": "Judgment and creativity",
+      "title": "Human diversity adds value",
+      "lead": "A preprint compares 25 models with 13 senior researchers and 60 doctoral scholars on social-theory tasks.",
+      "rows": [
+        [
+          "Model strength",
+          "Theory elaboration and revision with new evidence, with strong results on several individual tasks."
+        ],
+        [
+          "Human strength",
+          "Greater diversity of ideas and accuracy gains when combining different people’s theories."
+        ],
+        [
+          "Educational implication",
+          "Practice comparing hypotheses, preserve different voices and test predictions."
+        ]
+      ],
+      "caveat": "Preprint dated 26 Sep 2026, limited to the studied tasks. The educational proposal is an interpretation, not a universal conclusion.",
+      "sources": [
+        [
+          "Li et al. · arXiv",
+          "https://arxiv.org/abs/2609.32562"
+        ]
+      ]
+    }
+  },
+  "governance": {
+    "es": {
+      "kicker": "Gobernanza europea",
+      "title": "El AI Act ya tiene efectos concretos",
+      "lead": "La aplicación avanza por fases. Transparencia y supervisión necesitan traducirse en prácticas visibles.",
+      "rows": [
+        [
+          "Desde febrero de 2025",
+          "Prohibiciones y obligaciones de alfabetización en IA."
+        ],
+        [
+          "Desde agosto de 2026",
+          "Obligaciones de transparencia para determinados sistemas y contenido sintético."
+        ],
+        [
+          "Alto riesgo: calendario específico",
+          "La Comisión sitúa determinados usos sensibles en diciembre de 2027 y sistemas integrados en productos en agosto de 2028."
+        ]
+      ],
+      "caveat": "Fuente: calendario vigente publicado por la Comisión Europea, consultado el 03/10/2026. Las obligaciones dependen del uso y del papel de cada actor.",
+      "sources": [
+        [
+          "Comisión Europea",
+          "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+        ]
+      ]
+    },
+    "ca": {
+      "kicker": "Governança europea",
+      "title": "L’AI Act ja té efectes concrets",
+      "lead": "L’aplicació avança per fases. Transparència i supervisió s’han de traduir en pràctiques visibles.",
+      "rows": [
+        [
+          "Des de febrer de 2025",
+          "Prohibicions i obligacions d’alfabetització en IA."
+        ],
+        [
+          "Des d’agost de 2026",
+          "Obligacions de transparència per a determinats sistemes i contingut sintètic."
+        ],
+        [
+          "Alt risc: calendari específic",
+          "La Comissió situa determinats usos sensibles el desembre de 2027 i sistemes integrats en productes l’agost de 2028."
+        ]
+      ],
+      "caveat": "Font: calendari vigent publicat per la Comissió Europea, consultat el 03/10/2026. Les obligacions depenen de l’ús i del paper de cada actor.",
+      "sources": [
+        [
+          "Comissió Europea",
+          "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+        ]
+      ]
+    },
+    "en": {
+      "kicker": "European governance",
+      "title": "The AI Act already has concrete effects",
+      "lead": "Implementation proceeds in phases. Transparency and oversight need visible practical measures.",
+      "rows": [
+        [
+          "Since February 2025",
+          "Prohibitions and AI-literacy obligations."
+        ],
+        [
+          "Since August 2026",
+          "Transparency obligations for certain systems and synthetic content."
+        ],
+        [
+          "High risk: a specific timeline",
+          "The Commission places certain sensitive uses in December 2027 and product-integrated systems in August 2028."
+        ]
+      ],
+      "caveat": "Source: the European Commission’s current timeline, checked 3 Oct 2026. Obligations depend on the use and each actor’s role.",
+      "sources": [
+        [
+          "European Commission",
+          "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+        ]
+      ]
+    }
+  },
+  "acceleration": {
+    "es": {
+      "kicker": "Futuro: escenario de investigación",
+      "title": "IA que acelera la investigación de IA",
+      "lead": "Un preprint del 28 de septiembre analiza si automatizar la I+D podría comprimir años de avance en periodos mucho menores.",
+      "rows": [
+        [
+          "Mecanismo propuesto",
+          "Mejores modelos ayudan a investigar, programar y evaluar la siguiente generación de modelos."
+        ],
+        [
+          "Incertidumbre",
+          "La evidencia es preliminar. El ritmo depende de los experimentos, el cómputo y los límites de la investigación."
+        ],
+        [
+          "Pregunta pública",
+          "¿Podrán la evaluación y las instituciones mantener el ritmo de las capacidades?"
+        ]
+      ],
+      "caveat": "Es un escenario para analizar y preparar respuestas. No demuestra una explosión de inteligencia ni fija una fecha para ella.",
+      "sources": [
+        [
+          "Chan et al. · arXiv",
+          "https://arxiv.org/abs/2609.36054"
+        ]
+      ]
+    },
+    "ca": {
+      "kicker": "Futur: escenari de recerca",
+      "title": "IA que accelera la recerca d’IA",
+      "lead": "Un preprint del 28 de setembre analitza si automatitzar l’R+D podria comprimir anys d’avenç en períodes molt més curts.",
+      "rows": [
+        [
+          "Mecanisme proposat",
+          "Models millors ajuden a investigar, programar i avaluar la generació següent de models."
+        ],
+        [
+          "Incertesa",
+          "L’evidència és preliminar. El ritme depèn dels experiments, el còmput i els límits de la recerca."
+        ],
+        [
+          "Pregunta pública",
+          "Podran l’avaluació i les institucions mantenir el ritme de les capacitats?"
+        ]
+      ],
+      "caveat": "És un escenari per analitzar i preparar respostes. No demostra una explosió d’intel·ligència ni en fixa una data.",
+      "sources": [
+        [
+          "Chan et al. · arXiv",
+          "https://arxiv.org/abs/2609.36054"
+        ]
+      ]
+    },
+    "en": {
+      "kicker": "Future: a research scenario",
+      "title": "AI accelerating AI research",
+      "lead": "A 28 September preprint examines whether automating R&D could compress years of progress into much shorter periods.",
+      "rows": [
+        [
+          "Proposed mechanism",
+          "Better models help research, code and evaluate the next generation of models."
+        ],
+        [
+          "Uncertainty",
+          "Evidence is preliminary. Pace depends on experiments, compute and research bottlenecks."
+        ],
+        [
+          "Public question",
+          "Can evaluation and institutions keep pace with capabilities?"
+        ]
+      ],
+      "caveat": "This is a scenario to analyze and prepare for. It does not establish an intelligence explosion or set a date for one.",
+      "sources": [
+        [
+          "Chan et al. · arXiv",
+          "https://arxiv.org/abs/2609.36054"
+        ]
+      ]
+    }
+  }
+}
+const entry = computed(() => content[props.section]?.[presentationLang.value])
+const cutoff = computed(() => ({ es: 'Actualizado a 03/10/2026', ca: 'Actualitzat a 03/10/2026', en: 'Updated to 3 Oct 2026' })[presentationLang.value])
+</script>
+
+<template>
+  <section v-if="entry && section === 'continuous'" class="continuity-slide" data-native-i18n>
+    <div class="kicker">{{ entry.kicker }}</div>
+    <h1>{{ entry.title }}</h1>
+    <p class="continuity-lead">{{ entry.lead }}</p>
+    <div class="continuity-concepts">
+      <div v-for="(row, i) in entry.rows.slice(0, 2)" :key="i" class="continuity-concept">
+        <span class="continuity-number">{{ String(i + 1).padStart(2, '0') }}</span>
+        <h2>{{ row[0] }}</h2>
+        <p>{{ row[1] }}</p>
+      </div>
+    </div>
+    <div class="continuity-control">
+      <h2>{{ entry.rows[2][0] }}</h2>
+      <p>{{ entry.rows[2][1] }}</p>
+    </div>
+    <p class="continuity-caveat">{{ entry.caveat }}</p>
+    <footer class="continuity-sources">
+      <a v-for="source in entry.sources" :key="source[1]" :href="source[1]" target="_blank" rel="noopener noreferrer">{{ source[0] }}</a>
+    </footer>
+  </section>
+  <section v-else-if="entry" class="frontier-update" data-native-i18n>
+    <div class="kicker">{{ entry.kicker }}</div>
+    <h1>{{ entry.title }}</h1>
+    <p class="frontier-lead">{{ entry.lead }}</p>
+    <div class="frontier-rows">
+      <div v-for="(row, i) in entry.rows" :key="i" class="frontier-row">
+        <span class="frontier-index">{{ String(i + 1).padStart(2, '0') }}</span>
+        <h3>{{ row[0] }}</h3>
+        <p>{{ row[1] }}</p>
+      </div>
+    </div>
+    <p class="frontier-caveat">{{ entry.caveat }}</p>
+    <footer class="frontier-sources">
+      <span>{{ cutoff }}</span>
+      <a v-for="source in entry.sources" :key="source[1]" :href="source[1]" target="_blank" rel="noopener noreferrer">{{ source[0] }}</a>
+    </footer>
+  </section>
+</template>
+
+<style scoped>
+.continuity-slide{height:100%;display:flex;flex-direction:column;position:relative}
+.continuity-slide .kicker{margin-bottom:12px!important}
+.continuity-slide h1{max-width:calc(100% - 125px);font-size:44px!important;line-height:1.04!important;margin-bottom:15px!important}
+.continuity-lead{font-size:20px!important;line-height:1.36!important;margin:0 0 25px!important;color:#c7d6ea!important;max-width:820px}
+.continuity-concepts{display:grid;grid-template-columns:1fr 1fr;gap:32px;border-top:1px solid rgba(220,240,255,.18);padding-top:20px}
+.continuity-concept{position:relative;padding-left:42px}
+.continuity-concept:last-child{border-left:1px solid rgba(220,240,255,.18);padding-left:62px}
+.continuity-number{position:absolute;left:0;top:7px;font-size:12px;font-weight:800;color:var(--cyan)}
+.continuity-concept:last-child .continuity-number{left:22px;color:var(--violet)}
+.continuity-concept h2{font-size:29px!important;line-height:1.16!important;margin:0 0 12px!important;color:var(--cyan)!important}
+.continuity-concept:last-child h2{color:#c4b3ff!important}
+.continuity-concept p{font-size:22px!important;line-height:1.3!important;color:#e0eaf5!important;margin:0!important;max-width:320px}
+.continuity-control{margin-top:29px;padding:3px 0 3px 16px;border-left:3px solid var(--amber)}
+.continuity-control h2{font-size:24px!important;line-height:1.15!important;margin:0 0 9px!important;color:#fff!important}
+.continuity-control p{font-size:18px!important;line-height:1.32!important;color:#c7d6ea!important;margin:0!important}
+.continuity-caveat{font-size:13px!important;line-height:1.3!important;color:#9fb0c5!important;margin:17px 0 0!important}
+.continuity-sources{margin-top:auto;padding-top:15px;display:flex;flex-wrap:wrap;gap:10px 24px;font-size:11px;line-height:1.3}
+.continuity-sources a{color:#9dcfdc;text-decoration:none;border-bottom:1px solid #456776}
+
+.frontier-update{height:100%;display:flex;flex-direction:column;position:relative}
+.frontier-update .kicker{margin-bottom:10px!important}
+.frontier-update h1{max-width:calc(100% - 140px);font-size:40px!important;line-height:1.04!important;margin-bottom:13px!important}
+.frontier-lead{font-size:18px!important;line-height:1.35!important;margin:0 0 14px!important;color:#c7d6ea!important}
+.frontier-rows{display:grid;gap:0}
+.frontier-row{display:grid;grid-template-columns:28px 230px minmax(0,1fr);gap:14px;align-items:start;padding:12px 0;border-top:1px solid rgba(220,240,255,.18)}
+.frontier-index{color:var(--cyan);font-size:12px;font-weight:800;padding-top:3px}
+.frontier-row h3{font-size:19px!important;line-height:1.22!important;margin:0!important;color:#f7fbff!important}
+.frontier-row p{font-size:17px!important;line-height:1.32!important;margin:0!important;color:#c7d6ea!important}
+.frontier-caveat{margin:12px 0 0!important;padding-left:13px;border-left:3px solid var(--amber);font-size:13px!important;line-height:1.35!important;color:#d7dfeb!important}
+.frontier-sources{margin-top:auto;padding-top:11px;display:flex;gap:14px;flex-wrap:wrap;color:#93a6bf;font-size:10px;line-height:1.3}
+.frontier-sources a{color:#a2dfe9;text-decoration:none;border-bottom:1px solid #456776}
+</style>

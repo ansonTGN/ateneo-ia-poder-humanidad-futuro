@@ -7,6 +7,16 @@ type TranslationRow = [source: string, es: string, ca: string, en: string]
 const STORAGE_KEY = 'aau-presentation-lang'
 
 const rows: TranslationRow[] = [
+["Vídeo NVIDIA · “Isaac GR00T N1: An Open Foundation Model for Humanoid Robots” (2025). Clip 00:18–01:18.", "Vídeo NVIDIA · “Isaac GR00T N1: An Open Foundation Model for Humanoid Robots” (2025). Clip 00:18–01:18.", "Vídeo NVIDIA · “Isaac GR00T N1: An Open Foundation Model for Humanoid Robots” (2025). Fragment 00:18–01:18.", "NVIDIA video · “Isaac GR00T N1: An Open Foundation Model for Humanoid Robots” (2025). Excerpt 00:18–01:18."],
+["Vídeo oficial · OpenAI · “Introducing GPT-6 Astra” (03/09/2026). Clip inicial de 60 segundos.", "Vídeo oficial · OpenAI · “Introducing GPT-6 Astra” (03/09/2026). Clip inicial de 60 segundos.", "Vídeo oficial · OpenAI · “Introducing GPT-6 Astra” (03/09/2026). Fragment inicial de 60 segons.", "Official video · OpenAI · “Introducing GPT-6 Astra” (3 Sep 2026). First 60 seconds."],
+["Vídeo oficial · Google DeepMind · “Gemini Robotics 2 brings whole body intelligence to robots” (30/07/2026). Clip 00:06–01:06.", "Vídeo oficial · Google DeepMind · “Gemini Robotics 2 brings whole body intelligence to robots” (30/07/2026). Clip 00:06–01:06.", "Vídeo oficial · Google DeepMind · “Gemini Robotics 2 brings whole body intelligence to robots” (30/07/2026). Fragment 00:06–01:06.", "Official video · Google DeepMind · “Gemini Robotics 2 brings whole body intelligence to robots” (30 Jul 2026). Excerpt 00:06–01:06."],
+["Agentes persistentes · del diálogo al trabajo", "Agentes persistentes · del diálogo al trabajo", "Agents persistents · del diàleg al treball", "Persistent agents · from dialogue to work"],
+["De una respuesta a un trabajo en curso", "De una respuesta a un trabajo en curso", "D’una resposta a un treball en curs", "From a reply to ongoing work"],
+["El lanzamiento muestra tareas conectadas entre aplicaciones, seguimiento y decisiones que requieren aprobación. ¿Qué queremos delegar y qué necesitamos poder revisar?", "El lanzamiento muestra tareas conectadas entre aplicaciones, seguimiento y decisiones que requieren aprobación. ¿Qué queremos delegar y qué necesitamos poder revisar?", "El llançament mostra tasques connectades entre aplicacions, seguiment i decisions que requereixen aprovació. Què volem delegar i què necessitem poder revisar?", "The launch shows connected tasks across apps, follow-through and decisions requiring approval. What do we want to delegate, and what must we be able to review?"],
+["Vídeo promocional con escenas preparadas. Ilustra la propuesta del producto; no es una prueba independiente de fiabilidad.", "Vídeo promocional con escenas preparadas. Ilustra la propuesta del producto; no es una prueba independiente de fiabilidad.", "Vídeo promocional amb escenes preparades. Il·lustra la proposta del producte; no és una prova independent de fiabilitat.", "Promotional video with prepared scenes. It illustrates the product proposal; it is not an independent reliability test."],
+["OpenAI · lanzamiento de dots (29/09/2026). Fragmento 00:29–01:29; requiere conexión.", "OpenAI · lanzamiento de dots (29/09/2026). Fragmento 00:29–01:29; requiere conexión.", "OpenAI · llançament de dots (29/09/2026). Fragment 00:29–01:29; requereix connexió.", "OpenAI · dots launch (29 Sep 2026). Excerpt 00:29–01:29; requires Internet."],
+["ENISA Threat Landscape 2026 (22/09): las dependencias digitales amplían la superficie de ataque. Analiza incidentes observados en 2025.", "ENISA Threat Landscape 2026 (22/09): las dependencias digitales amplían la superficie de ataque. Analiza incidentes observados en 2025.", "ENISA Threat Landscape 2026 (22/09): les dependències digitals amplien la superfície d’atac. Analitza incidents observats el 2025.", "ENISA Threat Landscape 2026 (22/09): digital dependencies expand the attack surface. It analyses incidents observed in 2025."],
+["Fragmento oficial · 00:18–01:18 · GR00T N1", "Fragmento oficial · 00:18–01:18 · GR00T N1", "Fragment oficial · 00:18–01:18 · GR00T N1", "Official excerpt · 00:18–01:18 · GR00T N1"],
   [
     "INTELIGENCIA ARTIFICIAL · PODER · HUMANIDAD · 2026",
     "INTELIGENCIA ARTIFICIAL · PODER · HUMANIDAD · 2026",
@@ -300,6 +310,60 @@ const rows: TranslationRow[] = [
     "Transformación del trabajo por tareas",
     "Transformació del treball per tasques",
     "Task-level transformation of work"
+  ],
+  [
+    "Cuando los robots ayudan a fabricar robots",
+    "Cuando los robots ayudan a fabricar robots",
+    "Quan els robots ajuden a fabricar robots",
+    "When robots help build robots"
+  ],
+  [
+    "La fábrica de UBTECH conecta dos cambios: la IA adquiere cuerpo y la industria reorganiza sus tareas. El futuro del trabajo también se juega en la planta de producción.",
+    "La fábrica de UBTECH conecta dos cambios: la IA adquiere cuerpo y la industria reorganiza sus tareas. El futuro del trabajo también se juega en la planta de producción.",
+    "La fàbrica d’UBTECH connecta dos canvis: la IA adquireix cos i la indústria reorganitza les seves tasques. El futur del treball també es juga a la planta de producció.",
+    "UBTECH’s factory connects two shifts: AI acquires a body and industry reorganizes its tasks. The future of work is also unfolding on the factory floor."
+  ],
+  [
+    "Vídeo corporativo: muestra una línea industrial. No demuestra autonomía total ni acredita productividad a escala.",
+    "Vídeo corporativo: muestra una línea industrial. No demuestra autonomía total ni acredita productividad a escala.",
+    "Vídeo corporatiu: mostra una línia industrial. No demostra autonomia total ni acredita productivitat a escala.",
+    "Corporate footage: it shows an industrial line. It does not establish full autonomy or verify productivity at scale."
+  ],
+  [
+    "Vídeo oficial · UBTECH Robotics · “Robots Building Robots” · 15/09/2026 · Fragmento de 60 s.",
+    "Vídeo oficial · UBTECH Robotics · “Robots Building Robots” · 15/09/2026 · Fragmento de 60 s.",
+    "Vídeo oficial · UBTECH Robotics · “Robots Building Robots” · 15/09/2026 · Fragment de 60 s.",
+    "Official video · UBTECH Robotics · “Robots Building Robots” · 15 Sep 2026 · 60 s excerpt."
+  ],
+  [
+    "Atlas · destreza física · octubre de 2026",
+    "Atlas · destreza física · octubre de 2026",
+    "Atlas · destresa física · octubre de 2026",
+    "Atlas · physical dexterity · October 2026"
+  ],
+  [
+    "La frontera está en las manos",
+    "La frontera está en las manos",
+    "La frontera és a les mans",
+    "The frontier is in the hands"
+  ],
+  [
+    "No basta con caminar: trabajar exige sujetar, ajustar y utilizar herramientas. Las nuevas manos de Atlas combinan cuatro dedos, 13 grados de libertad y sensores táctiles.",
+    "No basta con caminar: trabajar exige sujetar, ajustar y utilizar herramientas. Las nuevas manos de Atlas combinan cuatro dedos, 13 grados de libertad y sensores táctiles.",
+    "No n’hi ha prou amb caminar: treballar exigeix subjectar, ajustar i utilitzar eines. Les noves mans d’Atlas combinen quatre dits, 13 graus de llibertat i sensors tàctils.",
+    "Walking is not enough: work requires grasping, adjusting and using tools. Atlas’s new hands combine four fingers, 13 degrees of freedom and tactile sensors."
+  ],
+  [
+    "Demostración del fabricante con segmentos autónomos y teleoperados. La destreza mostrada no prueba autonomía general ni productividad industrial.",
+    "Demostración del fabricante con segmentos autónomos y teleoperados. La destreza mostrada no prueba autonomía general ni productividad industrial.",
+    "Demostració del fabricant amb segments autònoms i teleoperats. La destresa mostrada no prova autonomia general ni productivitat industrial.",
+    "Manufacturer demonstration with autonomous and teleoperated segments. The dexterity shown does not establish general autonomy or industrial productivity."
+  ],
+  [
+    "Vídeo oficial · Boston Dynamics · “New Hands for Atlas” · 01/10/2026 · Fragmento de 60 s.",
+    "Vídeo oficial · Boston Dynamics · “New Hands for Atlas” · 01/10/2026 · Fragmento de 60 s.",
+    "Vídeo oficial · Boston Dynamics · “New Hands for Atlas” · 01/10/2026 · Fragment de 60 s.",
+    "Official video · Boston Dynamics · “New Hands for Atlas” · 1 Oct 2026 · 60 s excerpt."
   ],
   [
     "Trabajo físico · automatización flexible",
@@ -1889,6 +1953,7 @@ const translateRaw = (raw: string, lang: PresentationLang) => {
 }
 
 const translateTextNode = (node: Text, lang: PresentationLang) => {
+  if (node.parentElement?.closest('[data-native-i18n]')) return
   const base = originalText.get(node) ?? node.nodeValue ?? ''
   if (!originalText.has(node)) originalText.set(node, base)
   const translated = translateRaw(base, lang)
@@ -1896,6 +1961,7 @@ const translateTextNode = (node: Text, lang: PresentationLang) => {
 }
 
 const translateAttribute = (el: Element, attr: string, lang: PresentationLang) => {
+  if (el.closest('[data-native-i18n]')) return
   const current = el.getAttribute(attr)
   if (current == null) return
 
@@ -1997,3 +2063,4 @@ export const installPresentationI18n = () => {
 
   return () => observer.disconnect()
 }
+

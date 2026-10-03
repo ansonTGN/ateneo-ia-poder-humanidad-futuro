@@ -1,5 +1,14 @@
 <script setup>
-import { computed } from 'vue'
+import { computed, ref, watch } from 'vue'
+import { useSlideContext } from '@slidev/client/context.ts'
+import { presentationLang } from '../i18n/presentation'
+
+const showVideo = ref(false)
+const { $slidev, $route } = useSlideContext()
+watch(() => $route?.no === $slidev?.nav.currentSlideNo, active => {
+  if (!active) showVideo.value = false
+})
+const playLabel = computed(() => ({ es: 'Reproducir · requiere conexión', ca: 'Reproduir · requereix connexió', en: 'Play · requires Internet' })[presentationLang.value])
 
 const props = defineProps({
   videoId: { type: String, required: true },
@@ -36,6 +45,7 @@ const duration = computed(() => props.end > props.start ? `${props.end - props.s
     <div class="short-video__media glass">
       <div class="short-video__screen">
         <iframe
+          v-if="showVideo"
           :src="embedUrl"
           :title="`${company}: ${title}`"
           loading="eager"
@@ -43,6 +53,10 @@ const duration = computed(() => props.end > props.start ? `${props.end - props.s
           allow="autoplay; accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         />
+        <button v-else class="short-video__preview" data-native-i18n :aria-label="playLabel" @click="showVideo = true">
+          <img :src="`/video-posters/${videoId}.jpg`" :alt="company" />
+          <span class="short-video__play">▶ <span>{{ playLabel }}</span></span>
+        </button>
       </div>
       <div class="short-video__meta">
         <span class="short-video__company">{{ company }}</span>
@@ -68,6 +82,10 @@ const duration = computed(() => props.end > props.start ? `${props.end - props.s
 .short-video__screen{position:relative;aspect-ratio:16/9;border-radius:16px;overflow:hidden;background:#000}
 .short-video__screen:after{content:"";position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 0 1px rgba(255,255,255,.08)}
 .short-video__screen iframe{position:absolute;inset:0;width:100%;height:100%;border:0;background:#000}
+.short-video__preview{position:absolute;inset:0;width:100%;height:100%;padding:0;border:0;cursor:pointer;background:#07111f;color:#fff}
+.short-video__preview img{width:100%;height:100%;object-fit:cover;opacity:.82}
+.short-video__play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:12px;font-size:30px;background:linear-gradient(180deg,transparent,rgba(0,0,0,.38))}
+.short-video__play span{font-size:12px;padding:9px 12px;border:1px solid rgba(255,255,255,.32);border-radius:8px;background:rgba(4,12,24,.82)}
 .short-video__meta{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:9px 7px 1px;font-size:10px;letter-spacing:.035em;color:#8fa0b7}
 .short-video__company{color:#e7f7ff;font-weight:750}.short-video__duration{white-space:nowrap}
 .short-video__fallback{display:inline-flex;margin:5px 7px 1px;font-size:10px;color:#86e8ff;text-decoration:none;border-bottom:1px solid rgba(134,232,255,.35)}

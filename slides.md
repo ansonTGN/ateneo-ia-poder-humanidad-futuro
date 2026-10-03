@@ -2,7 +2,7 @@
 theme: default
 title: Inteligencia artificial — poder, humanidad y futuro
 info: |
-  Presentación para el Centre d’Amics de Reus, Reus.
+  Presentación v7.2.0 para el Centre d’Amics de Reus, Reus. Corte editorial 03/10/2026.
   Una conversación visual sobre inteligencia artificial, biología, sociedad, ciberseguridad y salud mental.
 author: Angel A. Urbina
 transition: fade-out
@@ -65,6 +65,39 @@ class: debate
 ---
 ---
 
+<FrontierUpdate section="continuous" />
+
+<!--
+Fuentes consultadas el 03/10/2026.
+- OpenAI: https://openai.com/index/introducing-dots/
+- Google DeepMind: https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/
+La continuidad de un producto no prueba identidad personal ni consciencia. El control es una condición de diseño.
+-->
+
+---
+
+<ShortVideo
+  company="OpenAI · dots"
+  kicker="Agentes persistentes · del diálogo al trabajo"
+  title="De una respuesta a un trabajo en curso"
+  caption="El lanzamiento muestra tareas conectadas entre aplicaciones, seguimiento y decisiones que requieren aprobación. ¿Qué queremos delegar y qué necesitamos poder revisar?"
+  caveat="Vídeo promocional con escenas preparadas. Ilustra la propuesta del producto; no es una prueba independiente de fiabilidad."
+  video-id="uXspbC2srEQ"
+  :start="29"
+  :end="89"
+/>
+<div class="source">OpenAI · lanzamiento de dots (29/09/2026). Fragmento 00:29–01:29; requiere conexión.</div>
+
+<!--
+https://www.youtube.com/watch?v=uXspbC2srEQ
+https://openai.com/index/introducing-dots/
+Situar el vídeo después de continuidad y memoria: qué significa delegar trabajo.
+Es una pieza promocional, no una captura continua de una prueba independiente.
+-->
+
+---
+---
+
 <div class="kicker">El salto conceptual</div>
 <h1>La frontera se desplaza</h1>
 <div class="grid-4" style="margin-top:30px">
@@ -81,43 +114,42 @@ class: debate
 ---
 ---
 
-<div class="kicker">Frontera · septiembre de 2026</div>
-<h1>No hay un único “modelo ganador”. Hay varias fronteras avanzando a la vez.</h1>
-<div class="grid-4" style="margin-top:26px">
-  <div class="glass card">
-    <div class="card-icon">↗</div><h3>Autonomía</h3>
-    <p>GPT-6 Astra lleva el foco hacia tareas largas, computer use y ejecución con herramientas.</p>
-  </div>
-  <div class="glass card">
-    <div class="card-icon">⌘</div><h3>Agentes y código</h3>
-    <p>Claude Opus 5.5 refuerza programación agéntica de larga duración y trabajo de conocimiento.</p>
-  </div>
-  <div class="glass card">
-    <div class="card-icon">◈</div><h3>Eficiencia abierta</h3>
-    <p>DeepSeek V4.1-Flash y Kimi muestran que la frontera también compite en coste, contexto y apertura.</p>
-  </div>
-  <div class="glass card">
-    <div class="card-icon">◎</div><h3>Multimodalidad</h3>
-    <p>Qwen 3.8 amplía contexto, visión, audio, vídeo y orquestación de herramientas dentro del mismo ecosistema.</p>
-  </div>
-</div>
-<div class="callout" style="margin-top:22px"><strong>La tendencia común:</strong> modelos menos aislados, más conectados a memoria, herramientas, software y mundo físico.</div>
-<div class="source">Fuentes oficiales consultadas a 25/09/2026: OpenAI, Anthropic, DeepSeek, Moonshot/Kimi y Alibaba Cloud.</div>
+<FrontierUpdate section="models" />
+
+<!--
+Fuentes consultadas el 03/10/2026.
+- OpenAI: https://openai.com/index/introducing-gpt-6-1-sol/
+- Anthropic: https://www.anthropic.com/claude-sonnet-5-5
+- Google: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/
+Son anuncios de proveedores. Un benchmark mide una tarea concreta bajo unas condiciones concretas.
+-->
 
 ---
+---
+
+<FrontierUpdate section="china" />
+
+<!--
+Fuentes consultadas el 03/10/2026.
+- DeepSeek: https://api-docs.deepseek.com/updates/
+- Kimi: https://www.kimi.com/code/docs/en/kimi-code/whats-new.html
+- Alibaba Cloud: https://www.alibabacloud.com/help/en/model-studio/newly-released-models
+Acceso por API, pesos abiertos y licencia son condiciones distintas. La disponibilidad depende del modelo y la región.
+-->
+
 ---
 
 <ShortVideo
-  company="NVIDIA · GR00T N1"
-  kicker="Modelos fundacionales · visión → lenguaje → acción"
-  title="El fundamento técnico: aprender una política de acción, no sólo producir palabras"
-  caption="GR00T N1 condensa el cambio hacia modelos VLA: percibir el entorno, interpretar una instrucción, planificar y convertir ese plan en movimiento continuo."
-  caveat="La demostración es del fabricante. Su interés aquí es arquitectónico: hace visible cómo los modelos fundacionales empiezan a convertirse en políticas de control físico."
-  video-id="m1CH-mgpdYg"
-  :start="18"
-  :end="78"
+  company="Boston Dynamics · Atlas"
+  kicker="Atlas · destreza física · octubre de 2026"
+  title="La frontera está en las manos"
+  caption="No basta con caminar: trabajar exige sujetar, ajustar y utilizar herramientas. Las nuevas manos de Atlas combinan cuatro dedos, 13 grados de libertad y sensores táctiles."
+  caveat="Demostración del fabricante con segmentos autónomos y teleoperados. La destreza mostrada no prueba autonomía general ni productividad industrial."
+  video-id="4whgw2gLBS8"
+  :start="0"
+  :end="60"
 />
-<div class="source">Vídeo NVIDIA · “Isaac GR00T N1: An Open Foundation Model for Humanoid Robots” (2025). Clip 00:18–00:52.</div>
+<div class="source">Vídeo oficial · Boston Dynamics · “New Hands for Atlas” · 01/10/2026 · Fragmento de 60 s.</div>
 
 ---
 class: light
@@ -140,13 +172,14 @@ class: light
 <ShortVideo
   company="UBTECH Robotics · China"
   kicker="Trabajo físico · automatización flexible"
-  title="Cuando la IA sale de la oficina y entra en el turno de fábrica"
-  caption="Walker S2 muestra por qué la discusión sobre empleo ya no se limita a redactar, programar o analizar: la automatización cognitiva empieza a adquirir cuerpo."
-  video-id="xXiTvnsi4EI"
-  :start="6"
-  :end="66"
+  title="Cuando los robots ayudan a fabricar robots"
+  caption="La fábrica de UBTECH conecta dos cambios: la IA adquiere cuerpo y la industria reorganiza sus tareas. El futuro del trabajo también se juega en la planta de producción."
+  caveat="Vídeo corporativo: muestra una línea industrial. No demuestra autonomía total ni acredita productividad a escala."
+  video-id="hUlfQOrvPxA"
+  :start="0"
+  :end="60"
 />
-<div class="source">Vídeo oficial · UBTECH Robotics · “Meet The First Humanoid Robotic Worker at SANY RE!” (20/01/2026). Demo corporativa: ilustra capacidad, no prueba por sí sola productividad a escala.</div>
+<div class="source">Vídeo oficial · UBTECH Robotics · “Robots Building Robots” · 15/09/2026 · Fragmento de 60 s.</div>
 
 ---
 class: debate
@@ -209,7 +242,7 @@ class: debate
   </div>
   <I18nDiagram class="diagram-img diagram-cyber" src="/visuals/cyber-balance.svg" alt="IA como multiplicador de ataque y defensa" />
 </div>
-<div class="source">ENISA Threat Landscape 2025: la IA aparece como optimizador de actividad maliciosa y como nueva superficie de exposición.</div>
+<div class="source">ENISA Threat Landscape 2026 (22/09): las dependencias digitales amplían la superficie de ataque. Analiza incidentes observados en 2025.</div>
 
 ---
 ---
@@ -224,7 +257,7 @@ class: debate
   :start="0"
   :end="60"
 />
-<div class="source">Vídeo oficial · OpenAI · “Introducing GPT-6 Astra” (03/09/2026). Clip inicial 00:00–00:30.</div>
+<div class="source">Vídeo oficial · OpenAI · “Introducing GPT-6 Astra” (03/09/2026). Clip inicial de 60 segundos.</div>
 
 ---
 ---
@@ -254,6 +287,27 @@ class: debate
 </div></div>
 
 ---
+---
+
+<FrontierUpdate section="incident" />
+
+<!--
+Fuentes consultadas el 03/10/2026.
+- Transluce: https://transluce.org/us-canada-gov
+Fecha del informe: 30/09/2026. Los incidentes descritos ocurrieron meses antes. La implicación de diseño es una lectura editorial.
+-->
+
+---
+---
+
+<FrontierUpdate section="safety" />
+
+<!--
+Fuentes consultadas el 03/10/2026.
+- OpenAI: https://openai.com/index/towards-safety-cases-for-frontier-ai-training/
+Propuesta del 28/09/2026, en desarrollo. Su ámbito es el entrenamiento de frontera, no una certificación general de productos.
+-->
+
 ---
 
 <div class="kicker">04 · IA + biología</div>
@@ -327,6 +381,28 @@ class: debate
 <div class="source">Nature (22/07/2026; 02/09/2026). Resultados experimentales, no promesas comerciales.</div>
 
 ---
+---
+
+<FrontierUpdate section="art" />
+
+<!--
+Fuentes consultadas el 03/10/2026.
+- Anthropic: https://www.anthropic.com/news/claude-discovers-novel-enzyme-system
+Comunicación de Anthropic del 23/09/2026 y preprint asociado. El descubrimiento necesita caracterización posterior.
+-->
+
+---
+---
+
+<FrontierUpdate section="bio" />
+
+<!--
+Fuentes consultadas el 03/10/2026.
+- Google DeepMind: https://deepmind.google/blog/introducing-synthid-bio/
+Publicado el 30/09/2026. Es una capa adicional de verificación, junto al análisis biológico y los controles de síntesis.
+-->
+
+---
 class: debate
 ---
 
@@ -352,14 +428,13 @@ class: debate
 ---
 ---
 
-<div class="kicker">Diseño de salud mental</div>
-<h1>Cuatro límites que deberían ser visibles</h1>
-<div class="grid-4" style="margin-top:28px">
-  <div class="glass card"><div class="card-icon" style="color:var(--green)">ID</div><h3>Identidad clara</h3><p>La persona debe saber que habla con un sistema.</p></div>
-  <div class="glass card"><div class="card-icon" style="color:var(--amber)">↗</div><h3>Escalado</h3><p>Derivar cuando el contexto supera al sistema.</p></div>
-  <div class="glass card"><div class="card-icon" style="color:var(--violet)">◈</div><h3>Privacidad</h3><p>Tratar la conversación como dato especialmente sensible.</p></div>
-  <div class="glass card"><div class="card-icon" style="color:var(--red)">∞</div><h3>No dependencia</h3><p>Diseñar para autonomía, no para maximizar apego.</p></div>
-</div>
+<FrontierUpdate section="mental" />
+
+<!--
+Fuentes consultadas el 03/10/2026.
+- Transluce: https://transluce.org/announcing-mental-health-evaluation
+Informe del 31/08/2026. Las simulaciones evalúan conductas del sistema, no eficacia terapéutica ni resultados clínicos.
+-->
 
 ---
 ---
@@ -397,6 +472,16 @@ class: debate
 ---
 ---
 
+<FrontierUpdate section="complement" />
+
+<!--
+Fuentes consultadas el 03/10/2026.
+- Li et al. · arXiv: https://arxiv.org/abs/2609.32562
+Preprint del 26/09/2026, limitado a las tareas estudiadas. La propuesta educativa es una interpretación, no una conclusión universal.
+-->
+
+---
+
 <div class="split">
   <div>
     <div class="kicker">07 · Poder</div>
@@ -424,16 +509,13 @@ class: debate
 ---
 ---
 
-<div class="kicker">Gobernanza</div>
-<h1>Regular no es detener. Es decidir condiciones de legitimidad.</h1>
-<div style="margin-top:32px;display:grid;grid-template-columns:1fr;gap:10px">
-  <div class="glass card" style="display:grid;grid-template-columns:150px 1fr;align-items:center"><div class="metric-label" style="color:var(--green)">RIESGO BAJO</div><div style="height:18px;border-radius:999px;background:linear-gradient(90deg,var(--green),rgba(98,232,184,.1))"></div></div>
-  <div class="glass card" style="display:grid;grid-template-columns:150px 1fr;align-items:center"><div class="metric-label" style="color:var(--cyan)">TRANSPARENCIA</div><div style="height:18px;border-radius:999px;background:linear-gradient(90deg,var(--cyan),rgba(93,230,255,.12))"></div></div>
-  <div class="glass card" style="display:grid;grid-template-columns:150px 1fr;align-items:center"><div class="metric-label" style="color:var(--amber)">ALTO IMPACTO</div><div style="height:18px;border-radius:999px;background:linear-gradient(90deg,var(--amber),rgba(255,200,103,.12))"></div></div>
-  <div class="glass card" style="display:grid;grid-template-columns:150px 1fr;align-items:center"><div class="metric-label" style="color:var(--red)">PROHIBIDO</div><div style="height:18px;border-radius:999px;background:linear-gradient(90deg,var(--red),rgba(255,116,135,.12))"></div></div>
-</div>
-<div class="callout" style="margin-top:24px">La cuestión política central: <strong>¿qué derechos y decisiones deben permanecer no delegables?</strong></div>
-<div class="source">EU AI Act: marco basado en riesgo; obligaciones de transparencia y otras disposiciones entran en aplicación por fases.</div>
+<FrontierUpdate section="governance" />
+
+<!--
+Fuentes consultadas el 03/10/2026.
+- Comisión Europea: https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+Fuente: calendario vigente publicado por la Comisión Europea, consultado el 03/10/2026. Las obligaciones dependen del uso y del papel de cada actor.
+-->
 
 ---
 ---
@@ -459,6 +541,16 @@ class: debate
 ---
 ---
 
+<FrontierUpdate section="acceleration" />
+
+<!--
+Fuentes consultadas el 03/10/2026.
+- Chan et al. · arXiv: https://arxiv.org/abs/2609.36054
+Es un escenario para analizar y preparar respuestas. No demuestra una explosión de inteligencia ni fija una fecha para ella.
+-->
+
+---
+
 <div class="kicker">2030 · tres futuros plausibles</div>
 <h1>No hay un único futuro tecnológico</h1>
 <I18nDiagram class="diagram-img diagram-future" src="/visuals/future-fork.svg" alt="Tres futuros posibles de la IA hacia 2030" />
@@ -481,7 +573,7 @@ class: debate
   :start="6"
   :end="66"
 />
-<div class="source">Vídeo oficial · Google DeepMind · “Gemini Robotics 2 brings whole body intelligence to robots” (30/07/2026). Clip 00:06–00:36.</div>
+<div class="source">Vídeo oficial · Google DeepMind · “Gemini Robotics 2 brings whole body intelligence to robots” (30/07/2026). Clip 00:06–01:06.</div>
 
 ---
 class: debate
@@ -539,7 +631,7 @@ class: debate
   <div class="glass card">
     <h3>Trabajo · sociedad · ciberseguridad</h3>
     <p><strong>OIT/NASK</strong> · <em>Generative AI and Jobs</em> (2025)</p>
-    <p><strong>ENISA</strong> · <em>Threat Landscape 2025</em></p>
+    <p><strong>ENISA</strong> · <em>Threat Landscape 2026</em> (22/09)</p>
     <p><strong>Unión Europea</strong> · AI Act y guías de implementación</p>
     <p><strong>Vídeos oficiales</strong> · NVIDIA · Google DeepMind · Unitree · UBTECH · AGIBOT · Palantir</p>
   </div>
@@ -559,3 +651,4 @@ class: cinematic-v56
 ---
 
 <CinematicClosing />
+

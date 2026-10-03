@@ -1,5 +1,23 @@
 # Inteligencia artificial — poder, humanidad y futuro
 
+## Edición actual v7.2.0 · 03/10/2026
+
+Actualiza la frontera de modelos, asistentes persistentes, incidentes con agentes,
+argumentos de seguridad, investigación biológica, SynthID Bio, salud mental,
+complementariedad humana y calendario europeo. Los bloques nuevos tienen versiones
+ES/CA/EN reactivas y fuentes enlazadas. Conserva el diseño institucional y los vídeos.
+
+El acceso es directo, sin contraseña. `dist/` contiene la publicación estática.
+Los vídeos de YouTube muestran miniaturas locales y cargan al pulsar Reproducir;
+al cambiar de diapositiva se detiene el reproductor. Los vídeos externos siguen necesitando conexión. La edición no promete operación
+totalmente sin Internet ni disponibilidad general de modelos con acceso restringido.
+
+Las secciones siguientes describen la evolución histórica del proyecto.
+
+
+**Acceso actualizado: directo sin contraseña. Las instrucciones históricas de acceso protegido quedan obsoletas.**
+
+
 Presentación web profesional en **Slidev + Vue 3**, preparada para GitHub y Netlify.
 
 ## Edición v5
@@ -170,3 +188,48 @@ selecciona reactivamente la ruta apropiada según el idioma:
 Esto evita depender de mutaciones manuales del atributo `src`, que no eran
 fiables con el ciclo de renderizado de Slidev/Vue.
 
+## Acceso protegido en Netlify — base v7.1
+
+La presentación incorpora una pantalla de acceso previa mediante una Netlify
+Edge Function. No utiliza la función comercial de Password Protection de
+Netlify.
+
+Las credenciales se leen exclusivamente de:
+
+- `PRESENTATION_USER`
+- `PRESENTATION_PASSWORD`
+- `PRESENTATION_SESSION_SECRET`
+
+Nunca deben guardarse en GitHub ni en `netlify.toml`.
+
+La sesión utiliza una cookie firmada HMAC-SHA256, `HttpOnly` y
+`SameSite=Strict`, con una duración de 8 horas.
+
+### Prueba local
+
+```bash
+python3 scripts/configure-local-auth.py
+npx netlify-cli@latest dev
+```
+
+Abrir `http://localhost:8888/`.
+
+No abrir directamente el puerto 3030 durante la prueba, porque ese puerto es el
+servidor Slidev interno y no pasa por la capa Edge simulada por Netlify Dev.
+
+
+## Revisión de autenticación — 03/10/2026
+
+Base de contenido: v7.1. Esta revisión corrige redirecciones, usuarios con puntos,
+validación del origen del POST y caché del contenido autenticado.
+
+El configurador conserva `.env` por defecto. `--replace` lo sustituye y rota
+el secreto LOCAL. No cambia las variables de producción de Netlify.
+Para invalidar todas las sesiones de producción, rotar
+`PRESENTATION_SESSION_SECRET` en Netlify. Cambiar solo la contraseña no las revoca.
+Las cookies antiguas de usuarios sin puntos siguen siendo válidas hasta caducar.
+
+La espera de 650 ms no es una limitación efectiva de intentos. Antes de abrir
+el servicio públicamente, configurar un control efectivo de solicitudes al login
+o sustituir el acceso compartido por un proveedor de identidad.
+Los cambios de caché no borran copias descargadas o guardadas anteriormente.

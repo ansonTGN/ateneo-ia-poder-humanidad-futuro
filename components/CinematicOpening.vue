@@ -1,4 +1,5 @@
 <template>
+    <EditionStamp />
   <section class="opening-v56">
     <NvidiaCosmosBackground :opacity="0.98" />
 
@@ -78,3 +79,4 @@
 }
 
 </style>
+

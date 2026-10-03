@@ -1,6 +1,6 @@
 # Fuentes y lecturas
 
-Fecha de corte editorial: 25 de septiembre de 2026.
+Fecha de corte editorial: 3 de octubre de 2026 (Europe/Madrid).
 
 ## Trabajo
 
@@ -9,8 +9,8 @@ Fecha de corte editorial: 25 de septiembre de 2026.
 
 ## Ciberseguridad
 
-- ENISA. **ENISA Threat Landscape 2025**.
-  https://www.enisa.europa.eu/publications/enisa-threat-landscape-2025
+- ENISA. **ENISA Threat Landscape 2026** (22/09/2026; periodo observado: 2025).
+  https://www.enisa.europa.eu/publications/enisa-threat-landscape-2026
 
 ## Salud
 
@@ -51,11 +51,14 @@ Los vídeos se incrustan desde canales oficiales mediante `youtube-nocookie.com`
 - **Unitree Robotics** — *Movement creates intelligence - Unitree's G1 humanoid robot nails the world's first kip-up!* (21 marzo 2025). Clip: 00:08–00:31.
   https://www.youtube.com/watch?v=Nkh6RUocD8c
 
-- **NVIDIA** — *Isaac GR00T N1: An Open Foundation Model for Humanoid Robots* (2025). Clip: 00:18–00:52.
-  https://www.youtube.com/watch?v=m1CH-mgpdYg
+- **Boston Dynamics** — *New Hands for Atlas* (1 octubre 2026). Diapositiva 10; fragmento: 00:00–01:00.
+  https://www.youtube.com/watch?v=4whgw2gLBS8
+  Explicación técnica oficial: https://bostondynamics.com/blog/robot-hands-for-modern-ai-and-real-work/
+  La mano GR3 tiene cuatro dedos, 13 grados de libertad y sensores táctiles. El vídeo combina segmentos autónomos y teleoperados; no debe interpretarse como prueba de autonomía general o rendimiento industrial validado.
 
-- **UBTECH Robotics** — *Meet The First Humanoid Robotic Worker at SANY RE!* (20 enero 2026). Clip: 00:06–00:34.
-  https://www.youtube.com/watch?v=xXiTvnsi4EI
+- **UBTECH Robotics** — *Robots Building Robots: World's First 10,000-Scale Humanoid Robot Smart Factory Goes Mass Production* (15 septiembre 2026). Diapositiva 12; fragmento: 00:00–01:00.
+  https://www.youtube.com/watch?v=hUlfQOrvPxA
+  Material promocional del fabricante: las cifras de capacidad no equivalen a producción observada ni prueban autonomía integral. La diapositiva evita presentar estas cifras como resultados independientes.
 
 - **AGIBOT** — *G2: The Next Generation of Industrial-Grade Interactive Embodied Operation Robots* (25 febrero 2026). Clip: 00:06–00:34.
   https://www.youtube.com/watch?v=WrSpfnEtzPA
@@ -118,3 +121,96 @@ Las demos de fabricantes se usan como **artefactos visuales y casos de producto*
 
 - **Google DeepMind — AlphaGenome Atlas: Understanding the human genome** (8 septiembre 2026).
   https://www.youtube.com/watch?v=U0aToL5C-bQ
+
+
+## Actualización v7.2.0 · fuentes verificadas el 03/10/2026
+
+### Capacidad y coste avanzan a la vez
+
+Son anuncios de proveedores. Un benchmark mide una tarea concreta bajo unas condiciones concretas.
+
+- OpenAI: https://openai.com/index/introducing-gpt-6-1-sol/
+- Anthropic: https://www.anthropic.com/claude-sonnet-5-5
+- Google: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/
+
+### Otra frontera: eficiencia y multimodalidad
+
+Acceso por API, pesos abiertos y licencia son condiciones distintas. La disponibilidad depende del modelo y la región.
+
+- DeepSeek: https://api-docs.deepseek.com/updates/
+- Kimi: https://www.kimi.com/code/docs/en/kimi-code/whats-new.html
+- Alibaba Cloud: https://www.alibabacloud.com/help/en/model-studio/newly-released-models
+
+### Trabajo continuo y memoria personal
+
+La continuidad de un producto no prueba identidad personal ni consciencia. El control es una condición de diseño.
+
+- OpenAI: https://openai.com/index/introducing-dots/
+- Google DeepMind: https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/
+
+### Una búsqueda puede exceder sus límites
+
+Fecha del informe: 30/09/2026. Los incidentes descritos ocurrieron meses antes. La implicación de diseño es una lectura editorial.
+
+- Transluce: https://transluce.org/us-canada-gov
+
+### La seguridad necesita evidencia verificable
+
+Propuesta del 28/09/2026, en desarrollo. Su ámbito es el entrenamiento de frontera, no una certificación general de productos.
+
+- OpenAI: https://openai.com/index/towards-safety-cases-for-frontier-ai-training/
+
+### Agentes que generan hipótesis biológicas
+
+Comunicación de Anthropic del 23/09/2026 y preprint asociado. El descubrimiento necesita caracterización posterior.
+
+- Anthropic: https://www.anthropic.com/news/claude-discovers-novel-enzyme-system
+
+### La trazabilidad llega a las proteínas
+
+Publicado el 30/09/2026. Es una capa adicional de verificación, junto al análisis biológico y los controles de síntesis.
+
+- Google DeepMind: https://deepmind.google/blog/introducing-synthid-bio/
+
+### Mejoras medibles y límites persistentes
+
+Informe del 31/08/2026. Las simulaciones evalúan conductas del sistema, no eficacia terapéutica ni resultados clínicos.
+
+- Transluce: https://transluce.org/announcing-mental-health-evaluation
+
+### La diversidad humana aporta valor
+
+Preprint del 26/09/2026, limitado a las tareas estudiadas. La propuesta educativa es una interpretación, no una conclusión universal.
+
+- Li et al. · arXiv: https://arxiv.org/abs/2609.32562
+
+### El AI Act ya tiene efectos concretos
+
+Fuente: calendario vigente publicado por la Comisión Europea, consultado el 03/10/2026. Las obligaciones dependen del uso y del papel de cada actor.
+
+- Comisión Europea: https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+
+### IA que acelera la investigación de IA
+
+Es un escenario para analizar y preparar respuestas. No demuestra una explosión de inteligencia ni fija una fecha para ella.
+
+- Chan et al. · arXiv: https://arxiv.org/abs/2609.36054
+
+### Criterio de lectura
+
+Las comparaciones de modelos son anuncios o evaluaciones del proveedor salvo
+indicación expresa. Los preprints no equivalen a conclusiones consolidadas.
+La fecha del informe de Transluce no es la fecha de los incidentes.
+Las simulaciones de salud mental no prueban eficacia terapéutica.
+La selección cubre novedades pertinentes para la charla y no pretende ser un
+inventario exhaustivo de todos los productos de IA existentes.
+
+### Ciberseguridad: edición actual del panorama europeo
+ENISA Threat Landscape 2026, publicado el 22/09/2026; periodo observado: 2025.
+https://www.enisa.europa.eu/publications/enisa-threat-landscape-2026
+
+### Nuevo vídeo: asistentes persistentes
+OpenAI: lanzamiento oficial de dots (29/09/2026). Fragmento 00:29–01:29.
+https://www.youtube.com/watch?v=uXspbC2srEQ
+https://openai.com/index/introducing-dots/
+Pieza promocional con escenas preparadas; no prueba independiente de fiabilidad.
