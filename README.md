@@ -1,8 +1,8 @@
 # Inteligencia artificial — poder, humanidad y futuro
 
-## Edición actual v7.3.0 · 03/10/2026
+## Edición actual v7.3.1 · 03/10/2026
 
-Revisión narrativa y visual en español, catalán e inglés. Incluye 49 diapositivas:
+Revisión narrativa y visual en español, catalán e inglés. Incluye 50 diapositivas:
 se conserva el recorrido anterior y se añade el vídeo oficial del LinkerArm A7
 tras las nuevas manos de Atlas. El dato de exposición laboral de la OIT se
 distingue de las demostraciones de automatización física.
@@ -11,9 +11,14 @@ Se corrigen el espacio de las preguntas, la diapositiva Evo 2 y los futuros,
 se mejora el contraste y se alternan comparaciones, recorridos de investigación
 y cronologías. Las instituciones quedan cerca de la síntesis humana del cierre.
 
+Army of Robots ocupa la diapositiva 39, después de TITAN y antes de la gobernanza.
+Su anuncio conceptual generado con IA se reproduce como vídeo local de 60 segundos,
+con una etiqueta visible antes y durante la reproducción. Su presentación no acredita
+combate autónomo desplegado ni financiación corporativa de Palantir para el programa.
+
 Acceso directo sin contraseña. Compilar con `npm run build`. Para presentar
 la compilación local: `python3 presentar.py`. Puerto alternativo:
-`python3 presentar.py --port 8082`. Los vídeos de YouTube necesitan Internet.
+`python3 presentar.py --port 8082`. Los vídeos de YouTube necesitan Internet; el anuncio Army of Robots es local.
 
 Las secciones siguientes describen la evolución histórica del proyecto.
 

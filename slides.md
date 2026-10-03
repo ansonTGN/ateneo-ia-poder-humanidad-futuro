@@ -2,7 +2,7 @@
 theme: default
 title: Inteligencia artificial — poder, humanidad y futuro
 info: |
-  Presentación v7.3.0 para el Centre d’Amics de Reus, Reus. Corte editorial 03/10/2026.
+  Presentación v7.3.1 para el Centre d’Amics de Reus, Reus. Corte editorial 03/10/2026.
   Una conversación visual sobre inteligencia artificial, biología, sociedad, ciberseguridad y salud mental.
 author: Angel A. Urbina
 transition: fade-out
@@ -491,7 +491,24 @@ Transición del ponente: El criterio individual necesita instituciones que permi
 ---
 ---
 
+<ArmyOfRobots />
+
+<!--
+ES: TITAN trata la decisión asistida; Army of Robots desplaza la aspiración hacia la acción física. Antes del vídeo, señalar que es una visualización generada con IA. Después: «¿Quién autoriza el uso de fuerza y quién responde cuando una máquina actúa?». Enlazar con gobernanza. No presentar los plazos de seis y doce meses como resultados logrados ni equiparar teleoperación con autonomía letal.
+CA: TITAN tracta la decisió assistida; Army of Robots desplaça l’aspiració cap a l’acció física. Abans del vídeo, assenyalar que és una visualització generada amb IA. Després: «Qui autoritza l’ús de la força i qui respon quan una màquina actua?». Enllaçar amb governança. No presentar els terminis de sis i dotze mesos com a resultats assolits ni equiparar teleoperació amb autonomia letal.
+EN: TITAN concerns assisted decisions; Army of Robots moves the aspiration toward physical action. Before playing, identify this as an AI-generated visualization. Then ask: “Who authorizes force, and who is accountable when a machine acts?” Bridge to governance. Do not present the six- and twelve-month targets as achieved results or equate teleoperation with lethal autonomy.
+-->
+
+---
+---
+
 <FrontierUpdate section="governance" />
+
+<!--
+ES: El AI Act tiene un ámbito distinto: excluye los usos exclusivamente militares, de defensa o seguridad nacional (art. 2.3). Esta diapositiva es un ejemplo de gobernanza civil, no la norma aplicable a los ataques del vídeo anterior.
+CA: L’AI Act té un àmbit diferent: exclou els usos exclusivament militars, de defensa o seguretat nacional (art. 2.3). Aquesta diapositiva és un exemple de governança civil, no la norma aplicable als atacs del vídeo anterior.
+EN: The AI Act has a different scope: it excludes exclusively military, defence or national-security uses (Article 2(3)). This slide illustrates civilian governance; it is not the rule governing the attacks depicted in the previous video.
+-->
 
 ---
 ---

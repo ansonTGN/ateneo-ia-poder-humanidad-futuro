@@ -226,3 +226,20 @@ Pieza promocional con escenas preparadas; no prueba independiente de fiabilidad.
 El séptimo eje aporta redundancia para alcanzar una pose con distintas posturas del brazo, dentro de los límites del sistema. Un brazo de seis ejes puede tener varias soluciones discretas de cinemática inversa. Un eje adicional no elimina todas las singularidades ni garantiza teleoperación directa sin calibración.
 
 Las cifras de precio de manos, financiación, ventas y cuota de mercado del texto aportado no se presentan como datos verificados ni se extrapolan al precio o rendimiento del A7. La demostración no acredita autonomía general, repetibilidad, carga útil ni productividad en uso continuo. La estación de ensamblaje mencionada en CES no se identifica como parte de este vídeo de lanzamiento.
+
+
+## Army of Robots — v7.3.1 · corte 03/10/2026
+
+- Anuncio del promotor, Mykhailo Fedorov, 26/09/2026: https://www.linkedin.com/feed/update/urn:li:activity:7509592518309675008/
+- Publicación original del vídeo: https://t.me/zedigital/6908
+- Web del proyecto y aspiración a autonomía: https://thearmyofrobots.com/en
+- Vídeo del promotor reproducido por Kyiv Independent, con identificación de imágenes generadas con IA: https://kyivindependent.com/ex-defense-minister-fedorov-announces-new-army-of-robots-initiative-in-latest-move-since-leaving-office/
+- Anuncio de inversión de Alex Karp en una empresa de Fedorov, 01/09/2026: https://www.reuters.com/business/aerospace-defense/ukraines-fedorov-says-palantir-ceo-will-be-first-major-investor-new-defence-2026-09-01/
+
+El contenido audiovisual expresa una visión promocional; no acredita humanoides desplegados ni ataques letales plenamente autónomos. Los objetivos anunciados son metas futuras. La inversión anunciada de Karp no demuestra financiación corporativa de Palantir para Army of Robots.
+
+Crédito del vídeo y del fotograma: Mykhailo Fedorov / Army of Robots; difusión: Kyiv Independent. Se conserva la locución inglesa original, sin doblaje, y se contextualiza en español, catalán e inglés. Duración comprobada: 60 segundos; H.264 y AAC. Copia local para su reproducción durante la charla, sin dependencia de conexiones externas.
+
+La miniatura local es un fotograma del segundo 10 del vídeo. Origen de los archivos públicos: https://assets.kyivindependent.com/content/media/2026/09/IMG_7925.MP4 y https://assets.kyivindependent.com/content/images/2026/09/media-thumbnail-ember1507_20260926-132555.jpg
+
+Transición a gobernanza civil: artículo 2.3 del AI Act, para evitar atribuirle la regulación de usos exclusivamente militares: https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-2
