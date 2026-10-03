@@ -214,3 +214,15 @@ OpenAI: lanzamiento oficial de dots (29/09/2026). Fragmento 00:29–01:29.
 https://www.youtube.com/watch?v=uXspbC2srEQ
 https://openai.com/index/introducing-dots/
 Pieza promocional con escenas preparadas; no prueba independiente de fiabilidad.
+
+
+## Robótica modular — Linkerbot (v7.3)
+
+- **Linkerbot** — *LinkerArm A7 | Seven Axes, One Motion*. Vídeo del canal oficial, septiembre de 2026. Se reproduce completo, sin asignarle una duración no comprobada.
+  https://www.youtube.com/watch?v=lWQb99hitJc
+- Publicación oficial del fabricante: https://www.linkedin.com/posts/linker-bot_linkerbot-robotics-activity-7509611789584711680-77FS
+- SDK A7 y control de pose: https://docs.linkerhub.work/sdk/zh-cn/reference/a7/motion.html
+
+El séptimo eje aporta redundancia para alcanzar una pose con distintas posturas del brazo, dentro de los límites del sistema. Un brazo de seis ejes puede tener varias soluciones discretas de cinemática inversa. Un eje adicional no elimina todas las singularidades ni garantiza teleoperación directa sin calibración.
+
+Las cifras de precio de manos, financiación, ventas y cuota de mercado del texto aportado no se presentan como datos verificados ni se extrapolan al precio o rendimiento del A7. La demostración no acredita autonomía general, repetibilidad, carga útil ni productividad en uso continuo. La estación de ensamblaje mencionada en CES no se identifica como parte de este vídeo de lanzamiento.

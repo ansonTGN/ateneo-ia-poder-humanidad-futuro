@@ -1,22 +1,21 @@
 # Inteligencia artificial — poder, humanidad y futuro
 
-## Edición actual v7.2.0 · 03/10/2026
+## Edición actual v7.3.0 · 03/10/2026
 
-Actualiza la frontera de modelos, asistentes persistentes, incidentes con agentes,
-argumentos de seguridad, investigación biológica, SynthID Bio, salud mental,
-complementariedad humana y calendario europeo. Los bloques nuevos tienen versiones
-ES/CA/EN reactivas y fuentes enlazadas. Conserva el diseño institucional y los vídeos.
+Revisión narrativa y visual en español, catalán e inglés. Incluye 49 diapositivas:
+se conserva el recorrido anterior y se añade el vídeo oficial del LinkerArm A7
+tras las nuevas manos de Atlas. El dato de exposición laboral de la OIT se
+distingue de las demostraciones de automatización física.
 
-El acceso es directo, sin contraseña. `dist/` contiene la publicación estática.
-Los vídeos de YouTube muestran miniaturas locales y cargan al pulsar Reproducir;
-al cambiar de diapositiva se detiene el reproductor. Los vídeos externos siguen necesitando conexión. La edición no promete operación
-totalmente sin Internet ni disponibilidad general de modelos con acceso restringido.
+Se corrigen el espacio de las preguntas, la diapositiva Evo 2 y los futuros,
+se mejora el contraste y se alternan comparaciones, recorridos de investigación
+y cronologías. Las instituciones quedan cerca de la síntesis humana del cierre.
+
+Acceso directo sin contraseña. Compilar con `npm run build`. Para presentar
+la compilación local: `python3 presentar.py`. Puerto alternativo:
+`python3 presentar.py --port 8082`. Los vídeos de YouTube necesitan Internet.
 
 Las secciones siguientes describen la evolución histórica del proyecto.
-
-
-**Acceso actualizado: directo sin contraseña. Las instrucciones históricas de acceso protegido quedan obsoletas.**
-
 
 Presentación web profesional en **Slidev + Vue 3**, preparada para GitHub y Netlify.
 

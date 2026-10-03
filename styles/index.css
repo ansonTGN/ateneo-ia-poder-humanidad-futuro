@@ -354,3 +354,31 @@ html,body,#app{width:100%;height:100%;min-height:100%;}
     padding-right:122px;
   }
 }
+
+
+/* v7.3 · narrative pacing and projection legibility */
+.slidev-layout:not(.light):not(.cinematic-v56) p{color:#c7d6ea!important}
+.slidev-layout .center>div{display:flex;flex-direction:column;align-items:center;gap:20px;max-width:100%}
+.slidev-layout.debate .center .kicker{margin:0!important}
+.slidev-layout.debate .center .question{margin:0!important;font-size:46px!important;line-height:1.08!important;max-width:850px}
+.slidev-layout.debate .center p{margin:0!important;max-width:800px;line-height:1.4!important;font-size:17px!important}
+.slidev-layout:has(.diagram-work) h1{font-size:31px!important;line-height:1.08!important}
+.slidev-layout:has(.diagram-work) .big-number{margin-bottom:15px}
+.slidev-layout:has(.diagram-future) h1{font-size:40px!important;max-width:760px}
+.slidev-layout .diagram-future{width:100%!important;max-width:864px!important;height:310px!important;aspect-ratio:940/360!important;object-fit:contain}
+.slidev-layout .scenario-note{margin:10px 0 0!important;font-size:16px!important;color:#b4c7dd!important}
+.slidev-layout:has(.bio-topic) h1{font-size:41px!important}
+.slidev-layout .bio-topic{font-size:26px!important;color:#a8f0ff!important;line-height:1.12!important;margin-bottom:18px!important}
+.slidev-layout .evidence-process{gap:26px;margin-top:28px!important}
+.slidev-layout .evidence-process .card{background:none!important;border:none!important;border-top:2px solid var(--cyan)!important;border-radius:0!important;box-shadow:none!important;padding:18px 0!important}
+.slidev-layout .evidence-process .card:nth-child(2){border-top-color:var(--violet)!important}
+.slidev-layout .evidence-process .card:nth-child(3){border-top-color:var(--green)!important}
+.slidev-layout .evidence-process h3{font-size:24px!important}
+.slidev-layout .evidence-process p{font-size:18px!important}
+.slidev-layout:has(.metric-label) .split-45 h1{font-size:38px!important}
+.slidev-layout:has(.metric-label) .big-number{font-size:45px!important;line-height:1.05!important}
+.slidev-layout:has(.metric-label) .hero-sub{font-size:19px!important}
+.slidev-layout:has(.metric-label) .callout{font-size:15px!important;padding:11px 15px}
+
+/* Keep supporting text readable: the theme dims h1 + p by default. */
+.slidev-layout:not(.cinematic-v56) h1+p{opacity:1!important}

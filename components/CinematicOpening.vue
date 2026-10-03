@@ -10,10 +10,8 @@
     <div class="opening-v56__content">
       <div class="opening-v56__kicker"><span /> INTELIGENCIA ARTIFICIAL · PODER · HUMANIDAD · 2026</div>
       <h1 class="opening-v56__headline">Inteligencia artificial<br><em>Poder, humanidad y futuro</em></h1>
-      <p class="opening-v56__lead">Datos, modelos fundacionales y cómputo ya pueden percibir, simular, razonar y actuar. La cuestión política empieza cuando esa cadena entra en el mundo.</p>
-      <div class="opening-v56__flow" aria-label="Datos, modelos fundacionales, cómputo, mundo y acción">
-        <span>datos</span><b>→</b><span>modelos fundacionales</span><b>→</b><span>cómputo</span><b>→</b><span>mundo</span><b>→</b><span>acción</span>
-      </div>
+      <p class="opening-v56__lead">Cómo cambia la IA lo que podemos hacer y lo que queremos decidir.</p>
+
     </div>
 
     <div class="opening-v63__speaker">
@@ -54,8 +52,8 @@
   backdrop-filter:blur(11px)!important;
 }
 .opening-v63__speaker img{
-  width:42px!important;
-  height:42px!important;
+  width:48px!important;
+  height:48px!important;
   border-radius:50%!important;
   object-fit:cover!important;
   object-position:50% 27%!important;
@@ -67,13 +65,13 @@
 }
 .opening-v63__speaker strong{
   color:#fff!important;
-  font-size:10.5px!important;
+  font-size:13px!important;
   line-height:1.05!important;
   font-weight:850!important;
 }
 .opening-v63__speaker span{
   color:#92a7bf!important;
-  font-size:7.6px!important;
+  font-size:9px!important;
   line-height:1.05!important;
   letter-spacing:.025em!important;
 }

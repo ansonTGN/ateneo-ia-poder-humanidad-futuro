@@ -7,20 +7,20 @@ const content: Record<string, Record<'es' | 'ca' | 'en', Entry>> = {
   "models": {
     "es": {
       "kicker": "Modelos de frontera",
-      "title": "Capacidad y coste avanzan a la vez",
+      "title": "Avances en capacidad y coste",
       "lead": "Los anuncios de finales de septiembre refuerzan el trabajo con herramientas y las tareas prolongadas.",
       "rows": [
         [
-          "GPT-6.1 Sol · 29/09",
-          "OpenAI comunica capacidad cercana a Astra con menores precios de entrada y salida."
+          "GPT-6.1 Sol",
+          "OpenAI comunica capacidad cercana a Astra con menores precios."
         ],
         [
-          "Claude Sonnet 5.5 · 28/09",
-          "Anthropic mejora la eficiencia para programación y trabajo profesional. Opus 5.5 sigue como referencia superior."
+          "Claude Sonnet 5.5",
+          "Anthropic mejora la eficiencia para código y trabajo profesional."
         ],
         [
-          "Gemini 4 Argon · 30/09",
-          "Google anuncia razonamiento prolongado y defensa cibernética. El acceso inicial se limita a defensores seleccionados."
+          "Gemini 4 Argon",
+          "Google anuncia razonamiento y defensa cibernética con acceso inicial limitado."
         ]
       ],
       "caveat": "Son anuncios de proveedores. Un benchmark mide una tarea concreta bajo unas condiciones concretas.",
@@ -41,20 +41,20 @@ const content: Record<string, Record<'es' | 'ca' | 'en', Entry>> = {
     },
     "ca": {
       "kicker": "Models de frontera",
-      "title": "Capacitat i cost avancen alhora",
+      "title": "Avenços en capacitat i cost",
       "lead": "Els anuncis de finals de setembre reforcen el treball amb eines i les tasques prolongades.",
       "rows": [
         [
-          "GPT-6.1 Sol · 29/09",
-          "OpenAI comunica capacitat propera a Astra amb preus menors d’entrada i sortida."
+          "GPT-6.1 Sol",
+          "OpenAI comunica capacitat propera a Astra amb preus menors."
         ],
         [
-          "Claude Sonnet 5.5 · 28/09",
-          "Anthropic millora l’eficiència per a programació i treball professional. Opus 5.5 continua com a referència superior."
+          "Claude Sonnet 5.5",
+          "Anthropic millora l’eficiència per a codi i treball professional."
         ],
         [
-          "Gemini 4 Argon · 30/09",
-          "Google anuncia raonament prolongat i defensa cibernètica. L’accés inicial es limita a defensors seleccionats."
+          "Gemini 4 Argon",
+          "Google anuncia raonament i defensa cibernètica amb accés inicial limitat."
         ]
       ],
       "caveat": "Són anuncis de proveïdors. Un benchmark mesura una tasca concreta en unes condicions concretes.",
@@ -75,20 +75,20 @@ const content: Record<string, Record<'es' | 'ca' | 'en', Entry>> = {
     },
     "en": {
       "kicker": "Frontier models",
-      "title": "Capability and cost advance together",
+      "title": "Progress in capability and cost",
       "lead": "Late-September announcements strengthen tool use and long-running tasks.",
       "rows": [
         [
-          "GPT-6.1 Sol · 29 Sep",
-          "OpenAI reports near-Astra capability with lower input and output prices."
+          "GPT-6.1 Sol",
+          "OpenAI reports near-Astra capability at lower prices."
         ],
         [
-          "Claude Sonnet 5.5 · 28 Sep",
-          "Anthropic improves efficiency for coding and professional work. Opus 5.5 remains the higher-end reference."
+          "Claude Sonnet 5.5",
+          "Anthropic improves efficiency for coding and professional work."
         ],
         [
-          "Gemini 4 Argon · 30 Sep",
-          "Google announces sustained reasoning and cyber defense. Initial access is limited to selected defenders."
+          "Gemini 4 Argon",
+          "Google announces reasoning and cyber defense with limited initial access."
         ]
       ],
       "caveat": "These are vendor announcements. A benchmark measures a specific task under specific conditions.",
@@ -111,20 +111,20 @@ const content: Record<string, Record<'es' | 'ca' | 'en', Entry>> = {
   "china": {
     "es": {
       "kicker": "Ecosistema chino",
-      "title": "Otra frontera: eficiencia y multimodalidad",
+      "title": "Eficiencia y multimodalidad",
       "lead": "La competencia incluye el coste de operar, el contexto disponible y la combinación de medios.",
       "rows": [
         [
-          "DeepSeek V4.1 Flash · 10/09",
-          "Nueva arquitectura con comprensión visual nativa. El proveedor comunica reducciones de precios de API."
+          "DeepSeek V4.1 Flash",
+          "Comprensión visual nativa y menores precios de API, según el proveedor."
         ],
         [
-          "Kimi K2.8 Preview · 11/09",
-          "Kimi Code incorpora razonamiento ajustable y contexto de hasta un millón de tokens."
+          "Kimi K2.8 Preview",
+          "Razonamiento ajustable y contexto de hasta un millón de tokens."
         ],
         [
-          "Qwen · 21/09 y 02/10",
-          "Qwen3.8 Omni conecta audio, vídeo y herramientas. Qwen-Image-2.1-Pro añade generación y edición con transparencia."
+          "Qwen",
+          "Audio, vídeo y herramientas; generación y edición de imágenes."
         ]
       ],
       "caveat": "Acceso por API, pesos abiertos y licencia son condiciones distintas. La disponibilidad depende del modelo y la región.",
@@ -145,20 +145,20 @@ const content: Record<string, Record<'es' | 'ca' | 'en', Entry>> = {
     },
     "ca": {
       "kicker": "Ecosistema xinès",
-      "title": "Una altra frontera: eficiència i multimodalitat",
+      "title": "Eficiència i multimodalitat",
       "lead": "La competència inclou el cost d’operar, el context disponible i la combinació de mitjans.",
       "rows": [
         [
-          "DeepSeek V4.1 Flash · 10/09",
-          "Nova arquitectura amb comprensió visual nativa. El proveïdor comunica reduccions de preus d’API."
+          "DeepSeek V4.1 Flash",
+          "Comprensió visual nativa i preus menors d’API, segons el proveïdor."
         ],
         [
-          "Kimi K2.8 Preview · 11/09",
-          "Kimi Code incorpora raonament ajustable i context de fins a un milió de tokens."
+          "Kimi K2.8 Preview",
+          "Raonament ajustable i context de fins a un milió de tokens."
         ],
         [
-          "Qwen · 21/09 i 02/10",
-          "Qwen3.8 Omni connecta àudio, vídeo i eines. Qwen-Image-2.1-Pro afegeix generació i edició amb transparència."
+          "Qwen",
+          "Àudio, vídeo i eines; generació i edició d’imatges."
         ]
       ],
       "caveat": "Accés per API, pesos oberts i llicència són condicions diferents. La disponibilitat depèn del model i la regió.",
@@ -179,20 +179,20 @@ const content: Record<string, Record<'es' | 'ca' | 'en', Entry>> = {
     },
     "en": {
       "kicker": "Chinese ecosystem",
-      "title": "Another frontier: efficiency and multimodality",
+      "title": "Efficiency and multimodality",
       "lead": "Competition includes operating cost, available context and combined media.",
       "rows": [
         [
-          "DeepSeek V4.1 Flash · 10 Sep",
-          "A new architecture with native visual understanding. The provider reports lower API prices."
+          "DeepSeek V4.1 Flash",
+          "Native visual understanding and lower API prices, according to the provider."
         ],
         [
-          "Kimi K2.8 Preview · 11 Sep",
-          "Kimi Code adds adjustable reasoning and context of up to one million tokens."
+          "Kimi K2.8 Preview",
+          "Adjustable reasoning and up to one million tokens of context."
         ],
         [
-          "Qwen · 21 Sep and 2 Oct",
-          "Qwen3.8 Omni connects audio, video and tools. Qwen-Image-2.1-Pro adds generation and editing with transparency."
+          "Qwen",
+          "Audio, video and tools; image generation and editing."
         ]
       ],
       "caveat": "API access, open weights and licensing are different conditions. Availability depends on model and region.",
@@ -387,20 +387,20 @@ const content: Record<string, Record<'es' | 'ca' | 'en', Entry>> = {
   "safety": {
     "es": {
       "kicker": "Seguridad de frontera",
-      "title": "La seguridad necesita evidencia verificable",
+      "title": "Seguridad durante el entrenamiento",
       "lead": "OpenAI propone documentar argumentos de seguridad antes de continuar entrenamientos de frontera con aprendizaje por refuerzo.",
       "rows": [
         [
           "Contención",
-          "Limitar los entornos y servicios accesibles aunque el modelo intente una acción indebida."
+          "Limitar entornos y servicios accesibles."
         ],
         [
           "Supervisión",
-          "Detectar conductas preocupantes y disponer de alertas que puedan pausar el entrenamiento."
+          "Detectar conductas preocupantes y poder pausar el entrenamiento."
         ],
         [
           "Responsabilidad",
-          "Asignar responsables, revisar objeciones y conservar registros para investigar incidentes."
+          "Asignar responsables y conservar registros para investigar incidentes."
         ]
       ],
       "caveat": "Propuesta del 28/09/2026, en desarrollo. Su ámbito es el entrenamiento de frontera, no una certificación general de productos.",
@@ -413,20 +413,20 @@ const content: Record<string, Record<'es' | 'ca' | 'en', Entry>> = {
     },
     "ca": {
       "kicker": "Seguretat de frontera",
-      "title": "La seguretat necessita evidència verificable",
+      "title": "Seguretat durant l’entrenament",
       "lead": "OpenAI proposa documentar arguments de seguretat abans de continuar entrenaments de frontera amb aprenentatge per reforç.",
       "rows": [
         [
           "Contenció",
-          "Limitar els entorns i serveis accessibles encara que el model intenti una acció indeguda."
+          "Limitar entorns i serveis accessibles."
         ],
         [
           "Supervisió",
-          "Detectar conductes preocupants i disposar d’alertes que puguin pausar l’entrenament."
+          "Detectar conductes preocupants i poder pausar l’entrenament."
         ],
         [
           "Responsabilitat",
-          "Assignar responsables, revisar objeccions i conservar registres per investigar incidents."
+          "Assignar responsables i conservar registres per investigar incidents."
         ]
       ],
       "caveat": "Proposta del 28/09/2026, en desenvolupament. L’àmbit és l’entrenament de frontera, no una certificació general de productes.",
@@ -439,20 +439,20 @@ const content: Record<string, Record<'es' | 'ca' | 'en', Entry>> = {
     },
     "en": {
       "kicker": "Frontier safety",
-      "title": "Safety needs verifiable evidence",
+      "title": "Safety during training",
       "lead": "OpenAI proposes documenting safety arguments before continuing frontier reinforcement-learning training.",
       "rows": [
         [
           "Containment",
-          "Restrict reachable environments and services even if the model attempts an improper action."
+          "Limit accessible environments and services."
         ],
         [
-          "Monitoring",
-          "Detect concerning behavior and provide alerts that can pause training."
+          "Oversight",
+          "Detect concerning behavior and be able to pause training."
         ],
         [
           "Accountability",
-          "Assign accountable owners, review objections and retain records for incident investigation."
+          "Assign responsibility and retain records for investigating incidents."
         ]
       ],
       "caveat": "A developing proposal dated 28 Sep 2026. It concerns frontier training, not general product certification.",
@@ -627,20 +627,20 @@ const content: Record<string, Record<'es' | 'ca' | 'en', Entry>> = {
   "mental": {
     "es": {
       "kicker": "Salud mental: evaluación",
-      "title": "Mejoras medibles y límites persistentes",
-      "lead": "Transluce evaluó más de 50.000 conversaciones simuladas con 77 variantes de modelos.",
+      "title": "Evaluar respuestas, conservar los límites",
+      "lead": "Conversaciones simuladas con 77 variantes de modelos. Una evaluación de conducta, no de eficacia terapéutica.",
       "rows": [
         [
           "Mejora observada",
-          "Los modelos recientes respondieron mejor en crisis evidentes que generaciones anteriores."
+          "Mejores respuestas en crisis evidentes que generaciones anteriores."
         ],
         [
-          "Ambigüedad persistente",
-          "Algunos fallos aparecieron en situaciones indirectas, como escritura creativa y juegos de rol."
+          "Fallos persistentes",
+          "Situaciones indirectas, escritura creativa y juegos de rol siguen planteando problemas."
         ],
         [
           "Condiciones de uso",
-          "Identidad clara, privacidad, conexión con apoyo humano y diseño que evite dependencia."
+          "Privacidad, identidad clara y conexión con apoyo humano."
         ]
       ],
       "caveat": "Informe del 31/08/2026. Las simulaciones evalúan conductas del sistema, no eficacia terapéutica ni resultados clínicos.",
@@ -653,20 +653,20 @@ const content: Record<string, Record<'es' | 'ca' | 'en', Entry>> = {
     },
     "ca": {
       "kicker": "Salut mental: avaluació",
-      "title": "Millores mesurables i límits persistents",
-      "lead": "Transluce va avaluar més de 50.000 converses simulades amb 77 variants de models.",
+      "title": "Avaluar respostes, conservar els límits",
+      "lead": "Converses simulades amb 77 variants de models. Una avaluació de conducta, no d’eficàcia terapèutica.",
       "rows": [
         [
           "Millora observada",
-          "Els models recents van respondre millor en crisis evidents que generacions anteriors."
+          "Millors respostes en crisis evidents que generacions anteriors."
         ],
         [
-          "Ambigüitat persistent",
-          "Alguns errors van aparèixer en situacions indirectes, com escriptura creativa i jocs de rol."
+          "Errors persistents",
+          "Situacions indirectes, escriptura creativa i jocs de rol continuen plantejant problemes."
         ],
         [
           "Condicions d’ús",
-          "Identitat clara, privacitat, connexió amb suport humà i disseny que eviti dependència."
+          "Privacitat, identitat clara i connexió amb suport humà."
         ]
       ],
       "caveat": "Informe del 31/08/2026. Les simulacions avaluen conductes del sistema, no eficàcia terapèutica ni resultats clínics.",
@@ -679,20 +679,20 @@ const content: Record<string, Record<'es' | 'ca' | 'en', Entry>> = {
     },
     "en": {
       "kicker": "Mental health: evaluation",
-      "title": "Measurable gains and persistent limits",
-      "lead": "Transluce evaluated over 50,000 simulated conversations across 77 model variants.",
+      "title": "Evaluating responses, retaining limits",
+      "lead": "Simulated conversations with 77 model variants. An assessment of behavior, not therapeutic efficacy.",
       "rows": [
         [
           "Observed improvement",
-          "Recent models responded better to clear crises than earlier generations."
+          "Better responses to evident crises than earlier generations."
         ],
         [
-          "Persistent ambiguity",
-          "Some failures appeared in indirect contexts, such as creative writing and roleplay."
+          "Persistent failures",
+          "Indirect situations, creative writing and role play remain challenging."
         ],
         [
           "Conditions of use",
-          "Clear identity, privacy, connection to human support and design that avoids dependency."
+          "Privacy, clear identity and connection to human support."
         ]
       ],
       "caveat": "Report dated 31 Aug 2026. Simulations assess system behavior, not therapeutic efficacy or clinical outcomes.",
@@ -723,7 +723,7 @@ const content: Record<string, Record<'es' | 'ca' | 'en', Entry>> = {
           "Practicar el contraste entre hipótesis, conservar voces distintas y comprobar las predicciones."
         ]
       ],
-      "caveat": "Preprint del 26/09/2026, limitado a las tareas estudiadas. La propuesta educativa es una interpretación, no una conclusión universal.",
+      "caveat": "Preprint del 26/09/2026 sobre tareas concretas. La propuesta educativa es una interpretación.",
       "sources": [
         [
           "Li et al. · arXiv",
@@ -749,7 +749,7 @@ const content: Record<string, Record<'es' | 'ca' | 'en', Entry>> = {
           "Practicar el contrast entre hipòtesis, conservar veus diferents i comprovar les prediccions."
         ]
       ],
-      "caveat": "Preprint del 26/09/2026, limitat a les tasques estudiades. La proposta educativa és una interpretació, no una conclusió universal.",
+      "caveat": "Preprint del 26/09/2026 sobre tasques concretes. La proposta educativa és una interpretació.",
       "sources": [
         [
           "Li et al. · arXiv",
@@ -775,7 +775,7 @@ const content: Record<string, Record<'es' | 'ca' | 'en', Entry>> = {
           "Practice comparing hypotheses, preserve different voices and test predictions."
         ]
       ],
-      "caveat": "Preprint dated 26 Sep 2026, limited to the studied tasks. The educational proposal is an interpretation, not a universal conclusion.",
+      "caveat": "Preprint dated 26 Sep 2026 on specific tasks. The educational proposal is an interpretation.",
       "sources": [
         [
           "Li et al. · arXiv",
@@ -787,7 +787,7 @@ const content: Record<string, Record<'es' | 'ca' | 'en', Entry>> = {
   "governance": {
     "es": {
       "kicker": "Gobernanza europea",
-      "title": "El AI Act ya tiene efectos concretos",
+      "title": "El AI Act se aplica por fases",
       "lead": "La aplicación avanza por fases. Transparencia y supervisión necesitan traducirse en prácticas visibles.",
       "rows": [
         [
@@ -799,11 +799,11 @@ const content: Record<string, Record<'es' | 'ca' | 'en', Entry>> = {
           "Obligaciones de transparencia para determinados sistemas y contenido sintético."
         ],
         [
-          "Alto riesgo: calendario específico",
-          "La Comisión sitúa determinados usos sensibles en diciembre de 2027 y sistemas integrados en productos en agosto de 2028."
+          "Alto riesgo",
+          "Según la Comisión: determinados usos sensibles, diciembre de 2027; sistemas integrados en productos, agosto de 2028."
         ]
       ],
-      "caveat": "Fuente: calendario vigente publicado por la Comisión Europea, consultado el 03/10/2026. Las obligaciones dependen del uso y del papel de cada actor.",
+      "caveat": "Calendario de la Comisión, consultado el 03/10/2026. Las obligaciones dependen del uso y del actor.",
       "sources": [
         [
           "Comisión Europea",
@@ -813,7 +813,7 @@ const content: Record<string, Record<'es' | 'ca' | 'en', Entry>> = {
     },
     "ca": {
       "kicker": "Governança europea",
-      "title": "L’AI Act ja té efectes concrets",
+      "title": "L’AI Act s’aplica per fases",
       "lead": "L’aplicació avança per fases. Transparència i supervisió s’han de traduir en pràctiques visibles.",
       "rows": [
         [
@@ -825,11 +825,11 @@ const content: Record<string, Record<'es' | 'ca' | 'en', Entry>> = {
           "Obligacions de transparència per a determinats sistemes i contingut sintètic."
         ],
         [
-          "Alt risc: calendari específic",
-          "La Comissió situa determinats usos sensibles el desembre de 2027 i sistemes integrats en productes l’agost de 2028."
+          "Alt risc",
+          "Segons la Comissió: determinats usos sensibles, desembre de 2027; sistemes integrats en productes, agost de 2028."
         ]
       ],
-      "caveat": "Font: calendari vigent publicat per la Comissió Europea, consultat el 03/10/2026. Les obligacions depenen de l’ús i del paper de cada actor.",
+      "caveat": "Calendari de la Comissió, consultat el 03/10/2026. Les obligacions depenen de l’ús i de l’actor.",
       "sources": [
         [
           "Comissió Europea",
@@ -839,7 +839,7 @@ const content: Record<string, Record<'es' | 'ca' | 'en', Entry>> = {
     },
     "en": {
       "kicker": "European governance",
-      "title": "The AI Act already has concrete effects",
+      "title": "The AI Act takes effect in stages",
       "lead": "Implementation proceeds in phases. Transparency and oversight need visible practical measures.",
       "rows": [
         [
@@ -851,11 +851,11 @@ const content: Record<string, Record<'es' | 'ca' | 'en', Entry>> = {
           "Transparency obligations for certain systems and synthetic content."
         ],
         [
-          "High risk: a specific timeline",
-          "The Commission places certain sensitive uses in December 2027 and product-integrated systems in August 2028."
+          "High risk",
+          "Commission timeline: certain sensitive uses, December 2027; product-integrated systems, August 2028."
         ]
       ],
-      "caveat": "Source: the European Commission’s current timeline, checked 3 Oct 2026. Obligations depend on the use and each actor’s role.",
+      "caveat": "Commission timeline, checked 3 Oct 2026. Obligations depend on the use and the actor.",
       "sources": [
         [
           "European Commission",
@@ -946,6 +946,8 @@ const content: Record<string, Record<'es' | 'ca' | 'en', Entry>> = {
   }
 }
 const entry = computed(() => content[props.section]?.[presentationLang.value])
+const layout = computed(() => ({ models: 'comparison', china: 'comparison', incident: 'evidence', safety: 'layers', art: 'process', bio: 'two', mental: 'metric', complement: 'two', governance: 'timeline', acceleration: 'process' } as Record<string, string>)[props.section] || 'evidence')
+const metricLabel = computed(() => ({es: 'conversaciones simuladas', ca: 'converses simulades', en: 'simulated conversations'})[presentationLang.value])
 const cutoff = computed(() => ({ es: 'Actualizado a 03/10/2026', ca: 'Actualitzat a 03/10/2026', en: 'Updated to 3 Oct 2026' })[presentationLang.value])
 </script>
 
@@ -970,9 +972,10 @@ const cutoff = computed(() => ({ es: 'Actualizado a 03/10/2026', ca: 'Actualitza
       <a v-for="source in entry.sources" :key="source[1]" :href="source[1]" target="_blank" rel="noopener noreferrer">{{ source[0] }}</a>
     </footer>
   </section>
-  <section v-else-if="entry" class="frontier-update" data-native-i18n>
+  <section v-else-if="entry" class="frontier-update" :class="`layout-${layout}`" data-native-i18n>
     <div class="kicker">{{ entry.kicker }}</div>
     <h1>{{ entry.title }}</h1>
+    <div v-if="section === 'mental'" class="frontier-metric"><strong>{{ presentationLang === 'en' ? '50,000+' : '50.000+' }}</strong><span>{{ metricLabel }}</span></div>
     <p class="frontier-lead">{{ entry.lead }}</p>
     <div class="frontier-rows">
       <div v-for="(row, i) in entry.rows" :key="i" class="frontier-row">
@@ -1021,4 +1024,31 @@ const cutoff = computed(() => ({ es: 'Actualizado a 03/10/2026', ca: 'Actualitza
 .frontier-caveat{margin:12px 0 0!important;padding-left:13px;border-left:3px solid var(--amber);font-size:13px!important;line-height:1.35!important;color:#d7dfeb!important}
 .frontier-sources{margin-top:auto;padding-top:11px;display:flex;gap:14px;flex-wrap:wrap;color:#93a6bf;font-size:10px;line-height:1.3}
 .frontier-sources a{color:#a2dfe9;text-decoration:none;border-bottom:1px solid #456776}
+
+/* v7.3: evidence determines the layout, with the same institutional palette. */
+.layout-comparison .frontier-rows,.layout-process .frontier-rows,.layout-timeline .frontier-rows{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:8px}
+.layout-comparison .frontier-row,.layout-process .frontier-row,.layout-timeline .frontier-row{display:flex;flex-direction:column;gap:14px;padding:20px 0;min-width:0;border-top:2px solid var(--cyan)}
+.layout-comparison .frontier-row:nth-child(2),.layout-process .frontier-row:nth-child(2){border-top-color:var(--violet)}
+.layout-comparison .frontier-row:nth-child(3),.layout-process .frontier-row:nth-child(3){border-top-color:var(--green)}
+.layout-comparison .frontier-row h3,.layout-process .frontier-row h3,.layout-timeline .frontier-row h3{font-size:23px!important}
+.layout-comparison .frontier-row p,.layout-process .frontier-row p,.layout-timeline .frontier-row p{font-size:19px!important;line-height:1.4!important}
+.layout-two .frontier-rows{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 30px;margin-top:6px}
+.layout-two .frontier-row{display:flex;flex-direction:column;gap:9px;padding:15px 0}
+.layout-two .frontier-row:last-child{grid-column:1/-1;display:grid;grid-template-columns:28px 210px 1fr}
+.layout-two .frontier-row h3{font-size:21px!important}
+.layout-layers .frontier-row{grid-template-columns:28px 185px 1fr;border-top:none;border-left:2px solid var(--cyan);padding:14px 18px;margin-bottom:12px;background:linear-gradient(90deg,rgba(93,230,255,.04),transparent)}
+.layout-layers .frontier-row:nth-child(2){border-left-color:var(--violet)}
+.layout-layers .frontier-row:nth-child(3){border-left-color:var(--amber)}
+.frontier-metric{display:flex;align-items:baseline;gap:18px;margin-bottom:14px}
+.frontier-metric strong{font-size:54px;line-height:1;letter-spacing:-.06em;color:#a8f0ff}
+.frontier-metric span{font-size:18px;color:#c7d6ea}
+.layout-metric h1{font-size:35px!important}
+.layout-metric .frontier-row{padding:9px 0}
+.layout-metric .frontier-lead{font-size:17px!important}
+.layout-timeline .frontier-row{border-top-color:var(--violet)}
+.layout-timeline .frontier-index{color:var(--violet)}
+</style>
+
+<style scoped>
+.frontier-lead{color:#bac9dc!important}
 </style>

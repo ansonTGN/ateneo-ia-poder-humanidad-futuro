@@ -2,7 +2,7 @@
 theme: default
 title: Inteligencia artificial — poder, humanidad y futuro
 info: |
-  Presentación v7.2.0 para el Centre d’Amics de Reus, Reus. Corte editorial 03/10/2026.
+  Presentación v7.3.0 para el Centre d’Amics de Reus, Reus. Corte editorial 03/10/2026.
   Una conversación visual sobre inteligencia artificial, biología, sociedad, ciberseguridad y salud mental.
 author: Angel A. Urbina
 transition: fade-out
@@ -31,7 +31,7 @@ class: debate
 
 <div class="center"><div>
   <div class="kicker">Primera pregunta</div>
-  <h1 class="question">Si una máquina puede hacer cada vez más cosas que asociábamos a la inteligencia…<br><em>¿qué pasa a ser valioso en una persona?</em></h1>
+  <h1 class="question">Si la IA puede hacer cada vez más…<br><em>¿qué queremos que siga siendo valioso en una persona?</em></h1>
   <p>Guarda tu respuesta. Volveremos a ella al final.</p>
 </div></div>
 
@@ -42,10 +42,26 @@ class: debate
   <div>
     <div class="kicker">01 · Qué está cambiando</div>
     <h1>De responder a actuar</h1>
-    <p class="hero-sub">La ruptura no es sólo que la IA genere texto. Es que <strong>percibe, crea, usa herramientas y entra en cadenas de decisión</strong>.</p>
+    <p class="hero-sub">La IA genera contenido, utiliza herramientas y participa en decisiones. Puede <strong>actuar dentro de sistemas digitales y físicos</strong>.</p>
     <div class="callout" style="margin-top:22px">Cuando la IA deja de ser un “chat” y pasa a ser un <strong>actor dentro de sistemas</strong>, cambian también los riesgos y las responsabilidades.</div>
   </div>
   <I18nDiagram class="diagram-img diagram-capability" src="/visuals/capability-orbit.svg" alt="Mapa visual de capacidades contemporáneas de la IA" />
+</div>
+
+---
+---
+
+<div class="kicker">El salto conceptual</div>
+<h1>La frontera se desplaza</h1>
+<div class="grid-4" style="margin-top:30px">
+  <div class="glass card"><div class="card-icon">1</div><h3>Preguntar</h3><p>El humano formula la tarea.</p></div>
+  <div class="glass card"><div class="card-icon">2</div><h3>Responder</h3><p>La IA produce una propuesta.</p></div>
+  <div class="glass card"><div class="card-icon">3</div><h3>Herramientas</h3><p>Consulta datos y servicios.</p></div>
+  <div class="glass card"><div class="card-icon">4</div><h3>Acción</h3><p>Ejecuta dentro del mundo digital.</p></div>
+</div>
+<div style="display:flex;align-items:center;gap:10px;margin-top:34px">
+  <div style="height:5px;flex:1;border-radius:999px;background:linear-gradient(90deg,var(--cyan),var(--violet),var(--magenta))"></div>
+  <div style="font-size:15px;color:#dceafa">más autonomía → más necesidad de control</div>
 </div>
 
 ---
@@ -67,20 +83,14 @@ class: debate
 
 <FrontierUpdate section="continuous" />
 
-<!--
-Fuentes consultadas el 03/10/2026.
-- OpenAI: https://openai.com/index/introducing-dots/
-- Google DeepMind: https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/
-La continuidad de un producto no prueba identidad personal ni consciencia. El control es una condición de diseño.
--->
-
+---
 ---
 
 <ShortVideo
   company="OpenAI · dots"
   kicker="Agentes persistentes · del diálogo al trabajo"
   title="De una respuesta a un trabajo en curso"
-  caption="El lanzamiento muestra tareas conectadas entre aplicaciones, seguimiento y decisiones que requieren aprobación. ¿Qué queremos delegar y qué necesitamos poder revisar?"
+  caption="Un asistente retoma tareas entre aplicaciones. Delegar exige decidir qué puede hacer y qué debemos revisar."
   caveat="Vídeo promocional con escenas preparadas. Ilustra la propuesta del producto; no es una prueba independiente de fiabilidad."
   video-id="uXspbC2srEQ"
   :start="29"
@@ -88,55 +98,17 @@ La continuidad de un producto no prueba identidad personal ni consciencia. El co
 />
 <div class="source">OpenAI · lanzamiento de dots (29/09/2026). Fragmento 00:29–01:29; requiere conexión.</div>
 
-<!--
-https://www.youtube.com/watch?v=uXspbC2srEQ
-https://openai.com/index/introducing-dots/
-Situar el vídeo después de continuidad y memoria: qué significa delegar trabajo.
-Es una pieza promocional, no una captura continua de una prueba independiente.
--->
-
----
----
-
-<div class="kicker">El salto conceptual</div>
-<h1>La frontera se desplaza</h1>
-<div class="grid-4" style="margin-top:30px">
-  <div class="glass card"><div class="card-icon">1</div><h3>Preguntar</h3><p>El humano formula la tarea.</p></div>
-  <div class="glass card"><div class="card-icon">2</div><h3>Responder</h3><p>La IA produce una propuesta.</p></div>
-  <div class="glass card"><div class="card-icon">3</div><h3>Herramientas</h3><p>Consulta datos y servicios.</p></div>
-  <div class="glass card"><div class="card-icon">4</div><h3>Acción</h3><p>Ejecuta dentro del mundo digital.</p></div>
-</div>
-<div style="display:flex;align-items:center;gap:10px;margin-top:34px">
-  <div style="height:5px;flex:1;border-radius:999px;background:linear-gradient(90deg,var(--cyan),var(--violet),var(--magenta))"></div>
-  <div style="font-size:15px;color:#dceafa">más autonomía → más necesidad de control</div>
-</div>
-
 ---
 ---
 
 <FrontierUpdate section="models" />
-
-<!--
-Fuentes consultadas el 03/10/2026.
-- OpenAI: https://openai.com/index/introducing-gpt-6-1-sol/
-- Anthropic: https://www.anthropic.com/claude-sonnet-5-5
-- Google: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/
-Son anuncios de proveedores. Un benchmark mide una tarea concreta bajo unas condiciones concretas.
--->
 
 ---
 ---
 
 <FrontierUpdate section="china" />
 
-<!--
-Fuentes consultadas el 03/10/2026.
-- DeepSeek: https://api-docs.deepseek.com/updates/
-- Kimi: https://www.kimi.com/code/docs/en/kimi-code/whats-new.html
-- Alibaba Cloud: https://www.alibabacloud.com/help/en/model-studio/newly-released-models
-Acceso por API, pesos abiertos y licencia son condiciones distintas. La disponibilidad depende del modelo y la región.
--->
-
+---
 ---
 
 <ShortVideo
@@ -152,6 +124,28 @@ Acceso por API, pesos abiertos y licencia son condiciones distintas. La disponib
 <div class="source">Vídeo oficial · Boston Dynamics · “New Hands for Atlas” · 01/10/2026 · Fragmento de 60 s.</div>
 
 ---
+---
+
+<ShortVideo
+  company="Linkerbot · LinkerArm A7"
+  kicker="Robótica modular · brazo y mano"
+  title="La destreza también se integra"
+  caption="Linkerbot combina su mano con un brazo de siete ejes. El eje adicional permite cambiar la postura del codo manteniendo la posición y orientación de la mano."
+  caveat="Demostración comercial. Siete ejes no garantizan autonomía; la teleoperación y el aprendizaje requieren calibración y evaluación."
+  video-id="lWQb99hitJc"
+/>
+<div class="source">Vídeo oficial · Linkerbot · LinkerArm A7 · septiembre de 2026.</div>
+
+<!--
+Vídeo oficial: https://www.youtube.com/watch?v=lWQb99hitJc
+Publicación del fabricante: https://www.linkedin.com/posts/linker-bot_linkerbot-robotics-activity-7509611789584711680-77FS
+SDK A7: https://docs.linkerhub.work/sdk/zh-cn/reference/a7/motion.html
+Un brazo 6R puede tener varias soluciones de cinemática inversa. El séptimo eje aporta redundancia local para una pose alcanzable, dentro de los límites articulares. No elimina todas las singularidades ni garantiza una correspondencia uno a uno con el brazo humano.
+Las cifras de cuota, precio y ventas del texto aportado no se utilizan como evidencia de productividad, precio del A7 ni autonomía.
+-->
+
+
+---
 class: light
 ---
 
@@ -159,7 +153,7 @@ class: light
   <div>
     <div class="kicker" style="color:#244ac7">Trabajo</div>
     <div class="big-number">1/4</div>
-    <h1 style="font-size:38px!important">de los trabajadores está en ocupaciones con algún grado de exposición a IA generativa</h1>
+    <h1 style="font-size:31px!important">trabajadores en ocupaciones con alguna exposición a IA generativa</h1>
     <p style="font-size:15px!important">La OIT subraya que <strong>transformación</strong> es más probable que sustitución automática.</p>
   </div>
   <I18nDiagram class="diagram-img diagram-work" src="/visuals/work-transform.svg" alt="Transformación del trabajo por tareas" />
@@ -187,9 +181,14 @@ class: debate
 
 <div class="center"><div>
   <div class="kicker">Debate</div>
-  <h1 class="question">¿Queremos una IA que <em>nos sustituya tareas</em>… o una IA que <em>nos amplíe capacidades</em>?</h1>
+  <h1 class="question">¿Cómo queremos repartir las tareas<br>entre <em>personas e IA</em>?</h1>
   <p>La diferencia no la decide el modelo. La deciden el diseño del trabajo, los incentivos y las instituciones.</p>
 </div></div>
+
+<!--
+Transición del ponente: También cambia cómo sabemos si algo ha ocurrido.
+-->
+
 
 ---
 ---
@@ -209,8 +208,8 @@ class: debate
 <ShortVideo
   company="Google DeepMind · Veo 3"
   kicker="Contenido sintético · confianza"
-  title="Cuando una imagen deja de ser evidencia por sí sola"
-  caption="Una escena cinematográfica puede generarse a partir de una instrucción. El problema social ya no es sólo detectar falsificaciones: es reconstruir procedencia, contexto y confianza."
+  title="Imágenes que necesitan contexto"
+  caption="Una escena convincente puede ser sintética. Antes de creerla, necesitamos conocer su origen y cómo se ha verificado."
   caveat="El clip es una demostración oficial de vídeo generado con Veo 3. Precisamente por eso se usa aquí: lo visualmente plausible ya no implica que el acontecimiento haya ocurrido."
   video-id="ffRaD7sY0TQ"
   :start="0"
@@ -231,6 +230,11 @@ class: debate
 </div>
 <div class="callout" style="margin-top:28px">La alfabetización digital del futuro será también <strong>alfabetización de procedencia</strong>.</div>
 
+<!--
+Transición del ponente: Cuando esos sistemas actúan, comprobar su información tiene consecuencias operativas.
+-->
+
+
 ---
 ---
 
@@ -250,8 +254,8 @@ class: debate
 <ShortVideo
   company="OpenAI · GPT-6 Astra"
   kicker="Agentes 2026 · computer use"
-  title="La frontera ya no es conversar: es ejecutar trabajo dentro del ordenador"
-  caption="Astra ejemplifica el salto hacia tareas largas con uso del ordenador y herramientas. La cuestión cambia de «¿qué responde?» a «¿qué puede hacer en nuestro nombre?»."
+  title="Agentes que actúan en el ordenador"
+  caption="Astra muestra trabajo con aplicaciones y herramientas. Su capacidad debe ir acompañada de permisos y supervisión."
   caveat="Demostración oficial del proveedor. Se utiliza para observar la dirección tecnológica; no como validación independiente de fiabilidad o seguridad."
   video-id="1QNsdr-Qx_I"
   :start="0"
@@ -282,7 +286,7 @@ class: debate
 ---
 
 <div class="center"><div>
-  <div class="kicker">Pregunta incómoda</div>
+  <div class="kicker">Ejemplo hipotético</div>
   <h1 class="question">¿Confiarías a una IA <em>tu dinero</em>, <em>tu historial médico</em> o <em>tu identidad digital</em> si supieras que puede equivocarse una vez entre mil?</h1>
 </div></div>
 
@@ -291,41 +295,32 @@ class: debate
 
 <FrontierUpdate section="incident" />
 
-<!--
-Fuentes consultadas el 03/10/2026.
-- Transluce: https://transluce.org/us-canada-gov
-Fecha del informe: 30/09/2026. Los incidentes descritos ocurrieron meses antes. La implicación de diseño es una lectura editorial.
--->
-
 ---
 ---
 
 <FrontierUpdate section="safety" />
 
 <!--
-Fuentes consultadas el 03/10/2026.
-- OpenAI: https://openai.com/index/towards-safety-cases-for-frontier-ai-training/
-Propuesta del 28/09/2026, en desarrollo. Su ámbito es el entrenamiento de frontera, no una certificación general de productos.
+Transición del ponente: Estas capacidades también entran en la investigación de la vida.
 -->
 
+
+---
 ---
 
 <div class="kicker">04 · IA + biología</div>
-<h1>La inteligencia artificial empieza a aprender el lenguaje de la vida</h1>
+<h1>IA para investigar la vida</h1>
 <div class="grid-3" style="margin-top:30px">
   <div class="glass card" style="min-height:235px">
-    <div class="big-number" style="font-size:52px">DNA</div>
-    <h3>Genoma</h3>
+    <h3 class="bio-topic">ADN</h3>
     <p>Modelos que predicen cómo cambios en una sola letra del ADN pueden alterar procesos moleculares.</p>
   </div>
   <div class="glass card" style="min-height:235px">
-    <div class="big-number" style="font-size:52px">PRO</div>
-    <h3>Proteínas</h3>
+    <h3 class="bio-topic">Proteínas</h3>
     <p>La IA ya no sólo predice estructuras: propone secuencias y arquitecturas con propiedades buscadas.</p>
   </div>
   <div class="glass card" style="min-height:235px">
-    <div class="big-number" style="font-size:52px">SYS</div>
-    <h3>Sistemas vivos</h3>
+    <h3 class="bio-topic">Sistemas vivos</h3>
     <p>La frontera se desplaza hacia modelos que conectan moléculas, células, genomas y experimentación.</p>
   </div>
 </div>
@@ -337,8 +332,8 @@ Propuesta del 28/09/2026, en desarrollo. Su ámbito es el entrenamiento de front
 <ShortVideo
   company="Google DeepMind · AlphaGenome Atlas"
   kicker="Genómica · septiembre de 2026"
-  title="Nueve mil millones de cambios posibles, convertidos en un mapa predictivo"
-  caption="AlphaGenome Atlas ofrece predicciones moleculares para cada posible variante de una sola letra del genoma humano. Es una imagen poderosa de cómo la IA transforma el genoma en un espacio navegable."
+  title="Un mapa predictivo del genoma"
+  caption="AlphaGenome Atlas predice efectos moleculares de cambios de una letra del ADN. Orienta hipótesis que necesitan comprobación experimental."
   caveat="Es una herramienta de investigación. Google DeepMind indica expresamente que no está validada ni aprobada para uso clínico."
   video-id="U0aToL5C-bQ"
   :start="0"
@@ -352,15 +347,15 @@ Propuesta del 28/09/2026, en desarrollo. Su ámbito es el entrenamiento de front
 <div class="split-45">
   <div>
     <div class="kicker">Evo 2 · modelo fundacional biológico</div>
-    <h1>Un contexto de un millón de bases para razonar sobre genomas</h1>
-    <p class="hero-sub">Evo 2 fue entrenado con <strong>9 billones de pares de bases</strong> de todos los dominios de la vida y trabaja con contexto de hasta <strong>1 millón de nucleótidos</strong>.</p>
-    <div class="callout" style="margin-top:20px">La analogía con los LLM es útil, pero incompleta: aquí los “tokens” representan secuencias biológicas y las predicciones deben volver al laboratorio para demostrar función.</div>
+    <h1>Evo 2: aprender de los genomas</h1>
+    <p class="hero-sub">Evo 2 aprende patrones de secuencias genómicas de todos los dominios de la vida. Sus propuestas necesitan volver al laboratorio.</p>
+    <div class="callout" style="margin-top:20px">Las predicciones orientan experimentos. La función biológica se comprueba en la realidad.</div>
   </div>
   <div class="glass card" style="padding:28px">
     <div class="metric-label">2026 · BIO FOUNDATION MODEL</div>
-    <div class="big-number" style="font-size:66px">9T</div>
+    <div class="big-number" style="font-size:66px">9 billones</div>
     <p>pares de bases en entrenamiento</p>
-    <div class="big-number" style="font-size:54px;margin-top:10px">1M</div>
+    <div class="big-number" style="font-size:54px;margin-top:10px">1 millón</div>
     <p>ventana de contexto, resolución de nucleótido</p>
     <p style="margin-top:18px"><strong>Abierto:</strong> parámetros, código y OpenGenome2.</p>
   </div>
@@ -371,8 +366,8 @@ Propuesta del 28/09/2026, en desarrollo. Su ámbito es el entrenamiento de front
 ---
 
 <div class="kicker">Diseño biológico</div>
-<h1>De predecir estructuras a proponer materia biológica nueva</h1>
-<div class="grid-3" style="margin-top:28px">
+<h1>Predicción, diseño y comprobación</h1>
+<div class="grid-3 evidence-process" style="margin-top:28px">
   <div class="glass card"><h3>Predicción</h3><p>¿Qué estructura o función es probable que tenga una secuencia?</p></div>
   <div class="glass card"><h3>Generación</h3><p>¿Qué secuencia podría producir una propiedad que buscamos?</p></div>
   <div class="glass card"><h3>Laboratorio</h3><p>La realidad experimental decide si la propuesta funciona, es estable y es segura.</p></div>
@@ -385,22 +380,10 @@ Propuesta del 28/09/2026, en desarrollo. Su ámbito es el entrenamiento de front
 
 <FrontierUpdate section="art" />
 
-<!--
-Fuentes consultadas el 03/10/2026.
-- Anthropic: https://www.anthropic.com/news/claude-discovers-novel-enzyme-system
-Comunicación de Anthropic del 23/09/2026 y preprint asociado. El descubrimiento necesita caracterización posterior.
--->
-
 ---
 ---
 
 <FrontierUpdate section="bio" />
-
-<!--
-Fuentes consultadas el 03/10/2026.
-- Google DeepMind: https://deepmind.google/blog/introducing-synthid-bio/
-Publicado el 30/09/2026. Es una capa adicional de verificación, junto al análisis biológico y los controles de síntesis.
--->
 
 ---
 class: debate
@@ -411,6 +394,11 @@ class: debate
   <h1 class="question">¿Qué cambia cuando la IA no sólo interpreta la vida…<br><em>sino que empieza a proponer cómo modificarla?</em></h1>
   <p>Conocimiento · salud · bioeconomía · seguridad · propiedad · límites</p>
 </div></div>
+
+<!--
+Transición del ponente: La relación con la IA afecta también a nuestra experiencia cotidiana y nuestros vínculos.
+-->
+
 
 ---
 ---
@@ -429,12 +417,6 @@ class: debate
 ---
 
 <FrontierUpdate section="mental" />
-
-<!--
-Fuentes consultadas el 03/10/2026.
-- Transluce: https://transluce.org/announcing-mental-health-evaluation
-Informe del 31/08/2026. Las simulaciones evalúan conductas del sistema, no eficacia terapéutica ni resultados clínicos.
--->
 
 ---
 ---
@@ -455,7 +437,7 @@ class: debate
 
 <div class="center"><div>
   <div class="kicker">Filosofía práctica</div>
-  <h1 class="question">Si sentimos afecto por una IA que sabemos que no siente…<br><em>¿qué revela eso sobre nosotros?</em></h1>
+  <h1 class="question">Si sentimos afecto por una IA cuya experiencia subjetiva no podemos verificar…<br><em>¿qué revela eso sobre nosotros?</em></h1>
 </div></div>
 
 ---
@@ -475,18 +457,18 @@ class: debate
 <FrontierUpdate section="complement" />
 
 <!--
-Fuentes consultadas el 03/10/2026.
-- Li et al. · arXiv: https://arxiv.org/abs/2609.32562
-Preprint del 26/09/2026, limitado a las tareas estudiadas. La propuesta educativa es una interpretación, no una conclusión universal.
+Transición del ponente: El criterio individual necesita instituciones que permitan ejercerlo.
 -->
 
+
+---
 ---
 
 <div class="split">
   <div>
     <div class="kicker">07 · Poder</div>
-    <h1>La IA distribuye capacidad.<br>Y concentra infraestructura.</h1>
-    <p class="hero-sub">La conversación pública no puede quedarse en el chatbot. También debe mirar <strong>energía, chips, datos, modelos, agentes, infraestructuras científicas y canales de distribución</strong>.</p>
+    <h1>Capacidad distribuida,<br>infraestructura concentrada</h1>
+    <p class="hero-sub">El acceso a la IA depende de <strong>energía, chips, datos y plataformas. Su control influye en quién puede participar</strong>.</p>
   </div>
   <I18nDiagram class="diagram-img diagram-power" src="/visuals/power-stack.svg" alt="Pila de infraestructura, capacidad y poder" />
 </div>
@@ -497,8 +479,8 @@ Preprint del 26/09/2026, limitado a las tareas estudiadas. La propuesta educativ
 <ShortVideo
   company="Palantir · TITAN"
   kicker="Poder · defensa · decisión"
-  title="Cuando la IA entra en sistemas donde una decisión tiene consecuencias físicas"
-  caption="El interés del ejemplo no es el vehículo: es la convergencia entre sensores, datos, modelos y cadena de decisión. Ahí la gobernanza deja de ser una cuestión abstracta."
+  title="IA en la decisión militar"
+  caption="Sensores y modelos alimentan decisiones con consecuencias físicas. Importa quién autoriza, supervisa y responde."
   caveat="Demo nocional del proveedor. Conviene verla con doble lectura: capacidad técnica y, al mismo tiempo, concentración de poder, responsabilidad y reglas de uso."
   video-id="7vwgr4xIfsw"
   :start="7"
@@ -511,11 +493,56 @@ Preprint del 26/09/2026, limitado a las tareas estudiadas. La propuesta educativ
 
 <FrontierUpdate section="governance" />
 
-<!--
-Fuentes consultadas el 03/10/2026.
-- Comisión Europea: https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
-Fuente: calendario vigente publicado por la Comisión Europea, consultado el 03/10/2026. Las obligaciones dependen del uso y del papel de cada actor.
--->
+---
+---
+
+<ShortVideo
+  company="Google DeepMind · Gemini Robotics 2"
+  kicker="Frontera 2026 · IA física"
+  title="Inteligencia entre distintos cuerpos"
+  caption="Gemini Robotics 2 explora el control de cuerpo completo y la colaboración. La pregunta es cuánto puede generalizarse lo aprendido."
+  caveat="Demo del propio laboratorio. Sirve para observar una dirección tecnológica reciente; no implica que estas capacidades estén desplegadas de forma general en entornos no controlados."
+  video-id="4lSQnrMC6nY"
+  :start="6"
+  :end="66"
+/>
+<div class="source">Vídeo oficial · Google DeepMind · “Gemini Robotics 2 brings whole body intelligence to robots” (30/07/2026). Clip 00:06–01:06.</div>
+
+---
+---
+
+<FrontierUpdate section="acceleration" />
+
+---
+---
+
+<div class="kicker">2030 · tres futuros plausibles</div>
+<h1>No hay un único futuro tecnológico</h1>
+<I18nDiagram class="diagram-img diagram-future" src="/visuals/future-fork.svg" alt="Tres futuros posibles de la IA hacia 2030" />
+<p class="scenario-note">Escenarios para pensar decisiones, no predicciones.</p>
+
+---
+class: debate
+---
+
+<div class="center"><div>
+  <div class="kicker">Decisión colectiva</div>
+  <h1 class="question">¿Qué capacidad humana estaríamos dispuestos a <em>perder</em> a cambio de comodidad?</h1>
+  <p>Memoria · orientación · escritura · cálculo · conversación · decisión · cuidado</p>
+</div></div>
+
+---
+---
+
+<div class="kicker">Notas de prudencia</div>
+<h1>Cuatro límites para interpretar los avances</h1>
+<div class="grid-4" style="margin-top:24px">
+  <div class="glass card"><div class="card-icon">↯</div><h3>Empleo</h3><p>Exposición a tareas no equivale a desaparición automática del empleo.</p></div>
+  <div class="glass card"><div class="card-icon">◉</div><h3>Consciencia</h3><p>Conducta lingüística sofisticada no prueba experiencia subjetiva.</p></div>
+  <div class="glass card"><div class="card-icon">✦</div><h3>Salud mental</h3><p>La salud mental exige validación, límites y gobernanza clínica.</p></div>
+  <div class="glass card"><div class="card-icon">⇄</div><h3>Futuro</h3><p>Diseño, instituciones y decisiones cambian los resultados.</p></div>
+</div>
+<div class="callout" style="margin-top:24px"><strong>Asombro + escepticismo.</strong> Una conversación adulta necesita conservar ambas capacidades.</div>
 
 ---
 ---
@@ -537,66 +564,6 @@ Fuente: calendario vigente publicado por la Comisión Europea, consultado el 03/
 
   <div class="reus-institution__thesis">La innovación no consiste sólo en adoptar tecnología. También consiste en <strong>decidir juntos qué no queremos delegar</strong>.</div>
 </div>
-
----
----
-
-<FrontierUpdate section="acceleration" />
-
-<!--
-Fuentes consultadas el 03/10/2026.
-- Chan et al. · arXiv: https://arxiv.org/abs/2609.36054
-Es un escenario para analizar y preparar respuestas. No demuestra una explosión de inteligencia ni fija una fecha para ella.
--->
-
----
-
-<div class="kicker">2030 · tres futuros plausibles</div>
-<h1>No hay un único futuro tecnológico</h1>
-<I18nDiagram class="diagram-img diagram-future" src="/visuals/future-fork.svg" alt="Tres futuros posibles de la IA hacia 2030" />
-<div class="grid-3" style="margin-top:-4px">
-  <div class="glass card"><h3 style="color:var(--green)!important">IA cívica</h3><p>Capacidad distribuida, educación, derechos y control humano significativo.</p></div>
-  <div class="glass card"><h3 style="color:var(--amber)!important">IA desigual</h3><p>Gran productividad con concentración de oportunidades y poder.</p></div>
-  <div class="glass card"><h3 style="color:var(--red)!important">IA tutelar</h3><p>Comodidad a cambio de vigilancia, dependencia y autonomía decreciente.</p></div>
-</div>
-
----
----
-
-<ShortVideo
-  company="Google DeepMind · Gemini Robotics 2"
-  kicker="Frontera 2026 · IA física"
-  title="El siguiente salto no es un robot concreto: es inteligencia transferible entre cuerpos"
-  caption="Gemini Robotics 2 ejemplifica una dirección de frontera: control de cuerpo completo, destreza y colaboración entre robots. El software cognitivo empieza a separarse del hardware que lo encarna."
-  caveat="Demo del propio laboratorio. Sirve para observar una dirección tecnológica reciente; no implica que estas capacidades estén desplegadas de forma general en entornos no controlados."
-  video-id="4lSQnrMC6nY"
-  :start="6"
-  :end="66"
-/>
-<div class="source">Vídeo oficial · Google DeepMind · “Gemini Robotics 2 brings whole body intelligence to robots” (30/07/2026). Clip 00:06–01:06.</div>
-
----
-class: debate
----
-
-<div class="center"><div>
-  <div class="kicker">Decisión colectiva</div>
-  <h1 class="question">¿Qué capacidad humana estaríamos dispuestos a <em>perder</em> a cambio de comodidad?</h1>
-  <p>Memoria · orientación · escritura · cálculo · conversación · decisión · cuidado</p>
-</div></div>
-
----
----
-
-<div class="kicker">Notas de prudencia</div>
-<h1>Cuatro cosas que esta charla no afirma</h1>
-<div class="grid-4" style="margin-top:24px">
-  <div class="glass card"><div class="card-icon">↯</div><h3>No predice desempleo masivo</h3><p>Exposición a tareas no equivale a desaparición automática del empleo.</p></div>
-  <div class="glass card"><div class="card-icon">◉</div><h3>No atribuye consciencia</h3><p>Conducta lingüística sofisticada no prueba experiencia subjetiva.</p></div>
-  <div class="glass card"><div class="card-icon">✦</div><h3>No equipara IA y terapeuta</h3><p>La salud mental exige validación, límites y gobernanza clínica.</p></div>
-  <div class="glass card"><div class="card-icon">⇄</div><h3>No convierte riesgo en destino</h3><p>Diseño, instituciones y decisiones cambian los resultados.</p></div>
-</div>
-<div class="callout" style="margin-top:24px"><strong>Asombro + escepticismo.</strong> Una conversación adulta necesita conservar ambas capacidades.</div>
 
 ---
 ---
@@ -633,7 +600,7 @@ class: debate
     <p><strong>OIT/NASK</strong> · <em>Generative AI and Jobs</em> (2025)</p>
     <p><strong>ENISA</strong> · <em>Threat Landscape 2026</em> (22/09)</p>
     <p><strong>Unión Europea</strong> · AI Act y guías de implementación</p>
-    <p><strong>Vídeos oficiales</strong> · NVIDIA · Google DeepMind · Unitree · UBTECH · AGIBOT · Palantir</p>
+    <p><strong>Vídeos oficiales</strong> · Boston Dynamics · Linkerbot · UBTECH · Unitree · OpenAI · Google DeepMind · Palantir</p>
   </div>
   <div class="glass card">
     <h3>Biología · salud · límites</h3>
@@ -651,4 +618,3 @@ class: cinematic-v56
 ---
 
 <CinematicClosing />
-
